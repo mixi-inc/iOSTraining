@@ -26,9 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"didload");
+    NSLog(@"viewDidLoad");
     // Do any additional setup after loading the view from its nib.
-    [_grayView setBackgroundColor:[UIColor redColor]];
     [_grayView setFrame:CGRectMake(_grayView.frame.origin.x,
                                    _grayView.frame.origin.y,
                                    _grayView.frame.size.width/2,
@@ -39,26 +38,26 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSLog(@"will ap");
+    NSLog(@"viewWillAppear");
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    NSLog(@"did ap");
+    NSLog(@"viewDidAppear");
 }
 
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    NSLog(@"will dap");
+    NSLog(@"viewWillDisappear");
 }
 
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    NSLog(@"did dap");
+    NSLog(@"viewDidDisappear");
 }
 
 -(void)dealloc

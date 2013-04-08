@@ -22,8 +22,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    NSObject *obj = [[NSObject alloc] init];
-
     _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
     [self.view addSubview:_sampleVC.view];
 }
