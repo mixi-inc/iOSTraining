@@ -28,6 +28,7 @@
     [super viewDidLoad];
     NSLog(@"didload");
     // Do any additional setup after loading the view from its nib.
+    [_grayView setBackgroundColor:[UIColor redColor]];
     [_grayView setFrame:CGRectMake(_grayView.frame.origin.x,
                                    _grayView.frame.origin.y,
                                    _grayView.frame.size.width/2,
