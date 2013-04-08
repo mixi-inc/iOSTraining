@@ -18,6 +18,9 @@
 		2A031CA8170E805D0064F7D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A031CA7170E805D0064F7D2 /* Default-568h@2x.png */; };
 		2A031CAB170E805D0064F7D2 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CAA170E805D0064F7D2 /* MixiViewController.m */; };
 		2A031CAE170E805D0064F7D2 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A031CAC170E805D0064F7D2 /* MixiViewController.xib */; };
+		2A031CB6170ED1B30064F7D2 /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB5170ED1B30064F7D2 /* MixiSampleClass.m */; };
+		2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB817125A030064F7D2 /* MixiSampleViewController.m */; };
+		2A031CBB17125A030064F7D2 /* MixiSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,11 @@
 		2A031CA9170E805D0064F7D2 /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
 		2A031CAA170E805D0064F7D2 /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		2A031CAD170E805D0064F7D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
+		2A031CB4170ED1B30064F7D2 /* MixiSampleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleClass.h; sourceTree = "<group>"; };
+		2A031CB5170ED1B30064F7D2 /* MixiSampleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleClass.m; sourceTree = "<group>"; };
+		2A031CB717125A030064F7D2 /* MixiSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleViewController.h; sourceTree = "<group>"; };
+		2A031CB817125A030064F7D2 /* MixiSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleViewController.m; sourceTree = "<group>"; };
+		2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiSampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,11 @@
 			children = (
 				2A031CA0170E805D0064F7D2 /* MixiAppDelegate.h */,
 				2A031CA1170E805D0064F7D2 /* MixiAppDelegate.m */,
+				2A031CB4170ED1B30064F7D2 /* MixiSampleClass.h */,
+				2A031CB5170ED1B30064F7D2 /* MixiSampleClass.m */,
+				2A031CB717125A030064F7D2 /* MixiSampleViewController.h */,
+				2A031CB817125A030064F7D2 /* MixiSampleViewController.m */,
+				2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */,
 				2A031CA9170E805D0064F7D2 /* MixiViewController.h */,
 				2A031CAA170E805D0064F7D2 /* MixiViewController.m */,
 				2A031CAC170E805D0064F7D2 /* MixiViewController.xib */,
@@ -164,6 +177,7 @@
 				2A031CA6170E805D0064F7D2 /* Default@2x.png in Resources */,
 				2A031CA8170E805D0064F7D2 /* Default-568h@2x.png in Resources */,
 				2A031CAE170E805D0064F7D2 /* MixiViewController.xib in Resources */,
+				2A031CBB17125A030064F7D2 /* MixiSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +191,8 @@
 				2A031C9E170E805D0064F7D2 /* main.m in Sources */,
 				2A031CA2170E805D0064F7D2 /* MixiAppDelegate.m in Sources */,
 				2A031CAB170E805D0064F7D2 /* MixiViewController.m in Sources */,
+				2A031CB6170ED1B30064F7D2 /* MixiSampleClass.m in Sources */,
+				2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +315,7 @@
 				2A031CB3170E805D0064F7D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

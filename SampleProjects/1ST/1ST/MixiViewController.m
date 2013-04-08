@@ -7,8 +7,11 @@
 //
 
 #import "MixiViewController.h"
+#import "MixiSampleViewController.h"
 
 @interface MixiViewController ()
+
+@property (nonatomic, strong) MixiSampleViewController *sampleVC;
 
 @end
 
@@ -18,6 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    NSObject *obj = [[NSObject alloc] init];
+
+    _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
+    [self.view addSubview:_sampleVC.view];
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +34,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressAddButton:(id)sender {
+    [self.view addSubview:_sampleVC.view];
+}
+
+- (IBAction)pressRemoveButton:(id)sender {
+    [_sampleVC.view removeFromSuperview];
+}
 @end
