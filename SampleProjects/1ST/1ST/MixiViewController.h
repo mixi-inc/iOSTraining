@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiPostViewController.h"
 
 @interface MixiViewController : UIViewController
+<MixiPostViewControllerDelegate>
 
 - (IBAction)pressAddButton:(id)sender;
 - (IBAction)pressRemoveButton:(id)sender;
-
+- (IBAction)pressModalButton:(id)sender;
 @end

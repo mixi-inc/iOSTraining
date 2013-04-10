@@ -21,6 +21,10 @@
 		2A031CB6170ED1B30064F7D2 /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB5170ED1B30064F7D2 /* MixiSampleClass.m */; };
 		2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB817125A030064F7D2 /* MixiSampleViewController.m */; };
 		2A031CBB17125A030064F7D2 /* MixiSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */; };
+		2A31E6C21714F3C9008FB7E1 /* MixiPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A31E6C01714F3C9008FB7E1 /* MixiPostViewController.m */; };
+		2A31E6C31714F3C9008FB7E1 /* MixiPostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A31E6C11714F3C9008FB7E1 /* MixiPostViewController.xib */; };
+		2AFC7DD2171500DA00182CB4 /* MixiLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC7DD0171500DA00182CB4 /* MixiLoginViewController.m */; };
+		2AFC7DD3171500DA00182CB4 /* MixiLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7DD1171500DA00182CB4 /* MixiLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,12 @@
 		2A031CB717125A030064F7D2 /* MixiSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleViewController.h; sourceTree = "<group>"; };
 		2A031CB817125A030064F7D2 /* MixiSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleViewController.m; sourceTree = "<group>"; };
 		2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiSampleViewController.xib; sourceTree = "<group>"; };
+		2A31E6BF1714F3C9008FB7E1 /* MixiPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiPostViewController.h; sourceTree = "<group>"; };
+		2A31E6C01714F3C9008FB7E1 /* MixiPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiPostViewController.m; sourceTree = "<group>"; };
+		2A31E6C11714F3C9008FB7E1 /* MixiPostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiPostViewController.xib; sourceTree = "<group>"; };
+		2AFC7DCF171500DA00182CB4 /* MixiLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiLoginViewController.h; sourceTree = "<group>"; };
+		2AFC7DD0171500DA00182CB4 /* MixiLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiLoginViewController.m; sourceTree = "<group>"; };
+		2AFC7DD1171500DA00182CB4 /* MixiLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,12 @@
 				2A031CAA170E805D0064F7D2 /* MixiViewController.m */,
 				2A031CAC170E805D0064F7D2 /* MixiViewController.xib */,
 				2A031C98170E805D0064F7D2 /* Supporting Files */,
+				2A31E6BF1714F3C9008FB7E1 /* MixiPostViewController.h */,
+				2A31E6C01714F3C9008FB7E1 /* MixiPostViewController.m */,
+				2A31E6C11714F3C9008FB7E1 /* MixiPostViewController.xib */,
+				2AFC7DCF171500DA00182CB4 /* MixiLoginViewController.h */,
+				2AFC7DD0171500DA00182CB4 /* MixiLoginViewController.m */,
+				2AFC7DD1171500DA00182CB4 /* MixiLoginViewController.xib */,
 			);
 			path = 1ST;
 			sourceTree = "<group>";
@@ -178,6 +194,8 @@
 				2A031CA8170E805D0064F7D2 /* Default-568h@2x.png in Resources */,
 				2A031CAE170E805D0064F7D2 /* MixiViewController.xib in Resources */,
 				2A031CBB17125A030064F7D2 /* MixiSampleViewController.xib in Resources */,
+				2A31E6C31714F3C9008FB7E1 /* MixiPostViewController.xib in Resources */,
+				2AFC7DD3171500DA00182CB4 /* MixiLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +211,8 @@
 				2A031CAB170E805D0064F7D2 /* MixiViewController.m in Sources */,
 				2A031CB6170ED1B30064F7D2 /* MixiSampleClass.m in Sources */,
 				2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */,
+				2A31E6C21714F3C9008FB7E1 /* MixiPostViewController.m in Sources */,
+				2AFC7DD2171500DA00182CB4 /* MixiLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

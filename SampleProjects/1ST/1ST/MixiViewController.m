@@ -39,4 +39,21 @@
 - (IBAction)pressRemoveButton:(id)sender {
     [_sampleVC.view removeFromSuperview];
 }
+
+- (void)pressModalButton:(id)sender
+{
+    MixiPostViewController *postViewController = [[MixiPostViewController alloc] init];
+    postViewController.delegate = self;
+    [self presentViewController:postViewController animated:YES completion:^{
+        NSLog(@"%@", self.presentingViewController);
+    }];
+}
+
+#pragma mark - MixiPostViewControllerDelegate methods
+-(void)didPressCloseButton
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"%@, %@", self.presentingViewController, self.presentedViewController);
+}
+
 @end
