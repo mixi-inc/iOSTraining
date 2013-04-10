@@ -1,18 +1,18 @@
 //
-//  MixiPostViewController.m
+//  MixiChildViewController.m
 //  1ST
 //
 //  Created by 田村 航弥 on 2013/04/10.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiPostViewController.h"
+#import "MixiChildViewController.h"
 
-@interface MixiPostViewController ()
+@interface MixiChildViewController ()
 
 @end
 
-@implementation MixiPostViewController
+@implementation MixiChildViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,14 +37,15 @@
 
 - (IBAction)pressModalButton:(id)sender
 {
-    MixiLoginViewController *mixiLoginVC = [[MixiLoginViewController alloc]init];
-    mixiLoginVC.delegate = self;
-    [self presentViewController:mixiLoginVC animated:YES completion:nil];
+//    MixiGrandchildViewController *grandChildVC = [[MixiGrandchildViewController alloc]init];
+//    grandChildVC.delegate = self;
+//    [self presentViewController:grandChildVC animated:YES completion:nil];
 }
 
 -(IBAction)pressClosedButton:(id)sender
 {
     NSLog(@"%@, %@, %@", self.presentingViewController, self.presentedViewController, self.parentViewController);
+    // [3] delegate オブジェクトにメッセージを送信
     if([_delegate respondsToSelector:@selector(didPressCloseButton)]){
         [_delegate didPressCloseButton];
     }

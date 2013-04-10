@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MixiPostViewController.h"
+#import "MixiChildViewController.h"
 
-@interface MixiViewController : UIViewController
-<MixiPostViewControllerDelegate>
+@interface MixiViewController : UIViewController <MixiChildViewControllerDelegate> // [4] protocol の採用
 
 - (IBAction)pressAddButton:(id)sender;
 - (IBAction)pressRemoveButton:(id)sender;

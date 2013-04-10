@@ -1,5 +1,5 @@
 //
-//  MixiLoginViewController.h
+//  MixiGrandchildViewController.h
 //  1ST
 //
 //  Created by 田村 航弥 on 2013/04/10.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MixiLoginViewController : UIViewController
+@interface MixiGrandchildViewController : UIViewController
 
 - (IBAction)pressCloseButton:(id)sender;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@protocol MixiLoginViewControllerDelegate <NSObject>
+@protocol MixiGrandchildViewControllerDelegate <NSObject>
 
 -(void)didPressCloseButton;
 

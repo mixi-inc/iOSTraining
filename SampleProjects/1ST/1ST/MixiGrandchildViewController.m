@@ -1,18 +1,18 @@
 //
-//  MixiLoginViewController.m
+//  MixiGrandchildViewController.m
 //  1ST
 //
 //  Created by 田村 航弥 on 2013/04/10.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiLoginViewController.h"
+#import "MixiGrandchildViewController.h"
 
-@interface MixiLoginViewController ()
+@interface MixiGrandchildViewController ()
 
 @end
 
-@implementation MixiLoginViewController
+@implementation MixiGrandchildViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

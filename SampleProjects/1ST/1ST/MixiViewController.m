@@ -42,13 +42,12 @@
 
 - (void)pressModalButton:(id)sender
 {
-    MixiPostViewController *postViewController = [[MixiPostViewController alloc] init];
-    postViewController.delegate = self;
-    [self presentViewController:postViewController animated:YES completion:^{
-        NSLog(@"%@", self.presentingViewController);
-    }];
+    MixiChildViewController *mixiChildViewController = [[MixiChildViewController alloc] init];
+    mixiChildViewController.delegate = self; // [5] delegate 先として自身を代入
+    [self presentViewController:mixiChildViewController animated:YES completion:nil];
 }
 
+// [6] delegate method の実装
 #pragma mark - MixiPostViewControllerDelegate methods
 -(void)didPressCloseButton
 {
