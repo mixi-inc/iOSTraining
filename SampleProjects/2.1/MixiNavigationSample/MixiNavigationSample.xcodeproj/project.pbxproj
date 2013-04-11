@@ -18,7 +18,7 @@
 		2AFC7E3617155F5400182CB4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7E3517155F5400182CB4 /* Default-568h@2x.png */; };
 		2AFC7E3917155F5400182CB4 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC7E3817155F5400182CB4 /* MixiViewController.m */; };
 		2AFC7E3C17155F5400182CB4 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7E3A17155F5400182CB4 /* MixiViewController.xib */; };
-		2AFC7E431716474500182CB4 /* barButtonItem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7E421716474500182CB4 /* barButtonItem1.png */; };
+		2AFC7E4917168CC500182CB4 /* customNavBarImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7E4817168CC500182CB4 /* customNavBarImage1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		2AFC7E3717155F5400182CB4 /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
 		2AFC7E3817155F5400182CB4 /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		2AFC7E3B17155F5400182CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
-		2AFC7E421716474500182CB4 /* barButtonItem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barButtonItem1.png; sourceTree = "<group>"; };
+		2AFC7E4817168CC500182CB4 /* customNavBarImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customNavBarImage1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				2AFC7E3117155F5400182CB4 /* Default.png */,
 				2AFC7E3317155F5400182CB4 /* Default@2x.png */,
 				2AFC7E3517155F5400182CB4 /* Default-568h@2x.png */,
-				2AFC7E421716474500182CB4 /* barButtonItem1.png */,
+				2AFC7E4817168CC500182CB4 /* customNavBarImage1.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				2AFC7E3417155F5400182CB4 /* Default@2x.png in Resources */,
 				2AFC7E3617155F5400182CB4 /* Default-568h@2x.png in Resources */,
 				2AFC7E3C17155F5400182CB4 /* MixiViewController.xib in Resources */,
-				2AFC7E431716474500182CB4 /* barButtonItem1.png in Resources */,
+				2AFC7E4917168CC500182CB4 /* customNavBarImage1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

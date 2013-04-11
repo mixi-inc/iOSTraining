@@ -19,8 +19,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.title = [NSString stringWithFormat:@"%d", [self.navigationController.viewControllers count]];
-
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"pop" style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"pop" style:UIBarButtonItemStylePlain target:self action:@selector(pressPopButton)];
     self.navigationItem.rightBarButtonItem = rightButton;
 }
 
@@ -35,7 +35,7 @@
     [self.navigationController pushViewController:[[MixiViewController alloc] init] animated:YES];
 }
 
-- (void)pressPushPopButton
+- (void)pressPopButton
 {
     [self.navigationController popViewControllerAnimated:YES];
 }

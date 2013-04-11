@@ -1,25 +1,33 @@
 //
 //  MixiAppDelegate.m
-//  MixiNavigationSample
+//  MixiTabSample
 //
-//  Created by 田村 航弥 on 2013/04/10.
+//  Created by 田村 航弥 on 2013/04/11.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
 #import "MixiAppDelegate.h"
 
-#import "MixiViewController.h"
+#import "MixiFirstViewController.h"
+
+#import "MixiSecondViewController.h"
 
 @implementation MixiAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self customizeAppearance];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_viewController];
-    self.window.rootViewController = navigationController;
+    UIViewController *vc1 = [[MixiFirstViewController alloc] initWithImageName:@"first"];
+    UIViewController *vc2 = [[MixiSecondViewController alloc] initWithNibName:@"MixiSecondViewController" bundle:nil];
+    UIViewController *vc3 = [[MixiFirstViewController alloc] initWithImageName:@"third"];
+    UIViewController *vc4 = [[MixiFirstViewController alloc] initWithImageName:@"fourth"];
+    UIViewController *vc5 = [[MixiFirstViewController alloc] initWithImageName:@"fifth"];
+    UIViewController *vc6 = [[MixiFirstViewController alloc] initWithImageName:@"sixth"];
+
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[vc1, vc2, vc3, vc4, vc5, vc6];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -51,9 +59,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)customizeAppearance
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"customNavBarImage1"] forBarMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setTintColor:[UIColor blackColor]];
 }
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
+
 @end
