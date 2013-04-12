@@ -20,6 +20,7 @@
     if (self) {
         self.title = imageNmae;
         self.tabBarItem.image = [UIImage imageNamed:imageNmae];
+        self.tabBarItem.badgeValue = @"4";
     }
     return self;
 }
