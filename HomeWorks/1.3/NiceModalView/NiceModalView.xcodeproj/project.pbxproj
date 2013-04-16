@@ -18,7 +18,6 @@
 		DAC572B8171D325600E434A0 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC572B2171D325600E434A0 /* about@2x.png */; };
 		DAC572B9171D325600E434A0 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC572B3171D325600E434A0 /* profile.png */; };
 		DAC572BA171D325600E434A0 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC572B4171D325600E434A0 /* profile@2x.png */; };
-		DAC572BE171D3A5A00E434A0 /* buttonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC572BD171D3A5A00E434A0 /* buttonBack.png */; };
 		DAD37290171C3B0F00DF0A95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD3728F171C3B0F00DF0A95 /* UIKit.framework */; };
 		DAD37292171C3B0F00DF0A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD37291171C3B0F00DF0A95 /* Foundation.framework */; };
 		DAD37294171C3B0F00DF0A95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD37293171C3B0F00DF0A95 /* CoreGraphics.framework */; };
@@ -43,7 +42,6 @@
 		DAC572B2171D325600E434A0 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
 		DAC572B3171D325600E434A0 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		DAC572B4171D325600E434A0 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
-		DAC572BD171D3A5A00E434A0 /* buttonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBack.png; sourceTree = "<group>"; };
 		DAD3728C171C3B0F00DF0A95 /* NiceModalView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceModalView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD3728F171C3B0F00DF0A95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DAD37291171C3B0F00DF0A95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,7 +90,6 @@
 		DAC572B0171D325500E434A0 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				DAC572BD171D3A5A00E434A0 /* buttonBack.png */,
 				DAC572B1171D325600E434A0 /* about.png */,
 				DAC572B2171D325600E434A0 /* about@2x.png */,
 				DAC572B3171D325600E434A0 /* profile.png */,
@@ -232,7 +229,6 @@
 				DAC572B8171D325600E434A0 /* about@2x.png in Resources */,
 				DAC572B9171D325600E434A0 /* profile.png in Resources */,
 				DAC572BA171D325600E434A0 /* profile@2x.png in Resources */,
-				DAC572BE171D3A5A00E434A0 /* buttonBack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
