@@ -21,6 +21,7 @@
 		2A031CB6170ED1B30064F7D2 /* MixiSampleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB5170ED1B30064F7D2 /* MixiSampleClass.m */; };
 		2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A031CB817125A030064F7D2 /* MixiSampleViewController.m */; };
 		2A031CBB17125A030064F7D2 /* MixiSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */; };
+		2ABDFA6D171CE55200602E11 /* NSString+HogeAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDFA6C171CE55200602E11 /* NSString+HogeAddition.m */; };
 		2AFC7DDA1715413000182CB4 /* MixiChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC7DD51715413000182CB4 /* MixiChildViewController.m */; };
 		2AFC7DDB1715413000182CB4 /* MixiChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC7DD61715413000182CB4 /* MixiChildViewController.xib */; };
 		2AFC7DDC1715413000182CB4 /* MixiGrandchildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC7DD81715413000182CB4 /* MixiGrandchildViewController.m */; };
@@ -49,6 +50,8 @@
 		2A031CB717125A030064F7D2 /* MixiSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleViewController.h; sourceTree = "<group>"; };
 		2A031CB817125A030064F7D2 /* MixiSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleViewController.m; sourceTree = "<group>"; };
 		2A031CB917125A030064F7D2 /* MixiSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiSampleViewController.xib; sourceTree = "<group>"; };
+		2ABDFA6B171CE55200602E11 /* NSString+HogeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HogeAddition.h"; sourceTree = "<group>"; };
+		2ABDFA6C171CE55200602E11 /* NSString+HogeAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HogeAddition.m"; sourceTree = "<group>"; };
 		2AFC7DD41715413000182CB4 /* MixiChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiChildViewController.h; sourceTree = "<group>"; };
 		2AFC7DD51715413000182CB4 /* MixiChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiChildViewController.m; sourceTree = "<group>"; };
 		2AFC7DD61715413000182CB4 /* MixiChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiChildViewController.xib; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		2A031C97170E805D0064F7D2 /* 1ST */ = {
 			isa = PBXGroup;
 			children = (
+				2ABDFA6B171CE55200602E11 /* NSString+HogeAddition.h */,
+				2ABDFA6C171CE55200602E11 /* NSString+HogeAddition.m */,
 				2A031CA0170E805D0064F7D2 /* MixiAppDelegate.h */,
 				2A031CA1170E805D0064F7D2 /* MixiAppDelegate.m */,
 				2A031CB4170ED1B30064F7D2 /* MixiSampleClass.h */,
@@ -213,6 +218,7 @@
 				2A031CBA17125A030064F7D2 /* MixiSampleViewController.m in Sources */,
 				2AFC7DDA1715413000182CB4 /* MixiChildViewController.m in Sources */,
 				2AFC7DDC1715413000182CB4 /* MixiGrandchildViewController.m in Sources */,
+				2ABDFA6D171CE55200602E11 /* NSString+HogeAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

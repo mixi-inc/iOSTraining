@@ -8,6 +8,8 @@
 
 #import "MixiViewController.h"
 #import "MixiSampleViewController.h"
+#import "NSString+HogeAddition.h"
+#import "MixiSampleClass.h"
 
 @interface MixiViewController ()
 
@@ -21,6 +23,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    MixiSampleClass *obj = [[MixiSampleClass alloc] initWithName:@"tamura" sampleType:SampleTypeFuga];
+    NSLog(@"%@", [obj.name addHoge]);
+
 
     _sampleVC = [[MixiSampleViewController alloc] initWithNibName:@"MixiSampleViewController" bundle:nil];
     [self.view addSubview:_sampleVC.view];
