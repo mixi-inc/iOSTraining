@@ -14,10 +14,10 @@
 
 @end
 
-const CGRect kPortraitBuleViewRect = { { 32.0f, 33.0f }, { 150.0f, 150.0f } };
-const CGRect kLandscapeBuleViewRect = { { 33.0f, 32.0f }, { 150.0f, 150.0f } };
-const CGRect kPortraitYellowViewRect = { { 32.0f, 211.0f }, { 150.0f, 150.0f } };
-const CGRect kLandscapeYellowViewRect = { { 211.0f, 32.0f }, { 150.0f, 150.0f } };
+const CGRect kPortraitBuleViewRect = { { 32.0f, 18.0f }, { 150.0f, 150.0f } };
+const CGRect kLandscapeBuleViewRect = { { 18.0f, 32.0f }, { 150.0f, 150.0f } };
+const CGRect kPortraitYellowViewRect = { { 32.0f, 185.0f }, { 150.0f, 150.0f } };
+const CGRect kLandscapeYellowViewRect = { { 185.0f, 32.0f }, { 150.0f, 150.0f } };
 
 @implementation MixiViewController
 
