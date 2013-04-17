@@ -28,6 +28,7 @@
 }
 - (IBAction)modalButtonTapped:(id)sender {
 
+    // 一度モーダルで表示させたのには特に意味はありません(途中で宿題の中身を変えたためです)
     NIMModalViewController *modal = [[NIMModalViewController alloc] initWithNibName:@"NIMModalViewController" bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:modal];
     [self presentViewController:navigationController animated:YES completion:nil];
