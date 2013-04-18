@@ -7,20 +7,22 @@
 //
 
 #import "MixiFirstViewController.h"
+#import "MixiSecondViewController.h"
 
 @interface MixiFirstViewController ()
+- (IBAction)pressPushButton:(id)sender;
 
 @end
 
 @implementation MixiFirstViewController
 
--(id)initWithImageName:(NSString *)imageNmae;
+-(id)initWithImageName:(NSString *)imageName;
 {
     self = [super initWithNibName:@"MixiFirstViewController" bundle:nil];
     if (self) {
-        self.title = imageNmae;
-        self.tabBarItem.image = [UIImage imageNamed:imageNmae];
-        self.tabBarItem.badgeValue = @"4";
+        self.title = imageName;
+        self.tabBarItem.image = [UIImage imageNamed:imageName];
+        self.tabBarItem.badgeValue = @"N";
     }
     return self;
 }
@@ -29,6 +31,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    MixiSecondViewController *vc = [[MixiSecondViewController alloc]init];
+    [vc.view setFrame:CGRectMake(0, 0, vc.view.frame.size.width/4, vc.view.frame.size.height)];
+    [self.view addSubview:vc.view];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,4 +44,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressPushButton:(id)sender {
+    [self.navigationController pushViewController:[[MixiFirstViewController alloc] initWithImageName:@"sixed"] animated:YES];
+}
 @end

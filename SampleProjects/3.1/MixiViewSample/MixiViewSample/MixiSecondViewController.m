@@ -1,14 +1,15 @@
 //
 //  MixiSecondViewController.m
-//  MixiTabSample
+//  MixiViewSample
 //
-//  Created by 田村 航弥 on 2013/04/11.
+//  Created by 田村 航弥 on 2013/04/18.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
 #import "MixiSecondViewController.h"
 
 @interface MixiSecondViewController ()
+- (IBAction)pressButton:(UIButton *)sender;
 
 @end
 
@@ -23,16 +24,13 @@
     }
     return self;
 }
-
--(void)viewWillAppear:(BOOL)animated
-{
-    NSLog(@"second appear");
-}
 							
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    [[self.view viewWithTag:5] removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,4 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pressButton:(UIButton *)sender
+{
+    NSLog(@"%d", sender.tag);
+}
 @end

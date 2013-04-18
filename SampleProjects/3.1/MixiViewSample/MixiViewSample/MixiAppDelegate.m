@@ -1,8 +1,8 @@
 //
 //  MixiAppDelegate.m
-//  MixiTabSample
+//  MixiViewSample
 //
-//  Created by 田村 航弥 on 2013/04/11.
+//  Created by 田村 航弥 on 2013/04/18.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
@@ -18,16 +18,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *vc1 = [[MixiFirstViewController alloc] initWithImageName:@"first"];
-    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:vc1];
-    UIViewController *vc2 = [[MixiSecondViewController alloc] initWithNibName:@"MixiSecondViewController" bundle:nil];
-    UIViewController *vc3 = [[MixiFirstViewController alloc] initWithImageName:@"third"];
-    UIViewController *vc4 = [[MixiFirstViewController alloc] initWithImageName:@"fourth"];
-    UIViewController *vc5 = [[MixiFirstViewController alloc] initWithImageName:@"fifth"];
-    UIViewController *vc6 = [[MixiFirstViewController alloc] initWithImageName:@"sixth"];
-
+    UIViewController *viewController1 = [[MixiFirstViewController alloc] initWithNibName:@"MixiFirstViewController" bundle:nil];
+    UIViewController *viewController2 = [[MixiSecondViewController alloc] initWithNibName:@"MixiSecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[nv, vc2, vc3, vc4, vc5, vc6];
+    self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

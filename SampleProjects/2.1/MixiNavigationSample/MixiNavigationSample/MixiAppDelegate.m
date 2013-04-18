@@ -18,7 +18,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil];
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:self.viewController];
+
+    for(NSInteger i = 0; i < 4; i ++){
+        [array addObject:[[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil]];
+    }
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_viewController];
+    [navigationController setViewControllers:array];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;

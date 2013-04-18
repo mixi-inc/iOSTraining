@@ -33,6 +33,7 @@
 - (IBAction)pressPushButton:(id)sender
 {
     [self.navigationController pushViewController:[[MixiViewController alloc] init] animated:YES];
+    NSLog(@"%d", [self.navigationController.viewControllers count]);
 }
 
 - (void)pressPopButton

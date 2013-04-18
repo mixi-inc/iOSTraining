@@ -1,38 +1,39 @@
 //
-//  MixiSecondViewController.m
-//  MixiTabSample
+//  MixiFirstViewController.m
+//  MixiViewSample
 //
-//  Created by 田村 航弥 on 2013/04/11.
+//  Created by 田村 航弥 on 2013/04/18.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiSecondViewController.h"
+#import "MixiFirstViewController.h"
 
-@interface MixiSecondViewController ()
+@interface MixiFirstViewController ()
 
 @end
 
-@implementation MixiSecondViewController
+@implementation MixiFirstViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.title = NSLocalizedString(@"First", @"First");
+        self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
-}
-
--(void)viewWillAppear:(BOOL)animated
-{
-    NSLog(@"second appear");
 }
 							
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@", self.view.subviews);
+    for (UIView *view in self.view.subviews){
+        if([view isKindOfClass:[UILabel class]]){
+            [view removeFromSuperview];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

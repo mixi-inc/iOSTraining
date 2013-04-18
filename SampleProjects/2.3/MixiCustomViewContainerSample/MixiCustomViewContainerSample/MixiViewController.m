@@ -43,7 +43,11 @@
     [fromViewController willMoveToParentViewController:nil]; //[3] 
     [self addChildViewController:toViewController];
 
-    toViewController.view.frame = CGRectMake(0, -_dummyView.frame.size.height, _dummyView.frame.size.width, _dummyView.frame.size.height);
+    toViewController.view.frame
+    = CGRectMake(0,
+                 -_dummyView.frame.size.height,
+                 _dummyView.frame.size.width,
+                 _dummyView.frame.size.height);
 
     // [4] 画面遷移メソッド
     [self transitionFromViewController:fromViewController
@@ -51,8 +55,8 @@
                               duration:0.5
                                options:0
                             animations:^{
-                                toViewController.view.frame = fromViewController.view.frame;
-                                fromViewController.view.frame = CGRectMake(0, 50, _dummyView.frame.size.width, _dummyView.frame.size.height);
+                                toViewController.view.frame = _dummyView.frame;
+                                fromViewController.view.alpha = 0.0;
                             } completion:^(BOOL finished) {
                                 [fromViewController removeFromParentViewController];
                                 [toViewController didMoveToParentViewController:self];
