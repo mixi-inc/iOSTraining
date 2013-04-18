@@ -18,7 +18,6 @@
     // Override point for customization after application launch.
 
     // TODO: MixiNiceViewControllerを XIBファイルを使って初期化します。
-    // self.viewController =
 	self.viewController = [[MixiNiceViewController alloc] initWithNibName:@"MixiNiceViewController" bundle:nil];
 
     // TODO: 生成した self.viewControllerを　windowのRootViewControllerとして設定します。
