@@ -32,11 +32,21 @@
     // TODO secondViewControllerのdelegateを自分にセット
     // TODO [self presentViewController:￼ animated:￼ completion:￼] を呼ぶ
 
+    secondViewController.delegate = self; // [5] delegate 先として自身を代入
+    [self presentViewController:secondViewController animated:YES completion:nil];
+
 }
 
 #pragma EMFSecondViewController delegate
 // TODO EFMSecondViewController の delegateメソッドを実装
-
+- (void)didPressCloseButton
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        EFMSecondViewController *secondViewController = [[EFMSecondViewController alloc] init];
+        secondViewController.delegate = self; // [5] delegate 先として自身を代入
+        [self presentViewController:secondViewController animated:YES completion:nil];
+    }];
+}
 
 
 @end
