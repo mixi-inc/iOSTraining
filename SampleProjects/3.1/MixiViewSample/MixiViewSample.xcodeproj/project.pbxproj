@@ -24,6 +24,10 @@
 		2A068AF617201C6300EBB613 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A068AF517201C6300EBB613 /* second@2x.png */; };
 		2A068AF917201C6400EBB613 /* MixiFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A068AF717201C6300EBB613 /* MixiFirstViewController.xib */; };
 		2A068AFC17201C6400EBB613 /* MixiSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A068AFA17201C6400EBB613 /* MixiSecondViewController.xib */; };
+		2A068B051721298100EBB613 /* MixiThridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A068B031721298100EBB613 /* MixiThridViewController.m */; };
+		2A068B061721298100EBB613 /* MixiThridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A068B041721298100EBB613 /* MixiThridViewController.xib */; };
+		2A068B08172129DB00EBB613 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A068B07172129DB00EBB613 /* circle.png */; };
+		2A068B0A17212E0200EBB613 /* ojisan.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A068B0917212E0100EBB613 /* ojisan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,11 @@
 		2A068AF517201C6300EBB613 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		2A068AF817201C6400EBB613 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiFirstViewController.xib; sourceTree = "<group>"; };
 		2A068AFB17201C6400EBB613 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiSecondViewController.xib; sourceTree = "<group>"; };
+		2A068B021721298100EBB613 /* MixiThridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiThridViewController.h; sourceTree = "<group>"; };
+		2A068B031721298100EBB613 /* MixiThridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiThridViewController.m; sourceTree = "<group>"; };
+		2A068B041721298100EBB613 /* MixiThridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiThridViewController.xib; sourceTree = "<group>"; };
+		2A068B07172129DB00EBB613 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		2A068B0917212E0100EBB613 /* ojisan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ojisan.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,18 +105,23 @@
 		2A068AD717201C6300EBB613 /* MixiViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				2A068B0917212E0100EBB613 /* ojisan.png */,
+				2A068B07172129DB00EBB613 /* circle.png */,
+				2A068AEC17201C6300EBB613 /* first.png */,
+				2A068AEE17201C6300EBB613 /* first@2x.png */,
 				2A068AE017201C6300EBB613 /* MixiAppDelegate.h */,
 				2A068AE117201C6300EBB613 /* MixiAppDelegate.m */,
 				2A068AE917201C6300EBB613 /* MixiFirstViewController.h */,
 				2A068AEA17201C6300EBB613 /* MixiFirstViewController.m */,
-				2A068AEC17201C6300EBB613 /* first.png */,
-				2A068AEE17201C6300EBB613 /* first@2x.png */,
+				2A068AF717201C6300EBB613 /* MixiFirstViewController.xib */,
 				2A068AF017201C6300EBB613 /* MixiSecondViewController.h */,
 				2A068AF117201C6300EBB613 /* MixiSecondViewController.m */,
+				2A068AFA17201C6400EBB613 /* MixiSecondViewController.xib */,
+				2A068B021721298100EBB613 /* MixiThridViewController.h */,
+				2A068B031721298100EBB613 /* MixiThridViewController.m */,
+				2A068B041721298100EBB613 /* MixiThridViewController.xib */,
 				2A068AF317201C6300EBB613 /* second.png */,
 				2A068AF517201C6300EBB613 /* second@2x.png */,
-				2A068AF717201C6300EBB613 /* MixiFirstViewController.xib */,
-				2A068AFA17201C6400EBB613 /* MixiSecondViewController.xib */,
 				2A068AD817201C6300EBB613 /* Supporting Files */,
 			);
 			path = MixiViewSample;
@@ -189,6 +203,9 @@
 				2A068AF617201C6300EBB613 /* second@2x.png in Resources */,
 				2A068AF917201C6400EBB613 /* MixiFirstViewController.xib in Resources */,
 				2A068AFC17201C6400EBB613 /* MixiSecondViewController.xib in Resources */,
+				2A068B061721298100EBB613 /* MixiThridViewController.xib in Resources */,
+				2A068B08172129DB00EBB613 /* circle.png in Resources */,
+				2A068B0A17212E0200EBB613 /* ojisan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +220,7 @@
 				2A068AE217201C6300EBB613 /* MixiAppDelegate.m in Sources */,
 				2A068AEB17201C6300EBB613 /* MixiFirstViewController.m in Sources */,
 				2A068AF217201C6300EBB613 /* MixiSecondViewController.m in Sources */,
+				2A068B051721298100EBB613 /* MixiThridViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +351,7 @@
 				2A068B0117201C6400EBB613 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

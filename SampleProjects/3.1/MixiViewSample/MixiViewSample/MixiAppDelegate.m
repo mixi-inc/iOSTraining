@@ -12,6 +12,8 @@
 
 #import "MixiSecondViewController.h"
 
+#import "MixiThridViewController.h"
+
 @implementation MixiAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -20,8 +22,9 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[MixiFirstViewController alloc] initWithNibName:@"MixiFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[MixiSecondViewController alloc] initWithNibName:@"MixiSecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[MixiThridViewController alloc] initWithNibName:@"MixiThridViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
