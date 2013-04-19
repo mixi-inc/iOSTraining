@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA28B781171FA45700B1D982 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28B780171FA45700B1D982 /* UIKit.framework */; };
+		DA28B783171FA45700B1D982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28B782171FA45700B1D982 /* Foundation.framework */; };
+		DA28B785171FA45700B1D982 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28B784171FA45700B1D982 /* CoreGraphics.framework */; };
+		DA28B78B171FA45700B1D982 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA28B789171FA45700B1D982 /* InfoPlist.strings */; };
+		DA28B78D171FA45700B1D982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B78C171FA45700B1D982 /* main.m */; };
+		DA28B791171FA45700B1D982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B790171FA45700B1D982 /* AppDelegate.m */; };
+		DA28B793171FA45700B1D982 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DA28B792171FA45700B1D982 /* Default.png */; };
+		DA28B795171FA45700B1D982 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA28B794171FA45700B1D982 /* Default@2x.png */; };
+		DA28B797171FA45700B1D982 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA28B796171FA45700B1D982 /* Default-568h@2x.png */; };
+		DA28B7B0171FA4FB00B1D982 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B7AE171FA4FB00B1D982 /* MainViewController.m */; };
+		DA28B7B1171FA4FB00B1D982 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7AF171FA4FB00B1D982 /* MainViewController.xib */; };
+		DA28B7B3171FAD3A00B1D982 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28B7B2171FAD3A00B1D982 /* QuartzCore.framework */; };
+		DA28B7B7171FAD6200B1D982 /* ThumbnailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B7B5171FAD6200B1D982 /* ThumbnailsViewController.m */; };
+		DA28B7B8171FAD6200B1D982 /* ThumbnailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7B6171FAD6200B1D982 /* ThumbnailsViewController.xib */; };
+		DA28B7C0171FB17D00B1D982 /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B7BE171FB17D00B1D982 /* FocusViewController.m */; };
+		DA28B7C1171FB17D00B1D982 /* FocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7BF171FB17D00B1D982 /* FocusViewController.xib */; };
+		DA28B7CD171FCA4000B1D982 /* 1f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7C4171FCA4000B1D982 /* 1f.jpg */; };
+		DA28B7CE171FCA4000B1D982 /* 2f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7C5171FCA4000B1D982 /* 2f.jpg */; };
+		DA28B7CF171FCA4000B1D982 /* 3f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7C6171FCA4000B1D982 /* 3f.jpg */; };
+		DA28B7D0171FCA4000B1D982 /* 4f.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7C7171FCA4000B1D982 /* 4f.jpg */; };
+		DA28B7D1171FCA4000B1D982 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7C9171FCA4000B1D982 /* 1.jpg */; };
+		DA28B7D2171FCA4000B1D982 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7CA171FCA4000B1D982 /* 2.jpg */; };
+		DA28B7D3171FCA4000B1D982 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7CB171FCA4000B1D982 /* 3.jpg */; };
+		DA28B7D4171FCA4000B1D982 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA28B7CC171FCA4000B1D982 /* 4.jpg */; };
+		DA28B7D7171FCBD100B1D982 /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B7D6171FCBD100B1D982 /* ImageScrollView.m */; };
+		DA28B7DA171FD9FC00B1D982 /* FocusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA28B7D9171FD9FA00B1D982 /* FocusManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA28B77D171FA45700B1D982 /* ThumbnailFocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThumbnailFocus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA28B780171FA45700B1D982 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DA28B782171FA45700B1D982 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA28B784171FA45700B1D982 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DA28B788171FA45700B1D982 /* ThumbnailFocus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThumbnailFocus-Info.plist"; sourceTree = "<group>"; };
+		DA28B78A171FA45700B1D982 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA28B78C171FA45700B1D982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA28B78E171FA45700B1D982 /* ThumbnailFocus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThumbnailFocus-Prefix.pch"; sourceTree = "<group>"; };
+		DA28B78F171FA45700B1D982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA28B790171FA45700B1D982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA28B792171FA45700B1D982 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DA28B794171FA45700B1D982 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DA28B796171FA45700B1D982 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA28B7AD171FA4FB00B1D982 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DA28B7AE171FA4FB00B1D982 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DA28B7AF171FA4FB00B1D982 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		DA28B7B2171FAD3A00B1D982 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DA28B7B4171FAD6200B1D982 /* ThumbnailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailsViewController.h; sourceTree = "<group>"; };
+		DA28B7B5171FAD6200B1D982 /* ThumbnailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailsViewController.m; sourceTree = "<group>"; };
+		DA28B7B6171FAD6200B1D982 /* ThumbnailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThumbnailsViewController.xib; sourceTree = "<group>"; };
+		DA28B7BD171FB17D00B1D982 /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
+		DA28B7BE171FB17D00B1D982 /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
+		DA28B7BF171FB17D00B1D982 /* FocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FocusViewController.xib; sourceTree = "<group>"; };
+		DA28B7C4171FCA4000B1D982 /* 1f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1f.jpg; sourceTree = "<group>"; };
+		DA28B7C5171FCA4000B1D982 /* 2f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2f.jpg; sourceTree = "<group>"; };
+		DA28B7C6171FCA4000B1D982 /* 3f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3f.jpg; sourceTree = "<group>"; };
+		DA28B7C7171FCA4000B1D982 /* 4f.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4f.jpg; sourceTree = "<group>"; };
+		DA28B7C9171FCA4000B1D982 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		DA28B7CA171FCA4000B1D982 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		DA28B7CB171FCA4000B1D982 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		DA28B7CC171FCA4000B1D982 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		DA28B7D5171FCBD000B1D982 /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		DA28B7D6171FCBD100B1D982 /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
+		DA28B7D8171FD9FA00B1D982 /* FocusManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusManager.h; sourceTree = "<group>"; };
+		DA28B7D9171FD9FA00B1D982 /* FocusManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA28B77A171FA45700B1D982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA28B781171FA45700B1D982 /* UIKit.framework in Frameworks */,
+				DA28B783171FA45700B1D982 /* Foundation.framework in Frameworks */,
+				DA28B785171FA45700B1D982 /* CoreGraphics.framework in Frameworks */,
+				DA28B7B3171FAD3A00B1D982 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA28B774171FA45700B1D982 = {
+			isa = PBXGroup;
+			children = (
+				DA28B7B2171FAD3A00B1D982 /* QuartzCore.framework */,
+				DA28B786171FA45700B1D982 /* ThumbnailFocus */,
+				DA28B7C2171FCA4000B1D982 /* Resource */,
+				DA28B77F171FA45700B1D982 /* Frameworks */,
+				DA28B77E171FA45700B1D982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA28B77E171FA45700B1D982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B77D171FA45700B1D982 /* ThumbnailFocus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA28B77F171FA45700B1D982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B780171FA45700B1D982 /* UIKit.framework */,
+				DA28B782171FA45700B1D982 /* Foundation.framework */,
+				DA28B784171FA45700B1D982 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA28B786171FA45700B1D982 /* ThumbnailFocus */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B78F171FA45700B1D982 /* AppDelegate.h */,
+				DA28B790171FA45700B1D982 /* AppDelegate.m */,
+				DA28B7AC171FA4FB00B1D982 /* Classes */,
+				DA28B787171FA45700B1D982 /* Supporting Files */,
+			);
+			path = ThumbnailFocus;
+			sourceTree = "<group>";
+		};
+		DA28B787171FA45700B1D982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B788171FA45700B1D982 /* ThumbnailFocus-Info.plist */,
+				DA28B789171FA45700B1D982 /* InfoPlist.strings */,
+				DA28B78C171FA45700B1D982 /* main.m */,
+				DA28B78E171FA45700B1D982 /* ThumbnailFocus-Prefix.pch */,
+				DA28B792171FA45700B1D982 /* Default.png */,
+				DA28B794171FA45700B1D982 /* Default@2x.png */,
+				DA28B796171FA45700B1D982 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA28B7AC171FA4FB00B1D982 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B7AD171FA4FB00B1D982 /* MainViewController.h */,
+				DA28B7AE171FA4FB00B1D982 /* MainViewController.m */,
+				DA28B7AF171FA4FB00B1D982 /* MainViewController.xib */,
+				DA28B7B4171FAD6200B1D982 /* ThumbnailsViewController.h */,
+				DA28B7B5171FAD6200B1D982 /* ThumbnailsViewController.m */,
+				DA28B7B6171FAD6200B1D982 /* ThumbnailsViewController.xib */,
+				DA28B7BD171FB17D00B1D982 /* FocusViewController.h */,
+				DA28B7BE171FB17D00B1D982 /* FocusViewController.m */,
+				DA28B7BF171FB17D00B1D982 /* FocusViewController.xib */,
+				DA28B7D8171FD9FA00B1D982 /* FocusManager.h */,
+				DA28B7D9171FD9FA00B1D982 /* FocusManager.m */,
+				DA28B7D5171FCBD000B1D982 /* ImageScrollView.h */,
+				DA28B7D6171FCBD100B1D982 /* ImageScrollView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DA28B7C2171FCA4000B1D982 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B7C3171FCA4000B1D982 /* full */,
+				DA28B7C8171FCA4000B1D982 /* thumbnails */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DA28B7C3171FCA4000B1D982 /* full */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B7C4171FCA4000B1D982 /* 1f.jpg */,
+				DA28B7C5171FCA4000B1D982 /* 2f.jpg */,
+				DA28B7C6171FCA4000B1D982 /* 3f.jpg */,
+				DA28B7C7171FCA4000B1D982 /* 4f.jpg */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		DA28B7C8171FCA4000B1D982 /* thumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				DA28B7C9171FCA4000B1D982 /* 1.jpg */,
+				DA28B7CA171FCA4000B1D982 /* 2.jpg */,
+				DA28B7CB171FCA4000B1D982 /* 3.jpg */,
+				DA28B7CC171FCA4000B1D982 /* 4.jpg */,
+			);
+			path = thumbnails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA28B77C171FA45700B1D982 /* ThumbnailFocus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA28B79A171FA45700B1D982 /* Build configuration list for PBXNativeTarget "ThumbnailFocus" */;
+			buildPhases = (
+				DA28B779171FA45700B1D982 /* Sources */,
+				DA28B77A171FA45700B1D982 /* Frameworks */,
+				DA28B77B171FA45700B1D982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThumbnailFocus;
+			productName = ThumbnailFocus;
+			productReference = DA28B77D171FA45700B1D982 /* ThumbnailFocus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA28B775171FA45700B1D982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "鄭 基旭";
+			};
+			buildConfigurationList = DA28B778171FA45700B1D982 /* Build configuration list for PBXProject "ThumbnailFocus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA28B774171FA45700B1D982;
+			productRefGroup = DA28B77E171FA45700B1D982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA28B77C171FA45700B1D982 /* ThumbnailFocus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA28B77B171FA45700B1D982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA28B78B171FA45700B1D982 /* InfoPlist.strings in Resources */,
+				DA28B793171FA45700B1D982 /* Default.png in Resources */,
+				DA28B795171FA45700B1D982 /* Default@2x.png in Resources */,
+				DA28B797171FA45700B1D982 /* Default-568h@2x.png in Resources */,
+				DA28B7B1171FA4FB00B1D982 /* MainViewController.xib in Resources */,
+				DA28B7B8171FAD6200B1D982 /* ThumbnailsViewController.xib in Resources */,
+				DA28B7C1171FB17D00B1D982 /* FocusViewController.xib in Resources */,
+				DA28B7CD171FCA4000B1D982 /* 1f.jpg in Resources */,
+				DA28B7CE171FCA4000B1D982 /* 2f.jpg in Resources */,
+				DA28B7CF171FCA4000B1D982 /* 3f.jpg in Resources */,
+				DA28B7D0171FCA4000B1D982 /* 4f.jpg in Resources */,
+				DA28B7D1171FCA4000B1D982 /* 1.jpg in Resources */,
+				DA28B7D2171FCA4000B1D982 /* 2.jpg in Resources */,
+				DA28B7D3171FCA4000B1D982 /* 3.jpg in Resources */,
+				DA28B7D4171FCA4000B1D982 /* 4.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA28B779171FA45700B1D982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA28B78D171FA45700B1D982 /* main.m in Sources */,
+				DA28B791171FA45700B1D982 /* AppDelegate.m in Sources */,
+				DA28B7B0171FA4FB00B1D982 /* MainViewController.m in Sources */,
+				DA28B7B7171FAD6200B1D982 /* ThumbnailsViewController.m in Sources */,
+				DA28B7C0171FB17D00B1D982 /* FocusViewController.m in Sources */,
+				DA28B7D7171FCBD100B1D982 /* ImageScrollView.m in Sources */,
+				DA28B7DA171FD9FC00B1D982 /* FocusManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA28B789171FA45700B1D982 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA28B78A171FA45700B1D982 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA28B798171FA45700B1D982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA28B799171FA45700B1D982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA28B79B171FA45700B1D982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailFocus/ThumbnailFocus-Prefix.pch";
+				INFOPLIST_FILE = "ThumbnailFocus/ThumbnailFocus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA28B79C171FA45700B1D982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThumbnailFocus/ThumbnailFocus-Prefix.pch";
+				INFOPLIST_FILE = "ThumbnailFocus/ThumbnailFocus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA28B778171FA45700B1D982 /* Build configuration list for PBXProject "ThumbnailFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA28B798171FA45700B1D982 /* Debug */,
+				DA28B799171FA45700B1D982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA28B79A171FA45700B1D982 /* Build configuration list for PBXNativeTarget "ThumbnailFocus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA28B79B171FA45700B1D982 /* Debug */,
+				DA28B79C171FA45700B1D982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA28B775171FA45700B1D982 /* Project object */;
+}
