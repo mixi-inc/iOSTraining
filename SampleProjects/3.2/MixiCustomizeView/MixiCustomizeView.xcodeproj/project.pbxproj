@@ -19,6 +19,8 @@
 		38DD0C7F1723FFF000B5F1E4 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DD0C7E1723FFF000B5F1E4 /* MixiViewController.m */; };
 		38DD0C821723FFF000B5F1E4 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DD0C801723FFF000B5F1E4 /* MixiViewController.xib */; };
 		38DD0C8A1724014E00B5F1E4 /* MixiCustomizedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DD0C891724014E00B5F1E4 /* MixiCustomizedView.m */; };
+		38DD0C8D172425C300B5F1E4 /* MixiCustomizedView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DD0C8C172425C300B5F1E4 /* MixiCustomizedView2.m */; };
+		38DD0C8F172425E400B5F1E4 /* MixiCustomizedView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DD0C8E172425E400B5F1E4 /* MixiCustomizedView2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		38DD0C811723FFF000B5F1E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
 		38DD0C881724014E00B5F1E4 /* MixiCustomizedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiCustomizedView.h; sourceTree = "<group>"; };
 		38DD0C891724014E00B5F1E4 /* MixiCustomizedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiCustomizedView.m; sourceTree = "<group>"; };
+		38DD0C8B172425C300B5F1E4 /* MixiCustomizedView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiCustomizedView2.h; sourceTree = "<group>"; };
+		38DD0C8C172425C300B5F1E4 /* MixiCustomizedView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiCustomizedView2.m; sourceTree = "<group>"; };
+		38DD0C8E172425E400B5F1E4 /* MixiCustomizedView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiCustomizedView2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,9 @@
 				38DD0C801723FFF000B5F1E4 /* MixiViewController.xib */,
 				38DD0C881724014E00B5F1E4 /* MixiCustomizedView.h */,
 				38DD0C891724014E00B5F1E4 /* MixiCustomizedView.m */,
+				38DD0C8B172425C300B5F1E4 /* MixiCustomizedView2.h */,
+				38DD0C8C172425C300B5F1E4 /* MixiCustomizedView2.m */,
+				38DD0C8E172425E400B5F1E4 /* MixiCustomizedView2.xib */,
 				38DD0C6C1723FFF000B5F1E4 /* Supporting Files */,
 			);
 			path = MixiCustomizeView;
@@ -169,6 +177,7 @@
 				38DD0C7A1723FFF000B5F1E4 /* Default@2x.png in Resources */,
 				38DD0C7C1723FFF000B5F1E4 /* Default-568h@2x.png in Resources */,
 				38DD0C821723FFF000B5F1E4 /* MixiViewController.xib in Resources */,
+				38DD0C8F172425E400B5F1E4 /* MixiCustomizedView2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +192,7 @@
 				38DD0C761723FFF000B5F1E4 /* MixiAppDelegate.m in Sources */,
 				38DD0C7F1723FFF000B5F1E4 /* MixiViewController.m in Sources */,
 				38DD0C8A1724014E00B5F1E4 /* MixiCustomizedView.m in Sources */,
+				38DD0C8D172425C300B5F1E4 /* MixiCustomizedView2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MixiCustomizeView/MixiCustomizeView-Prefix.pch";
 				INFOPLIST_FILE = "MixiCustomizeView/MixiCustomizeView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +292,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MixiCustomizeView/MixiCustomizeView-Prefix.pch";
 				INFOPLIST_FILE = "MixiCustomizeView/MixiCustomizeView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

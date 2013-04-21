@@ -13,6 +13,7 @@
 static CGRect const kSubViewFrame = {{10, 10}, {300, 180}};
 static CGRect const kButtonFrame = {{10, 10}, {220, 30}};
 
+// コードで初期化する場合
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -23,6 +24,7 @@ static CGRect const kButtonFrame = {{10, 10}, {220, 30}};
     return self;
 }
 
+// xib を使用する場合
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
