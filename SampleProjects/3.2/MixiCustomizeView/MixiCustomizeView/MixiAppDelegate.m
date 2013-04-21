@@ -1,16 +1,14 @@
 //
 //  MixiAppDelegate.m
-//  MixiViewSample
+//  MixiCustomizeView
 //
-//  Created by 田村 航弥 on 2013/04/18.
+//  Created by Koya Tamura on 2013/04/21.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
 #import "MixiAppDelegate.h"
 
-#import "MixiFirstViewController.h"
-
-#import "MixiSecondViewController.h"
+#import "MixiViewController.h"
 
 @implementation MixiAppDelegate
 
@@ -18,11 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[MixiFirstViewController alloc] initWithNibName:@"MixiFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[MixiSecondViewController alloc] initWithNibName:@"MixiSecondViewController" bundle:nil];
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
-    self.window.rootViewController = self.tabBarController;
+    self.viewController = [[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,19 +48,5 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
-
-/*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
 
 @end
