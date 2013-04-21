@@ -27,13 +27,15 @@
     self.view.clipsToBounds = NO;
 }
 
+#warning ⬇ HomeWork　iPadの場合は回転に対応してください。
 - (NSUInteger)supportedInterfaceOrientations
 {
     return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
 }
+
 #warning ⬇ HomeWork
 /*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-// １。４８ラインからのメソッドはコメント処理したのに、なんでうまく動いているか？ 考えてみてください。
+// １。５０ラインからのメソッドはコメント処理したのに、なんでうまく動いているか？ 考えてみてください。
 // ２。下記は必ず覚えていきましょう
 ー【UIViewControllerのViewロードに関する主要デリゲートメソッド】ーー
 -(void)viewDidLoad	初回ロードされた時のみ呼び出される
