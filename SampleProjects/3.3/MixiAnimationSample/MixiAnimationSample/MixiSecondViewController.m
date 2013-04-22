@@ -47,10 +47,10 @@ static CGRect const kOjisanInitialFrame = {{85, 115}, {170, 170}};
 {
     [UIView transitionWithView:self.view
                       duration:3.0
-                       options:UIViewAnimationOptionTransitionCurlUp
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
                     animations:^{
-                        _ojisanImageView1.hidden = YES;
-                        _ojisanImageView2.hidden = NO;
+                        _ojisanImageView1.hidden = !_ojisanImageView1.hidden;
+                        _ojisanImageView2.hidden = !_ojisanImageView2.hidden;
                     } completion:nil];
 }
 

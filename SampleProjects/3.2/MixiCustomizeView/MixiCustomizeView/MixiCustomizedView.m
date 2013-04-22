@@ -36,6 +36,8 @@ static CGRect const kButtonFrame = {{10, 10}, {220, 30}};
 
 -(void)initializeView
 {
+    [self setBackgroundColor:[UIColor greenColor]];
+
     UIView *subView = [[UIView alloc] initWithFrame:kSubViewFrame];
     [subView setBackgroundColor:[UIColor redColor]];
     [self addSubview:subView];

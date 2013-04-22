@@ -14,7 +14,7 @@
 @end
 
 static CGRect const kOjisanInitialFrame = {{0, 0}, {170, 170}};
-static CGRect const kOjisanMovedFrame = {{320, 586}, {170, 170}};
+static CGRect const kOjisanMovedFrame = {{150, 416}, {170, 170}};
 
 @implementation MixiFirstViewController
 
@@ -32,10 +32,20 @@ static CGRect const kOjisanMovedFrame = {{320, 586}, {170, 170}};
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//    [UIView animateWithDuration:4.5
+//                     animations:^{
+//                         [_ojisanImageView setFrame:kOjisanMovedFrame];
+//                     }];
 
-    [UIView animateWithDuration:4.5
+    [UIView animateWithDuration:1.5f
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          [_ojisanImageView setFrame:kOjisanMovedFrame];
+                     } completion:^(BOOL finished) {
+                         [UIView animateWithDuration:1.5f animations:^{
+                             [_ojisanImageView setFrame:kOjisanInitialFrame];
+                         }];
                      }];
 }
 

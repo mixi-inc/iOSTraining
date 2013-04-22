@@ -7,10 +7,13 @@
 //
 
 #import "MixiViewController.h"
+#import "MixiCustomizedView2.h"
 
 @interface MixiViewController ()
 
 @end
+
+static CGRect const kCustomizedViewFrame = {{0, 220},{320, 200}};
 
 @implementation MixiViewController
 
@@ -18,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    MixiCustomizedView2 *customizedView = [[MixiCustomizedView2 alloc]initWithFrame:kCustomizedViewFrame];
+    [self.view addSubview:customizedView];
 }
 
 - (void)didReceiveMemoryWarning

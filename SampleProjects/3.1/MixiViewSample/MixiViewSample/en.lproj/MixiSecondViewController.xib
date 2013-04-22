@@ -327,7 +327,6 @@
 				<string key="NSFrame">{{0, 20}, {320, 499}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView"/>
 				<reference key="IBUIBackgroundColor" ref="750221052"/>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedTabBarMetrics" key="IBUISimulatedBottomBarMetrics"/>
@@ -368,7 +367,7 @@
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
-					<int key="connectionID">30</int>
+					<int key="connectionID">42</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -484,9 +483,7 @@
 						<array class="NSMutableArray" key="children">
 							<reference ref="626738272"/>
 							<reference ref="978881744"/>
-							<reference ref="400248473"/>
 							<reference ref="1037835426"/>
-							<reference ref="528783213"/>
 							<reference ref="939595566"/>
 							<reference ref="402053062"/>
 							<reference ref="1054332580"/>
@@ -494,6 +491,8 @@
 							<reference ref="1053114127"/>
 							<reference ref="906499147"/>
 							<reference ref="395934246"/>
+							<reference ref="400248473"/>
+							<reference ref="528783213"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -593,7 +592,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">41</int>
+			<int key="maxID">42</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

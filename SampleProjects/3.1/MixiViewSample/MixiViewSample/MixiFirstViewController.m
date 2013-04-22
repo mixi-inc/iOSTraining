@@ -30,10 +30,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSLog(@"%@", self.view.subviews);
     for (UIView *view in self.view.subviews){
-        if([view isKindOfClass:[UILabel class]]){
-            [view removeFromSuperview];
+        if([view isKindOfClass:[UIButton class]]){
+            UIView *subview = [[UIView alloc] initWithFrame:view.frame];
+            [subview setBackgroundColor:[UIColor redColor]];
+            subview.alpha = 0.5;
+            [self.view insertSubview:subview belowSubview:view];
         }
     }
+
+
 }
 
 - (void)didReceiveMemoryWarning

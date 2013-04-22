@@ -14,6 +14,19 @@
 
 @implementation MixiCustomizedView2
 
+-(id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if(self){
+        NSArray *topLevelViews = [[NSBundle mainBundle] loadNibNamed:@"MixiCustomizedView2"
+                                                               owner:self
+                                                             options:nil];
+        UIView* customizedView2 = topLevelViews[0];
+        [self addSubview:customizedView2];
+    }
+    return self;
+}
+
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];

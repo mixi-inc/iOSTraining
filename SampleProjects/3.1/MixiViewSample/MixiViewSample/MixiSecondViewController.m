@@ -10,7 +10,6 @@
 
 @interface MixiSecondViewController ()
 - (IBAction)pressButton:(UIButton *)sender;
-
 @end
 
 @implementation MixiSecondViewController
