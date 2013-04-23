@@ -31,9 +31,6 @@
     _cellForCalcHeight = [_tableView dequeueReusableCellWithIdentifier:@"maimai"];
 
     //TODO : samplData.plist から NSArray を作成しましょう [1]
-    NSBundle* bundle = [NSBundle mainBundle];
-    NSString* path = [bundle pathForResource:@"sampleData" ofType:@"plist"];
-    _texts = [NSArray arrayWithContentsOfFile:path];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +42,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //TODO : cellForCalcHeight の高さ計算メソッドを使って高さを計算しましょう
-    return [_cellForCalcHeight calculateCellHeightWithText:_texts[indexPath.row]];
+    return 10;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
