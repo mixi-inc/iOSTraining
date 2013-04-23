@@ -81,3 +81,8 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  1. 単体テスト (GHUnit)
  2. 結合テスト (KIF)
  3. cocoaPods でライブラリ管理
+
+LICENCE
+-----------------
+LICENSE CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/deed.ja  
+この資料はクリエイティブ・コモンズ 3.0 ライセンスの下に提供されています。  
