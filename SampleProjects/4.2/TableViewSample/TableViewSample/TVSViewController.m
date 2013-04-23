@@ -42,8 +42,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row]; // 移動させた
-    cell.accessoryType
+    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row];
     return cell;
 }
 
