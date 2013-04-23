@@ -18,6 +18,8 @@
 		5405F0A417268ABD00C6E9F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5405F0A317268ABD00C6E9F5 /* Default-568h@2x.png */; };
 		5405F0A717268ABD00C6E9F5 /* TVSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405F0A617268ABD00C6E9F5 /* TVSViewController.m */; };
 		5405F0AA17268ABD00C6E9F5 /* TVSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405F0A817268ABD00C6E9F5 /* TVSViewController.xib */; };
+		5405F0B31726981400C6E9F5 /* TVSRefreshSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405F0B11726981300C6E9F5 /* TVSRefreshSampleViewController.m */; };
+		5405F0B41726981400C6E9F5 /* TVSRefreshSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405F0B21726981400C6E9F5 /* TVSRefreshSampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		5405F0A517268ABD00C6E9F5 /* TVSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TVSViewController.h; sourceTree = "<group>"; };
 		5405F0A617268ABD00C6E9F5 /* TVSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVSViewController.m; sourceTree = "<group>"; };
 		5405F0A917268ABD00C6E9F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TVSViewController.xib; sourceTree = "<group>"; };
+		5405F0B01726981300C6E9F5 /* TVSRefreshSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVSRefreshSampleViewController.h; sourceTree = "<group>"; };
+		5405F0B11726981300C6E9F5 /* TVSRefreshSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVSRefreshSampleViewController.m; sourceTree = "<group>"; };
+		5405F0B21726981400C6E9F5 /* TVSRefreshSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVSRefreshSampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,9 @@
 			children = (
 				5405F09C17268ABD00C6E9F5 /* TVSAppDelegate.h */,
 				5405F09D17268ABD00C6E9F5 /* TVSAppDelegate.m */,
+				5405F0B01726981300C6E9F5 /* TVSRefreshSampleViewController.h */,
+				5405F0B11726981300C6E9F5 /* TVSRefreshSampleViewController.m */,
+				5405F0B21726981400C6E9F5 /* TVSRefreshSampleViewController.xib */,
 				5405F0A517268ABD00C6E9F5 /* TVSViewController.h */,
 				5405F0A617268ABD00C6E9F5 /* TVSViewController.m */,
 				5405F0A817268ABD00C6E9F5 /* TVSViewController.xib */,
@@ -164,6 +172,7 @@
 				5405F0A217268ABD00C6E9F5 /* Default@2x.png in Resources */,
 				5405F0A417268ABD00C6E9F5 /* Default-568h@2x.png in Resources */,
 				5405F0AA17268ABD00C6E9F5 /* TVSViewController.xib in Resources */,
+				5405F0B41726981400C6E9F5 /* TVSRefreshSampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				5405F09A17268ABD00C6E9F5 /* main.m in Sources */,
 				5405F09E17268ABD00C6E9F5 /* TVSAppDelegate.m in Sources */,
 				5405F0A717268ABD00C6E9F5 /* TVSViewController.m in Sources */,
+				5405F0B31726981400C6E9F5 /* TVSRefreshSampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
