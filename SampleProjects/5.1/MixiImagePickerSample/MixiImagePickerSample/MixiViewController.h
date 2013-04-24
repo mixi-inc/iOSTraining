@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MixiViewController : UIViewController
+<UIImagePickerControllerDelegate,
+UINavigationControllerDelegate>
 
 @end
