@@ -31,6 +31,14 @@
 
     }];
 
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"sample" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    id obj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    NSLog(@"%@", obj);
+
+    data = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:nil];
+    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+
 }
 
 - (void)didReceiveMemoryWarning

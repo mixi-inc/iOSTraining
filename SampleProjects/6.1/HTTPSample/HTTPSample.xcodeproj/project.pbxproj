@@ -18,6 +18,7 @@
 		5405F19F172F75C600C6E9F5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5405F19E172F75C600C6E9F5 /* Default-568h@2x.png */; };
 		5405F1A2172F75C600C6E9F5 /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405F1A1172F75C600C6E9F5 /* HSViewController.m */; };
 		5405F1A5172F75C600C6E9F5 /* HSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405F1A3172F75C600C6E9F5 /* HSViewController.xib */; };
+		5405F1AC172FB55300C6E9F5 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 5405F1AB172FB55300C6E9F5 /* sample.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		5405F1A0172F75C600C6E9F5 /* HSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSViewController.h; sourceTree = "<group>"; };
 		5405F1A1172F75C600C6E9F5 /* HSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSViewController.m; sourceTree = "<group>"; };
 		5405F1A4172F75C600C6E9F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HSViewController.xib; sourceTree = "<group>"; };
+		5405F1AB172FB55300C6E9F5 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				5405F197172F75C600C6E9F5 /* HSAppDelegate.h */,
 				5405F198172F75C600C6E9F5 /* HSAppDelegate.m */,
 				5405F1A0172F75C600C6E9F5 /* HSViewController.h */,
+				5405F1AB172FB55300C6E9F5 /* sample.json */,
 				5405F1A1172F75C600C6E9F5 /* HSViewController.m */,
 				5405F1A3172F75C600C6E9F5 /* HSViewController.xib */,
 				5405F18F172F75C600C6E9F5 /* Supporting Files */,
@@ -164,6 +167,7 @@
 				5405F19D172F75C600C6E9F5 /* Default@2x.png in Resources */,
 				5405F19F172F75C600C6E9F5 /* Default-568h@2x.png in Resources */,
 				5405F1A5172F75C600C6E9F5 /* HSViewController.xib in Resources */,
+				5405F1AC172FB55300C6E9F5 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				5405F1AA172F75C600C6E9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
