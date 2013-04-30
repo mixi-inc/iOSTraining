@@ -39,5 +39,32 @@
     [super viewDidUnload];
 }
 
+#pragma mark - UITextFieldDelegate methods
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    _textFieldCountLabel.text = [NSString stringWithFormat:@"%d", [textField.text length]];
+    [_textFieldCountLabel sizeToFit];
+    return YES;
+}
+
+-(BOOL)textFieldShouldClear:(UITextField *)textField
+{
+    _textFieldCountLabel.text = @"0";
+    [_textFieldCountLabel sizeToFit];
+    return YES;
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark - UITextViewDelegate methods
+-(void)textViewDidChange:(UITextView *)textView
+{
+    _textViewCountLabel.text = [NSString stringWithFormat:@"%d", [textView.text length]];
+    [_textViewCountLabel sizeToFit];
+}
 
 @end
