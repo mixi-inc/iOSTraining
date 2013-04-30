@@ -8,6 +8,7 @@
 
 #import "MixiAssetsGroupViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "MixiAssetsViewController.h"
 
 @interface MixiAssetsGroupViewController ()
 
@@ -82,5 +83,12 @@
     return cell;
 }
 
+#pragma mark - UITableViewDelegate methods
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ALAssetsGroup *assetsGroup = _assetsGroups[indexPath.row];
+    MixiAssetsViewController *assetVC = [[MixiAssetsViewController alloc] initWithAssetsGroup:assetsGroup];
+    [self.navigationController pushViewController:assetVC animated:YES];
+}
 
 @end

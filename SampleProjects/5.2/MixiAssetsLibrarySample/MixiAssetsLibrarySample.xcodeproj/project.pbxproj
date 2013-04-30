@@ -21,6 +21,8 @@
 		2A1103F6172F76F00011EB7D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1103F5172F76F00011EB7D /* AssetsLibrary.framework */; };
 		2A1103FA172F78D40011EB7D /* MixiAssetsGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1103F8172F78020011EB7D /* MixiAssetsGroupViewController.m */; };
 		2A1103FB172F78D70011EB7D /* MixiAssetsGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1103F9172F78020011EB7D /* MixiAssetsGroupViewController.xib */; };
+		2A1103FF172F8F480011EB7D /* MixiAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1103FD172F8F470011EB7D /* MixiAssetsViewController.m */; };
+		2A110400172F8F480011EB7D /* MixiAssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1103FE172F8F480011EB7D /* MixiAssetsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,9 @@
 		2A1103F7172F78020011EB7D /* MixiAssetsGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiAssetsGroupViewController.h; sourceTree = "<group>"; };
 		2A1103F8172F78020011EB7D /* MixiAssetsGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiAssetsGroupViewController.m; sourceTree = "<group>"; };
 		2A1103F9172F78020011EB7D /* MixiAssetsGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MixiAssetsGroupViewController.xib; sourceTree = "<group>"; };
+		2A1103FC172F8F470011EB7D /* MixiAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiAssetsViewController.h; sourceTree = "<group>"; };
+		2A1103FD172F8F470011EB7D /* MixiAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiAssetsViewController.m; sourceTree = "<group>"; };
+		2A1103FE172F8F480011EB7D /* MixiAssetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiAssetsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +105,9 @@
 				2A1103F7172F78020011EB7D /* MixiAssetsGroupViewController.h */,
 				2A1103F8172F78020011EB7D /* MixiAssetsGroupViewController.m */,
 				2A1103F9172F78020011EB7D /* MixiAssetsGroupViewController.xib */,
+				2A1103FC172F8F470011EB7D /* MixiAssetsViewController.h */,
+				2A1103FD172F8F470011EB7D /* MixiAssetsViewController.m */,
+				2A1103FE172F8F480011EB7D /* MixiAssetsViewController.xib */,
 				2A1103D6172F757A0011EB7D /* Supporting Files */,
 			);
 			path = MixiAssetsLibrarySample;
@@ -177,6 +185,7 @@
 				2A1103E6172F757A0011EB7D /* Default-568h@2x.png in Resources */,
 				2A1103EC172F757A0011EB7D /* MixiViewController.xib in Resources */,
 				2A1103FB172F78D70011EB7D /* MixiAssetsGroupViewController.xib in Resources */,
+				2A110400172F8F480011EB7D /* MixiAssetsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +200,7 @@
 				2A1103E0172F757A0011EB7D /* MixiAppDelegate.m in Sources */,
 				2A1103E9172F757A0011EB7D /* MixiViewController.m in Sources */,
 				2A1103FA172F78D40011EB7D /* MixiAssetsGroupViewController.m in Sources */,
+				2A1103FF172F8F480011EB7D /* MixiAssetsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

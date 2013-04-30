@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MixiAssetsGroupViewController : UIViewController<UITableViewDataSource>
+@interface MixiAssetsGroupViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
