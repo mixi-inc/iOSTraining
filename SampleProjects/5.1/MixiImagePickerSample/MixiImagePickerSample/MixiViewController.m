@@ -7,10 +7,12 @@
 //
 
 #import "MixiViewController.h"
+#import "MixiAssetViewController.h"
 
 @interface MixiViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 - (IBAction)pressCameraButton:(id)sender;
+- (IBAction)pressAssetsButton:(id)sender;
 
 @end
 
@@ -42,6 +44,15 @@
     imagePickerVC.delegate = self;
     [self presentViewController:imagePickerVC animated:YES completion:nil];
 }
+
+- (IBAction)pressAssetsButton:(id)sender
+{
+    MixiAssetViewController *assetsVC = [[MixiAssetViewController alloc] init];
+    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:assetsVC];
+    [self presentViewController:nv animated:YES completion:nil];
+}
+
+#pragma mark - UIImagePickerDelegate methods
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
