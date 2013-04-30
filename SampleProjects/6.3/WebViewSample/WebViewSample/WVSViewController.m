@@ -66,6 +66,10 @@
 {
     _backButton.enabled = [webView canGoBack];
     _forwardButton.enabled = [webView canGoForward];
+
+    NSString *title = [webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    self.title = title;
+
 }
 
 @end
