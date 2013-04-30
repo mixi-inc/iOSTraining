@@ -19,8 +19,6 @@
 		2A5C151217254459002A1D72 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5C151117254459002A1D72 /* MixiViewController.m */; };
 		2A5C151517254459002A1D72 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5C151317254459002A1D72 /* MixiViewController.xib */; };
 		2AA059061727B85F00B10589 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA059051727B85F00B10589 /* AssetsLibrary.framework */; };
-		2AA0590A1727CED500B10589 /* MixiAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA059081727CED500B10589 /* MixiAssetViewController.m */; };
-		2AA0590B1727CED500B10589 /* MixiAssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AA059091727CED500B10589 /* MixiAssetViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,9 +39,6 @@
 		2A5C151117254459002A1D72 /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		2A5C151417254459002A1D72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
 		2AA059051727B85F00B10589 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		2AA059071727CED500B10589 /* MixiAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiAssetViewController.h; sourceTree = "<group>"; };
-		2AA059081727CED500B10589 /* MixiAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiAssetViewController.m; sourceTree = "<group>"; };
-		2AA059091727CED500B10589 /* MixiAssetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiAssetViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +92,6 @@
 				2A5C151017254459002A1D72 /* MixiViewController.h */,
 				2A5C151117254459002A1D72 /* MixiViewController.m */,
 				2A5C151317254459002A1D72 /* MixiViewController.xib */,
-				2AA059071727CED500B10589 /* MixiAssetViewController.h */,
-				2AA059081727CED500B10589 /* MixiAssetViewController.m */,
-				2AA059091727CED500B10589 /* MixiAssetViewController.xib */,
 				2A5C14FF17254459002A1D72 /* Supporting Files */,
 			);
 			path = MixiImagePickerSample;
@@ -176,7 +168,6 @@
 				2A5C150D17254459002A1D72 /* Default@2x.png in Resources */,
 				2A5C150F17254459002A1D72 /* Default-568h@2x.png in Resources */,
 				2A5C151517254459002A1D72 /* MixiViewController.xib in Resources */,
-				2AA0590B1727CED500B10589 /* MixiAssetViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +181,6 @@
 				2A5C150517254459002A1D72 /* main.m in Sources */,
 				2A5C150917254459002A1D72 /* MixiAppDelegate.m in Sources */,
 				2A5C151217254459002A1D72 /* MixiViewController.m in Sources */,
-				2AA0590A1727CED500B10589 /* MixiAssetViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

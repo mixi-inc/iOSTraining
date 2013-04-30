@@ -1,23 +1,23 @@
 //
-//  MixiAssetViewController.m
-//  MixiImagePickerSample
+//  MixiAssetsGroupViewController.m
+//  MixiAssetsLibrarySample
 //
 //  Created by 田村 航弥 on 2013/04/24.
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiAssetViewController.h"
+#import "MixiAssetsGroupViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface MixiAssetViewController ()
+@interface MixiAssetsGroupViewController ()
 
-@property (nonatomic, strong) ALAssetsLibrary *library;
+@property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSMutableArray *assetsGroups;
 @property (weak, nonatomic) IBOutlet UITableView *assetTableView;
 
 @end
 
-@implementation MixiAssetViewController
+@implementation MixiAssetsGroupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,9 +37,10 @@
     self.navigationItem.rightBarButtonItem = rightBarButton;
 
     _assetsGroups = [NSMutableArray array];
-    _library = [[ALAssetsLibrary alloc] init];
-    [_library enumerateGroupsWithTypes:ALAssetsGroupAll
+    _assetsLibrary = [[ALAssetsLibrary alloc] init];
+    [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupAll
                             usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+                                NSLog(@"AssetsGroup : %@", group);
                                 if (group) [_assetsGroups insertObject:group atIndex:0];
                                 else [_assetTableView reloadData];
                             } failureBlock:^(NSError *error) {
