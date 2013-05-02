@@ -90,6 +90,13 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
 11. 実際に何かアプリを作ってみる(前編)
 12. 実際に何かアプリを作ってみる(後編)
 
+参考資料
+-----------------
+- [iOS Developer Library](https://developer.apple.com/library/ios/navigation/)
+ - Guide から Reference まで全てのドキュメントが掲載されています。
+- [日本語ドキュメント](https://developer.apple.com/jp/devcenter/ios/library/japanese.html)
+ - Guide の一部が日本語訳された PDF がアップロードされています。ただし、こちらは本家の最新の英語のドキュメントが翻訳されているとは限りません。更新日に注目してなるべく最新版のものを読むようにしましょう。
+
 LICENSE
 -----------------
 LICENSE CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/deed.ja  
