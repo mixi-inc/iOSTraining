@@ -90,8 +90,6 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
 11. 実際に何かアプリを作ってみる(前編)
 12. 実際に何かアプリを作ってみる(後編)
 
-[edit sidebar](https://github.com/mixi-inc/iOSTraining/wiki/_Sidebar/_edit)
-
 LICENSE
 -----------------
 LICENSE CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/deed.ja  
