@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) ALAssetsGroup *assetsGroup;
 @property (strong, nonatomic) NSMutableArray *assets;
+@property (strong, nonatomic) NSMutableArray *selectedIndices;
+@property (strong, nonatomic) NSMutableArray *selectedAssets;
 
 @property (weak, nonatomic) IBOutlet UITableView *assetsTableView;
 
@@ -34,7 +36,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(pressDoneButton)];
+
     _assets = [NSMutableArray array];
+    _selectedIndices = [NSMutableArray array];
     [_assetsGroup enumerateAssetsUsingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
         NSLog(@"asset %@", result);
         if(result) [_assets addObject:result];
@@ -63,11 +68,46 @@
 
     ALAsset *asset = _assets[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [asset valueForProperty:ALAssetPropertyDate]];
-    NSLog(@"%@", [asset valueForProperty:ALAssetPropertyLocation]);
     [cell.imageView setImage:[UIImage imageWithCGImage:[asset thumbnail]]];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
 }
 
 #pragma mark - UITableViewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if(cell.accessoryType == UITableViewCellAccessoryNone){
+        [cell setAccessoryType:UITableViewCellAccessoryCheckmark];
+        [_selectedIndices addObject:[NSString stringWithFormat:@"%d", indexPath.row]];
+    }else{
+        [cell setAccessoryType:UITableViewCellAccessoryNone];
+        [_selectedIndices removeObject:[NSString stringWithFormat:@"%d", indexPath.row]];
+    }
+    [_selectedIndices sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+            return (NSComparisonResult)NSOrderedDescending;
+        }
+
+        if ([obj1 integerValue] < [obj2 integerValue]) {
+            return (NSComparisonResult)NSOrderedAscending;
+        }
+        return (NSComparisonResult)NSOrderedSame;
+    }];
+}
+
+#pragma mark - private methods
+-(void)pressDoneButton
+{
+    _selectedAssets = [NSMutableArray array];
+    for (NSString *indexString in _selectedIndices){
+        NSInteger selectedIndex = [indexString intValue];
+        [_selectedAssets addObject:_assets[selectedIndex]];
+    }
+
+    if([_delegate respondsToSelector:@selector(assetsViewControllerDidSelectedPhotos:)]){
+        [_delegate assetsViewControllerDidSelectedPhotos:_selectedAssets];
+    }
+}
 
 @end

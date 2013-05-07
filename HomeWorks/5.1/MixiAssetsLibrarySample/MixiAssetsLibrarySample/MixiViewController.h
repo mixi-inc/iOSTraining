@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiAssetsViewController.h"
 
 @interface MixiViewController : UIViewController
+<MixiAssetsViewControllerDelegate,
+UITableViewDataSource,
+UITableViewDelegate>
 
 @end

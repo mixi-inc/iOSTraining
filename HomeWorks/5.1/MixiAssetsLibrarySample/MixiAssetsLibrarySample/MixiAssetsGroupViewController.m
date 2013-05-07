@@ -88,6 +88,7 @@
 {
     ALAssetsGroup *assetsGroup = _assetsGroups[indexPath.row];
     MixiAssetsViewController *assetVC = [[MixiAssetsViewController alloc] initWithAssetsGroup:assetsGroup];
+    assetVC.delegate = self.delegate;
     [self.navigationController pushViewController:assetVC animated:YES];
 }
 

@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
+@protocol MixiAssetsViewControllerDelegate <NSObject>
+
+-(void)assetsViewControllerDidSelectedPhotos:(NSArray*)assets;
+
+@end
+
 @interface MixiAssetsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 -(id)initWithAssetsGroup:(ALAssetsGroup *)assetsGroup;
+
+@property (nonatomic, weak) id delegate;
 
 @end
