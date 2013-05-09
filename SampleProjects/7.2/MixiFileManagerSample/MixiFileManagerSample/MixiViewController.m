@@ -22,9 +22,9 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *rootURL = NSHomeDirectory();
     NSLog(@"%@", rootURL);
-    NSArray* possibleURLs = [fileManager URLsForDirectory:NSDocumentDirectory
+    NSArray *urls = [fileManager URLsForDirectory:NSDocumentDirectory
                                              inDomains:NSUserDomainMask];
-    NSLog(@"%@", possibleURLs);
+    NSLog(@"%@", urls[0]);
 }
 
 - (void)didReceiveMemoryWarning
