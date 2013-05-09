@@ -95,7 +95,6 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
  2. Tips of Debug
 
-[edit sidebar](https://github.com/mixi-inc/iOSTraining/wiki/_Sidebar/_edit)
 
 参考資料
 -----------------
