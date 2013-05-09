@@ -9,6 +9,7 @@
 #import "MixiAppDelegate.h"
 
 #import "MixiViewController.h"
+#import "MixiTableViewController.h"
 
 @implementation MixiAppDelegate
 
@@ -16,7 +17,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil];
+    self.viewController = [MixiTableViewController new];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class MixiViewController;
-
 @interface MixiAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MixiViewController *viewController;
+@property (strong, nonatomic) UIViewController *viewController;
 
 @end

@@ -18,6 +18,8 @@
 		54180AC3173A5EFC00F58CDA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54180AC2173A5EFC00F58CDA /* Default-568h@2x.png */; };
 		54180AC6173A5EFC00F58CDA /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54180AC5173A5EFC00F58CDA /* MixiViewController.m */; };
 		54180AC9173A5EFC00F58CDA /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54180AC7173A5EFC00F58CDA /* MixiViewController.xib */; };
+		54180AD2173B34F100F58CDA /* MixiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54180AD0173B34F100F58CDA /* MixiTableViewController.m */; };
+		54180AD3173B34F100F58CDA /* MixiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54180AD1173B34F100F58CDA /* MixiTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		54180AC4173A5EFC00F58CDA /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
 		54180AC5173A5EFC00F58CDA /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		54180AC8173A5EFC00F58CDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
+		54180ACF173B34F100F58CDA /* MixiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTableViewController.h; sourceTree = "<group>"; };
+		54180AD0173B34F100F58CDA /* MixiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTableViewController.m; sourceTree = "<group>"; };
+		54180AD1173B34F100F58CDA /* MixiTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,9 @@
 				54180AC4173A5EFC00F58CDA /* MixiViewController.h */,
 				54180AC5173A5EFC00F58CDA /* MixiViewController.m */,
 				54180AC7173A5EFC00F58CDA /* MixiViewController.xib */,
+				54180ACF173B34F100F58CDA /* MixiTableViewController.h */,
+				54180AD0173B34F100F58CDA /* MixiTableViewController.m */,
+				54180AD1173B34F100F58CDA /* MixiTableViewController.xib */,
 				54180AB3173A5EFC00F58CDA /* Supporting Files */,
 			);
 			path = MixiSampleProject;
@@ -164,6 +172,7 @@
 				54180AC1173A5EFC00F58CDA /* Default@2x.png in Resources */,
 				54180AC3173A5EFC00F58CDA /* Default-568h@2x.png in Resources */,
 				54180AC9173A5EFC00F58CDA /* MixiViewController.xib in Resources */,
+				54180AD3173B34F100F58CDA /* MixiTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				54180AB9173A5EFC00F58CDA /* main.m in Sources */,
 				54180ABD173A5EFC00F58CDA /* MixiAppDelegate.m in Sources */,
 				54180AC6173A5EFC00F58CDA /* MixiViewController.m in Sources */,
+				54180AD2173B34F100F58CDA /* MixiTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
