@@ -92,7 +92,7 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  2. Kiwi
  3. UIAutomation
  4. KIF
-12. User Interface Design
+12. iOS User Interface Design
 13. 付録
  1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
  2. Tips of Debug
