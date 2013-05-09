@@ -81,14 +81,19 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
 8. Blocks, GCD
  1. Blocks
  2. GCD
-9. 開発ツール
- 1. Instruments (leak, time profiler)
+9. 設計とデザインパターン
+10. 開発ツール
+ 1. Instruments (leak, time profiler, and so on)
  2. CocoaPods
- 3. 単体テスト (GHUnit, Kiwi)
- 4. 結合テスト (UIAutomation, KIF)
-10. 設計とデザインパターン
-11. 実際に何かアプリを作ってみる(前編)
-12. 実際に何かアプリを作ってみる(後編)
+11.
+ 1. GHUnit
+ 2. Kiwi
+ 3. UIAutomation
+ 4. KIF
+12. User Interface Design
+13. 付録
+ 1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
+ 2. Tips of Debug
 
 [edit sidebar](https://github.com/mixi-inc/iOSTraining/wiki/_Sidebar/_edit)
 
