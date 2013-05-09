@@ -85,7 +85,7 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
 10. 開発ツール
  1. Instruments (leak, time profiler, and so on)
  2. CocoaPods
-11.
+11. テスト
  1. GHUnit
  2. Kiwi
  3. UIAutomation
