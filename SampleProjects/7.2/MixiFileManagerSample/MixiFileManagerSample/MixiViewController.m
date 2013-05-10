@@ -10,6 +10,10 @@
 
 @interface MixiViewController ()
 
+- (IBAction)pressSaveButton:(id)sender;
+- (IBAction)pressReadButton:(id)sender;
+- (IBAction)pressDeleteButton:(id)sender;
+
 @end
 
 @implementation MixiViewController
@@ -18,13 +22,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSString *rootURL = NSHomeDirectory();
-    NSLog(@"%@", rootURL);
-    NSArray *urls = [fileManager URLsForDirectory:NSDocumentDirectory
-                                             inDomains:NSUserDomainMask];
-    NSLog(@"%@", urls[0]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,4 +30,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSURL *)getFileURL
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *urls = [fileManager URLsForDirectory:NSDocumentDirectory
+                                        inDomains:NSUserDomainMask];
+    NSString *documentURLString = [(NSURL*)urls[0] absoluteString];
+    NSURL *fileURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@save.xml", documentURLString]];
+    return fileURL;
+}
+
+- (IBAction)pressSaveButton:(id)sender
+{
+    NSDictionary *savedDict = @{@"key1":@"value1", @"key2":@"value2"};
+    [savedDict writeToURL:[self getFileURL] atomically:YES];
+}
+
+- (IBAction)pressReadButton:(id)sender
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if([fileManager fileExistsAtPath:[self getFileURL].path]){
+        NSDictionary *readDict = [NSDictionary dictionaryWithContentsOfURL:[self getFileURL]];
+        NSLog(@"%@", readDict);
+    }else{
+        NSLog(@"not exist");
+    }
+}
+
+- (IBAction)pressDeleteButton:(id)sender
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if([fileManager fileExistsAtPath:[self getFileURL].path]){
+        NSError *error = nil;
+        [fileManager removeItemAtURL:[self getFileURL] error:&error];
+    }else{
+        NSLog(@"not exist");
+    }
+}
 @end
