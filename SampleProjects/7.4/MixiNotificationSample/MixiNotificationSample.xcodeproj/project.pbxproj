@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3820AF7E173FA089007ED472 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3820AF7D173FA089007ED472 /* UIKit.framework */; };
+		3820AF80173FA089007ED472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3820AF7F173FA089007ED472 /* Foundation.framework */; };
+		3820AF82173FA089007ED472 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3820AF81173FA089007ED472 /* CoreGraphics.framework */; };
+		3820AF88173FA089007ED472 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF86173FA089007ED472 /* InfoPlist.strings */; };
+		3820AF8A173FA089007ED472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820AF89173FA089007ED472 /* main.m */; };
+		3820AF8E173FA089007ED472 /* MixiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820AF8D173FA089007ED472 /* MixiAppDelegate.m */; };
+		3820AF90173FA089007ED472 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF8F173FA089007ED472 /* Default.png */; };
+		3820AF92173FA089007ED472 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF91173FA089007ED472 /* Default@2x.png */; };
+		3820AF94173FA089007ED472 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF93173FA089007ED472 /* Default-568h@2x.png */; };
+		3820AF97173FA089007ED472 /* MixiFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820AF96173FA089007ED472 /* MixiFirstViewController.m */; };
+		3820AF99173FA089007ED472 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF98173FA089007ED472 /* first.png */; };
+		3820AF9B173FA089007ED472 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF9A173FA089007ED472 /* first@2x.png */; };
+		3820AF9E173FA089007ED472 /* MixiSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3820AF9D173FA089007ED472 /* MixiSecondViewController.m */; };
+		3820AFA0173FA089007ED472 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AF9F173FA089007ED472 /* second.png */; };
+		3820AFA2173FA089007ED472 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3820AFA1173FA089007ED472 /* second@2x.png */; };
+		3820AFA5173FA089007ED472 /* MixiFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3820AFA3173FA089007ED472 /* MixiFirstViewController.xib */; };
+		3820AFA8173FA089007ED472 /* MixiSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3820AFA6173FA089007ED472 /* MixiSecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3820AF7A173FA089007ED472 /* MixiNotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiNotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3820AF7D173FA089007ED472 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3820AF7F173FA089007ED472 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3820AF81173FA089007ED472 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3820AF85173FA089007ED472 /* MixiNotificationSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MixiNotificationSample-Info.plist"; sourceTree = "<group>"; };
+		3820AF87173FA089007ED472 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3820AF89173FA089007ED472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3820AF8B173FA089007ED472 /* MixiNotificationSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixiNotificationSample-Prefix.pch"; sourceTree = "<group>"; };
+		3820AF8C173FA089007ED472 /* MixiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiAppDelegate.h; sourceTree = "<group>"; };
+		3820AF8D173FA089007ED472 /* MixiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiAppDelegate.m; sourceTree = "<group>"; };
+		3820AF8F173FA089007ED472 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3820AF91173FA089007ED472 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3820AF93173FA089007ED472 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3820AF95173FA089007ED472 /* MixiFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiFirstViewController.h; sourceTree = "<group>"; };
+		3820AF96173FA089007ED472 /* MixiFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiFirstViewController.m; sourceTree = "<group>"; };
+		3820AF98173FA089007ED472 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		3820AF9A173FA089007ED472 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		3820AF9C173FA089007ED472 /* MixiSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiSecondViewController.h; sourceTree = "<group>"; };
+		3820AF9D173FA089007ED472 /* MixiSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiSecondViewController.m; sourceTree = "<group>"; };
+		3820AF9F173FA089007ED472 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		3820AFA1173FA089007ED472 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		3820AFA4173FA089007ED472 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiFirstViewController.xib; sourceTree = "<group>"; };
+		3820AFA7173FA089007ED472 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiSecondViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3820AF77173FA089007ED472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3820AF7E173FA089007ED472 /* UIKit.framework in Frameworks */,
+				3820AF80173FA089007ED472 /* Foundation.framework in Frameworks */,
+				3820AF82173FA089007ED472 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3820AF71173FA089007ED472 = {
+			isa = PBXGroup;
+			children = (
+				3820AF83173FA089007ED472 /* MixiNotificationSample */,
+				3820AF7C173FA089007ED472 /* Frameworks */,
+				3820AF7B173FA089007ED472 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3820AF7B173FA089007ED472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3820AF7A173FA089007ED472 /* MixiNotificationSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3820AF7C173FA089007ED472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3820AF7D173FA089007ED472 /* UIKit.framework */,
+				3820AF7F173FA089007ED472 /* Foundation.framework */,
+				3820AF81173FA089007ED472 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3820AF83173FA089007ED472 /* MixiNotificationSample */ = {
+			isa = PBXGroup;
+			children = (
+				3820AF98173FA089007ED472 /* first.png */,
+				3820AF9A173FA089007ED472 /* first@2x.png */,
+				3820AF8C173FA089007ED472 /* MixiAppDelegate.h */,
+				3820AF8D173FA089007ED472 /* MixiAppDelegate.m */,
+				3820AF95173FA089007ED472 /* MixiFirstViewController.h */,
+				3820AF96173FA089007ED472 /* MixiFirstViewController.m */,
+				3820AFA3173FA089007ED472 /* MixiFirstViewController.xib */,
+				3820AF9C173FA089007ED472 /* MixiSecondViewController.h */,
+				3820AF9D173FA089007ED472 /* MixiSecondViewController.m */,
+				3820AFA6173FA089007ED472 /* MixiSecondViewController.xib */,
+				3820AF9F173FA089007ED472 /* second.png */,
+				3820AFA1173FA089007ED472 /* second@2x.png */,
+				3820AF84173FA089007ED472 /* Supporting Files */,
+			);
+			path = MixiNotificationSample;
+			sourceTree = "<group>";
+		};
+		3820AF84173FA089007ED472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3820AF85173FA089007ED472 /* MixiNotificationSample-Info.plist */,
+				3820AF86173FA089007ED472 /* InfoPlist.strings */,
+				3820AF89173FA089007ED472 /* main.m */,
+				3820AF8B173FA089007ED472 /* MixiNotificationSample-Prefix.pch */,
+				3820AF8F173FA089007ED472 /* Default.png */,
+				3820AF91173FA089007ED472 /* Default@2x.png */,
+				3820AF93173FA089007ED472 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3820AF79173FA089007ED472 /* MixiNotificationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3820AFAB173FA089007ED472 /* Build configuration list for PBXNativeTarget "MixiNotificationSample" */;
+			buildPhases = (
+				3820AF76173FA089007ED472 /* Sources */,
+				3820AF77173FA089007ED472 /* Frameworks */,
+				3820AF78173FA089007ED472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixiNotificationSample;
+			productName = MixiNotificationSample;
+			productReference = 3820AF7A173FA089007ED472 /* MixiNotificationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3820AF72173FA089007ED472 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mixi;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Koya Tamura";
+			};
+			buildConfigurationList = 3820AF75173FA089007ED472 /* Build configuration list for PBXProject "MixiNotificationSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3820AF71173FA089007ED472;
+			productRefGroup = 3820AF7B173FA089007ED472 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3820AF79173FA089007ED472 /* MixiNotificationSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3820AF78173FA089007ED472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3820AF88173FA089007ED472 /* InfoPlist.strings in Resources */,
+				3820AF90173FA089007ED472 /* Default.png in Resources */,
+				3820AF92173FA089007ED472 /* Default@2x.png in Resources */,
+				3820AF94173FA089007ED472 /* Default-568h@2x.png in Resources */,
+				3820AF99173FA089007ED472 /* first.png in Resources */,
+				3820AF9B173FA089007ED472 /* first@2x.png in Resources */,
+				3820AFA0173FA089007ED472 /* second.png in Resources */,
+				3820AFA2173FA089007ED472 /* second@2x.png in Resources */,
+				3820AFA5173FA089007ED472 /* MixiFirstViewController.xib in Resources */,
+				3820AFA8173FA089007ED472 /* MixiSecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3820AF76173FA089007ED472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3820AF8A173FA089007ED472 /* main.m in Sources */,
+				3820AF8E173FA089007ED472 /* MixiAppDelegate.m in Sources */,
+				3820AF97173FA089007ED472 /* MixiFirstViewController.m in Sources */,
+				3820AF9E173FA089007ED472 /* MixiSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3820AF86173FA089007ED472 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3820AF87173FA089007ED472 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3820AFA3173FA089007ED472 /* MixiFirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3820AFA4173FA089007ED472 /* en */,
+			);
+			name = MixiFirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		3820AFA6173FA089007ED472 /* MixiSecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3820AFA7173FA089007ED472 /* en */,
+			);
+			name = MixiSecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3820AFA9173FA089007ED472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3820AFAA173FA089007ED472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3820AFAC173FA089007ED472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiNotificationSample/MixiNotificationSample-Prefix.pch";
+				INFOPLIST_FILE = "MixiNotificationSample/MixiNotificationSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3820AFAD173FA089007ED472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MixiNotificationSample/MixiNotificationSample-Prefix.pch";
+				INFOPLIST_FILE = "MixiNotificationSample/MixiNotificationSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3820AF75173FA089007ED472 /* Build configuration list for PBXProject "MixiNotificationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3820AFA9173FA089007ED472 /* Debug */,
+				3820AFAA173FA089007ED472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3820AFAB173FA089007ED472 /* Build configuration list for PBXNativeTarget "MixiNotificationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3820AFAC173FA089007ED472 /* Debug */,
+				3820AFAD173FA089007ED472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3820AF72173FA089007ED472 /* Project object */;
+}
