@@ -21,20 +21,6 @@
     if (self) {
         self.title = NSLocalizedString(@"Second", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
-
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//                                                 selector:@selector(recieveNotification:)
-//                                                     name:@"notificationName"
-//                                                   object:nil];
-
-        [[NSNotificationCenter defaultCenter] addObserverForName:@"notificationName"
-                                                          object:nil
-                                                           queue:[NSOperationQueue mainQueue]
-                                                      usingBlock:^(NSNotification *note) {
-                                                          NSLog(@"%@", note);
-                                                          NSDictionary *userInfo = note.userInfo;
-                                                          _label.text = userInfo[@"key"];
-                                                      }];
     }
     return self;
 }
@@ -48,6 +34,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(recieveNotification:)
+//                                                 name:@"notificationName"
+//                                               object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserverForName:@"notificationName"
+                                                      object:nil
+                                                       queue:[NSOperationQueue mainQueue]
+                                                  usingBlock:^(NSNotification *note) {
+                                                      NSLog(@"%@", note);
+                                                      NSDictionary *userInfo = note.userInfo;
+                                                      _label.text = userInfo[@"key"];
+                                                  }];
+
 }
 
 - (void)didReceiveMemoryWarning
