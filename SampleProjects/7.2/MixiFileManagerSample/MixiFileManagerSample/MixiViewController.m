@@ -9,6 +9,8 @@
 #import "MixiViewController.h"
 
 @interface MixiViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField1;
+@property (weak, nonatomic) IBOutlet UITextField *textField2;
 
 - (IBAction)pressSaveButton:(id)sender;
 - (IBAction)pressReadButton:(id)sender;
@@ -42,7 +44,7 @@
 
 - (IBAction)pressSaveButton:(id)sender
 {
-    NSDictionary *savedDict = @{@"key1":@"value1", @"key2":@"value2"};
+    NSDictionary *savedDict = @{@"text1":_textField1.text, @"text2":_textField2.text};
     [savedDict writeToURL:[self getFileURL] atomically:YES];
 }
 
@@ -51,6 +53,8 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if([fileManager fileExistsAtPath:[self getFileURL].path]){
         NSDictionary *readDict = [NSDictionary dictionaryWithContentsOfURL:[self getFileURL]];
+        _textField1.text = readDict[@"text1"];
+        _textField2.text = readDict[@"text2"];
         NSLog(@"%@", readDict);
     }else{
         NSLog(@"not exist");

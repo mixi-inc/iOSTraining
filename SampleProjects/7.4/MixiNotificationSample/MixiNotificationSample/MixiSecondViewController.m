@@ -22,14 +22,28 @@
         self.title = NSLocalizedString(@"Second", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
 
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(recieveNotification:)
-                                                     name:@"notificationName"
-                                                   object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(recieveNotification:)
+//                                                     name:@"notificationName"
+//                                                   object:nil];
+
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"notificationName"
+                                                          object:nil
+                                                           queue:[NSOperationQueue mainQueue]
+                                                      usingBlock:^(NSNotification *note) {
+                                                          NSLog(@"%@", note);
+                                                          NSDictionary *userInfo = note.userInfo;
+                                                          _label.text = userInfo[@"key"];
+                                                      }];
     }
     return self;
 }
-							
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -47,5 +61,6 @@
     NSDictionary *userInfo = notification.userInfo;
     _label.text = userInfo[@"key"];
 }
+
 
 @end
