@@ -19,7 +19,6 @@
 		54180B661740946300F58CDA /* MixiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54180B641740946300F58CDA /* MixiTableViewController.m */; };
 		54180B671740946300F58CDA /* MixiTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54180B651740946300F58CDA /* MixiTableViewController.xib */; };
 		54180B691740957400F58CDA /* MixiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54180B681740957400F58CDA /* MixiTableViewCell.xib */; };
-		54180B6C1740988300F58CDA /* MixiRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54180B6B1740988300F58CDA /* MixiRequestManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +39,6 @@
 		54180B641740946300F58CDA /* MixiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTableViewController.m; sourceTree = "<group>"; };
 		54180B651740946300F58CDA /* MixiTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiTableViewController.xib; sourceTree = "<group>"; };
 		54180B681740957400F58CDA /* MixiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiTableViewCell.xib; sourceTree = "<group>"; };
-		54180B6A1740988300F58CDA /* MixiRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiRequestManager.h; sourceTree = "<group>"; };
-		54180B6B1740988300F58CDA /* MixiRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiRequestManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +90,6 @@
 				54180B631740946300F58CDA /* MixiTableViewController.h */,
 				54180B681740957400F58CDA /* MixiTableViewCell.xib */,
 				54180B641740946300F58CDA /* MixiTableViewController.m */,
-				54180B6A1740988300F58CDA /* MixiRequestManager.h */,
-				54180B6B1740988300F58CDA /* MixiRequestManager.m */,
 				54180B651740946300F58CDA /* MixiTableViewController.xib */,
 				54180B471740943600F58CDA /* Supporting Files */,
 			);
@@ -186,7 +181,6 @@
 				54180B4D1740943600F58CDA /* main.m in Sources */,
 				54180B511740943600F58CDA /* MixiAppDelegate.m in Sources */,
 				54180B661740946300F58CDA /* MixiTableViewController.m in Sources */,
-				54180B6C1740988300F58CDA /* MixiRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
