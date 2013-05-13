@@ -81,8 +81,9 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  3. [Key Value Observing](https://github.com/mixi-inc/iOSTraining/wiki/7.3-Key-Value-Observing)
  4. [NSNotification、NSNotificationCenter を用いた通知](https://github.com/mixi-inc/iOSTraining/wiki/7.4-NSNotification%E3%80%81NSNotificationCenter-%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E9%80%9A%E7%9F%A5)
 8. Blocks, GCD
- 1. Blocks
- 2. GCD
+ 1. [Blocks](https://github.com/mixi-inc/iOSTraining/wiki/8.1-Blocks)
+ 2. [GCD](https://github.com/mixi-inc/iOSTraining/wiki/8.2-Grand-Central-Dispatch)
+ 3. [【演習】GCD,-Blocksを用いたHTTPリクエストマネージャの作成](https://github.com/mixi-inc/iOSTraining/wiki/8.3-%E3%80%90%E6%BC%94%E7%BF%92%E3%80%91GCD,-Blocks%E3%82%92%E7%94%A8%E3%81%84%E3%81%9FHTTP%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%81%AE%E4%BD%9C%E6%88%90)
 9. 設計とデザインパターン
 10. 開発ツール
  1. Instruments (leak, time profiler, and so on)
