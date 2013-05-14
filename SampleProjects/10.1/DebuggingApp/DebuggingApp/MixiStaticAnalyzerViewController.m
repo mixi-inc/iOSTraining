@@ -28,6 +28,13 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    char *str;
+
+    if (str == NULL) {
+        printf("it it null");
+    }
+
 }
 
 - (void)didReceiveMemoryWarning

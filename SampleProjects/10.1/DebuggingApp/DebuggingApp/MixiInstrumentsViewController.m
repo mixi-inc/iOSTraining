@@ -8,8 +8,14 @@
 
 #import "MixiInstrumentsViewController.h"
 
-@interface MixiInstrumentsViewController ()
+@interface LeakObject : NSObject
+@property (nonatomic, strong) LeakObject *obj;
+@end
 
+@implementation LeakObject
+@end
+
+@interface MixiInstrumentsViewController ()
 @end
 
 @implementation MixiInstrumentsViewController
@@ -21,6 +27,7 @@
         // Custom initialization
         self.title = NSLocalizedString(@"Second", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"Second"];
+        //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     }
     return self;
 }
@@ -28,13 +35,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning
+
+#pragma mark - UITableView Delegate and Datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    return 100;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.locale = [NSLocale systemLocale];
+    formatter.dateFormat = @"YYYY-MM-dd HH:mm:ss";
+
+    cell.textLabel.text = [formatter stringFromDate:[NSDate date]];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LeakObject *obj1 = [LeakObject new];
+    LeakObject *obj2 = [LeakObject new];
+
+    obj1.obj = obj2;
+    obj2.obj = obj1;
 }
 
 @end
+

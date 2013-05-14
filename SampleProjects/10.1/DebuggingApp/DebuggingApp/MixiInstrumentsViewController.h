@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MixiInstrumentsViewController : UIViewController
 
+@interface MixiInstrumentsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end

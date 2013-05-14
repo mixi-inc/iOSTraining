@@ -18,12 +18,16 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+
     UIViewController *viewController1 = [MixiDebuggerViewController new];
+
     UIViewController *viewController2 = [MixiInstrumentsViewController new];
+    UINavigationController *nc2 = [[UINavigationController alloc] initWithRootViewController:viewController2];
+
     UIViewController *viewController3 = [MixiStaticAnalyzerViewController new];
 
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
+    self.tabBarController.viewControllers = @[viewController1, nc2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
