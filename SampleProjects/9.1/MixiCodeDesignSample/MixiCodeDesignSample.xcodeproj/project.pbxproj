@@ -18,6 +18,10 @@
 		2A4E0EDE17421D7D003A7661 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E0EDD17421D7D003A7661 /* Default-568h@2x.png */; };
 		2A4E0EE117421D7D003A7661 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E0EE017421D7D003A7661 /* MixiViewController.m */; };
 		2A4E0EE417421D7D003A7661 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4E0EE217421D7D003A7661 /* MixiViewController.xib */; };
+		2A4E0EEC17423799003A7661 /* NSDate+Day.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E0EEB17423799003A7661 /* NSDate+Day.m */; };
+		2A4E0EF217423BF3003A7661 /* MixiDailyImageViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E0EF117423BF3003A7661 /* MixiDailyImageViewCreator.m */; };
+		2A4E0EF517424DCC003A7661 /* MixiVoiceEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4E0EF417424DCC003A7661 /* MixiVoiceEntity.m */; };
+		2AD7008B17433759005B0E41 /* MixiTransitionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD7008A17433759005B0E41 /* MixiTransitionHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		2A4E0EDF17421D7D003A7661 /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
 		2A4E0EE017421D7D003A7661 /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		2A4E0EE317421D7D003A7661 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
+		2A4E0EEA17423799003A7661 /* NSDate+Day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Day.h"; sourceTree = "<group>"; };
+		2A4E0EEB17423799003A7661 /* NSDate+Day.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Day.m"; sourceTree = "<group>"; };
+		2A4E0EF017423BF3003A7661 /* MixiDailyImageViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiDailyImageViewCreator.h; sourceTree = "<group>"; };
+		2A4E0EF117423BF3003A7661 /* MixiDailyImageViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiDailyImageViewCreator.m; sourceTree = "<group>"; };
+		2A4E0EF317424DCC003A7661 /* MixiVoiceEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiVoiceEntity.h; sourceTree = "<group>"; };
+		2A4E0EF417424DCC003A7661 /* MixiVoiceEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiVoiceEntity.m; sourceTree = "<group>"; };
+		2AD7008917433759005B0E41 /* MixiTransitionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTransitionHandler.h; sourceTree = "<group>"; };
+		2AD7008A17433759005B0E41 /* MixiTransitionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTransitionHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +97,17 @@
 			children = (
 				2A4E0ED617421D7D003A7661 /* MixiAppDelegate.h */,
 				2A4E0ED717421D7D003A7661 /* MixiAppDelegate.m */,
+				2A4E0EF017423BF3003A7661 /* MixiDailyImageViewCreator.h */,
+				2A4E0EF117423BF3003A7661 /* MixiDailyImageViewCreator.m */,
 				2A4E0EDF17421D7D003A7661 /* MixiViewController.h */,
 				2A4E0EE017421D7D003A7661 /* MixiViewController.m */,
 				2A4E0EE217421D7D003A7661 /* MixiViewController.xib */,
+				2A4E0EEA17423799003A7661 /* NSDate+Day.h */,
+				2A4E0EEB17423799003A7661 /* NSDate+Day.m */,
+				2A4E0EF317424DCC003A7661 /* MixiVoiceEntity.h */,
+				2AD7008917433759005B0E41 /* MixiTransitionHandler.h */,
+				2AD7008A17433759005B0E41 /* MixiTransitionHandler.m */,
+				2A4E0EF417424DCC003A7661 /* MixiVoiceEntity.m */,
 				2A4E0ECE17421D7D003A7661 /* Supporting Files */,
 			);
 			path = MixiCodeDesignSample;
@@ -177,6 +197,10 @@
 				2A4E0ED417421D7D003A7661 /* main.m in Sources */,
 				2A4E0ED817421D7D003A7661 /* MixiAppDelegate.m in Sources */,
 				2A4E0EE117421D7D003A7661 /* MixiViewController.m in Sources */,
+				2A4E0EEC17423799003A7661 /* NSDate+Day.m in Sources */,
+				2A4E0EF217423BF3003A7661 /* MixiDailyImageViewCreator.m in Sources */,
+				2A4E0EF517424DCC003A7661 /* MixiVoiceEntity.m in Sources */,
+				2AD7008B17433759005B0E41 /* MixiTransitionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +323,7 @@
 				2A4E0EE917421D7D003A7661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
