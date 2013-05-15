@@ -10,15 +10,22 @@
 
 #import "MixiViewController.h"
 
+#import <NimbusOverview.h>
+
 @implementation MixiAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NIOverview applicationDidFinishLaunching];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[MixiViewController alloc] initWithNibName:@"MixiViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
+    [NIOverview addOverviewToWindow:self.window];
+
     return YES;
 }
 
