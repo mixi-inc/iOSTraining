@@ -299,6 +299,7 @@
 				2A9B484F1740E4B000EE8E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
