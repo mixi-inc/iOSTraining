@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiDailyAbstractView.h"
+#import "MixiDailyView.h"
 
-@implementation MixiDailyAbstractView
+@implementation MixiDailyView
 
 
 -(void)pressCloseButton:(id)sender

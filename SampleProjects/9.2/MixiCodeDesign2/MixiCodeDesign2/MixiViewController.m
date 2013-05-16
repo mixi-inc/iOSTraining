@@ -7,9 +7,10 @@
 //
 
 #import "MixiViewController.h"
-#import "MixiDailyChoiceView.h"
 
 @interface MixiViewController ()
+
+@property (nonatomic, strong) MixiDailyView *dailyView;
 
 @end
 
@@ -19,15 +20,33 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    MixiDailyChoiceView *dailyView = [MixiDailyChoiceView dailyChoiceView];
-    dailyView.center = self.view.center;
-    [self.view addSubview:dailyView];
+    _dailyView = [MixiDailyChoiceView dailyChoiceView];
+    _dailyView.center = self.view.center;
+    _dailyView.delegate = self;
+    [self.view addSubview:_dailyView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)dailyViewDidPressCloseButton
+{
+    [_dailyView removeFromSuperview];
+}
+
+-(void)dailyViewDidPressYesButton
+{
+    //do something
+    NSLog(@"Yes");
+}
+
+-(void)dailyViewDidPressNoButton
+{
+    //do something
+    NSLog(@"No");
 }
 
 @end

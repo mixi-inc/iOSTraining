@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiDailyChoiceView.h"
 
-@interface MixiViewController : UIViewController
+@interface MixiViewController : UIViewController<MixiDailyViewDelegate>
 
 @end

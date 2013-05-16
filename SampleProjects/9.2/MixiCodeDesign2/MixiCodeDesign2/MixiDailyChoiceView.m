@@ -21,12 +21,16 @@
 
 - (IBAction)pressYesButton:(id)sender
 {
-    //do something
+    if([self.delegate respondsToSelector:@selector(dailyViewDidPressYesButton)]){
+        [self.delegate dailyViewDidPressYesButton];
+    }
 }
 
 - (IBAction)pressNoButton:(id)sender
 {
-    //do something
+    if([self.delegate respondsToSelector:@selector(dailyViewDidPressNoButton)]){
+        [self.delegate dailyViewDidPressNoButton];
+    }
 }
 
 @end

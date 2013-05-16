@@ -1,5 +1,5 @@
 //
-//  MixiDailyAbstractView.h
+//  MixiDailyView.h
 //  MixiCodeDesign2
 //
 //  Created by 田村 航弥 on 2013/05/15.
@@ -10,11 +10,16 @@
 
 @protocol MixiDailyViewDelegate <NSObject>
 
+@required
 -(void)dailyViewDidPressCloseButton;
+
+@optional
+-(void)dailyViewDidPressYesButton;
+-(void)dailyViewDidPressNoButton;
 
 @end
 
-@interface MixiDailyAbstractView : UIView
+@interface MixiDailyView : UIView
 
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak) IBOutlet UIButton *closeButton;

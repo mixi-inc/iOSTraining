@@ -6,9 +6,9 @@
 //  Copyright (c) 2013年 mixi. All rights reserved.
 //
 
-#import "MixiDailyAbstractView.h"
+#import "MixiDailyView.h"
 
-@interface MixiDailyChoiceView : MixiDailyAbstractView
+@interface MixiDailyChoiceView : MixiDailyView
 
 +(MixiDailyChoiceView *)dailyChoiceView;
 - (IBAction)pressYesButton:(id)sender;

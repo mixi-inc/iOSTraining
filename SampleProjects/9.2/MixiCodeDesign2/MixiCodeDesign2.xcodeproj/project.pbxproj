@@ -18,9 +18,9 @@
 		2AD700AF1743B6E9005B0E41 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AD700AE1743B6E9005B0E41 /* Default-568h@2x.png */; };
 		2AD700B21743B6E9005B0E41 /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD700B11743B6E9005B0E41 /* MixiViewController.m */; };
 		2AD700B51743B6E9005B0E41 /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD700B31743B6E9005B0E41 /* MixiViewController.xib */; };
-		2AD700BD1743B715005B0E41 /* MixiDailyAbstractView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD700BC1743B715005B0E41 /* MixiDailyAbstractView.m */; };
 		2AD700C01743B857005B0E41 /* MixiDailyChoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD700BF1743B857005B0E41 /* MixiDailyChoiceView.m */; };
 		2AD700C21743B864005B0E41 /* MixiDailyChoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AD700C11743B864005B0E41 /* MixiDailyChoiceView.xib */; };
+		2AD700C51743C108005B0E41 /* MixiDailyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD700C41743C029005B0E41 /* MixiDailyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +40,11 @@
 		2AD700B01743B6E9005B0E41 /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
 		2AD700B11743B6E9005B0E41 /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
 		2AD700B41743B6E9005B0E41 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
-		2AD700BB1743B715005B0E41 /* MixiDailyAbstractView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiDailyAbstractView.h; sourceTree = "<group>"; };
-		2AD700BC1743B715005B0E41 /* MixiDailyAbstractView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiDailyAbstractView.m; sourceTree = "<group>"; };
 		2AD700BE1743B857005B0E41 /* MixiDailyChoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiDailyChoiceView.h; sourceTree = "<group>"; };
 		2AD700BF1743B857005B0E41 /* MixiDailyChoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiDailyChoiceView.m; sourceTree = "<group>"; };
 		2AD700C11743B864005B0E41 /* MixiDailyChoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiDailyChoiceView.xib; sourceTree = "<group>"; };
+		2AD700C31743C029005B0E41 /* MixiDailyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiDailyView.h; sourceTree = "<group>"; };
+		2AD700C41743C029005B0E41 /* MixiDailyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiDailyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				2AD700A71743B6E9005B0E41 /* MixiAppDelegate.h */,
+				2AD700A81743B6E9005B0E41 /* MixiAppDelegate.m */,
 				2AD700BE1743B857005B0E41 /* MixiDailyChoiceView.h */,
 				2AD700BF1743B857005B0E41 /* MixiDailyChoiceView.m */,
 				2AD700C11743B864005B0E41 /* MixiDailyChoiceView.xib */,
-				2AD700A81743B6E9005B0E41 /* MixiAppDelegate.m */,
-				2AD700BB1743B715005B0E41 /* MixiDailyAbstractView.h */,
-				2AD700BC1743B715005B0E41 /* MixiDailyAbstractView.m */,
+				2AD700C31743C029005B0E41 /* MixiDailyView.h */,
+				2AD700C41743C029005B0E41 /* MixiDailyView.m */,
 				2AD700B01743B6E9005B0E41 /* MixiViewController.h */,
 				2AD700B11743B6E9005B0E41 /* MixiViewController.m */,
 				2AD700B31743B6E9005B0E41 /* MixiViewController.xib */,
@@ -188,10 +188,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD700C51743C108005B0E41 /* MixiDailyView.m in Sources */,
 				2AD700A51743B6E9005B0E41 /* main.m in Sources */,
 				2AD700A91743B6E9005B0E41 /* MixiAppDelegate.m in Sources */,
 				2AD700B21743B6E9005B0E41 /* MixiViewController.m in Sources */,
-				2AD700BD1743B715005B0E41 /* MixiDailyAbstractView.m in Sources */,
 				2AD700C01743B857005B0E41 /* MixiDailyChoiceView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
