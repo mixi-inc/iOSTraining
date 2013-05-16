@@ -2,25 +2,25 @@
     {
 	"object_type" : "photo",
 	"date" : "2013-05-13 10:00:00",
-	"author" : "",
+	"author" : "ojisan",
 	"photo_url" : ""
     },
     {
 	"object_type" : "text",
 	"date" : "2013-05-13 11:00:00",
-	"author" : "",
+	"author" : "ojisan",
 	"text" : "今日もいい天気だなー"
     },
     {
 	"object_type" : "text",
 	"date" : "2013-05-13 12:00:00",
-	"author" : "",
+	"author" : "ojisan",
 	"text" : "今日もビアガーデンだなー"
     },
     {
 	"object_type" : "photo",
 	"date" : "2013-05-13 13:00:00",
-	"author" : "",
+	"author" : "ojisan",
 	"photo_url" : ""
     }
 ]
