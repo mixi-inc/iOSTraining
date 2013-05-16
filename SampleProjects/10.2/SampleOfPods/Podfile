@@ -1,0 +1,5 @@
+platform :ios, '5.00'
+
+pod 'Reachability',  '~> 3.0.0'
+pod 'Nimbus'
+pod 'BlocksKit'

@@ -1,0 +1,64 @@
+PODS:
+  - BlocksKit (1.8.2):
+    - libffi
+  - JSONKit (1.5pre)
+  - libffi (3.0.11)
+  - Nimbus (0.9.3):
+    - Nimbus/AttributedLabel
+    - Nimbus/Core
+    - Nimbus/CSS
+    - Nimbus/Interapp
+    - Nimbus/Launcher
+    - Nimbus/Models
+    - Nimbus/NetworkControllers
+    - Nimbus/NetworkImage
+    - Nimbus/Operations
+    - Nimbus/Overview
+    - Nimbus/PagingScrollView
+    - Nimbus/Photos
+    - Nimbus/WebController
+  - Nimbus/AttributedLabel (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Core (0.9.3)
+  - Nimbus/CSS (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Interapp (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Launcher (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Models (0.9.3):
+    - Nimbus/Core
+  - Nimbus/NetworkControllers (0.9.3):
+    - Nimbus/Core
+  - Nimbus/NetworkImage (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Operations (0.9.3):
+    - Nimbus/Core
+    - Nimbus/Operations/JSON
+  - Nimbus/Operations/JSON (0.9.3):
+    - JSONKit
+    - Nimbus/Core
+  - Nimbus/Overview (0.9.3):
+    - Nimbus/Core
+  - Nimbus/PagingScrollView (0.9.3):
+    - Nimbus/Core
+  - Nimbus/Photos (0.9.3):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/WebController (0.9.3):
+    - Nimbus/Core
+  - Reachability (3.0.0)
+
+DEPENDENCIES:
+  - BlocksKit
+  - Nimbus
+  - Reachability (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
+  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
+  libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
+  Nimbus: 6a35688977607cda01be9027699a9e64bd08fb99
+  Reachability: 500bd76bf6cd8ff2c6fb715fc5f44ef6e4c024f2
+
+COCOAPODS: 0.19.1
