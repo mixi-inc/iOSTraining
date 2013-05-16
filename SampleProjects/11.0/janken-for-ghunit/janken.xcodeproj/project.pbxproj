@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C9F66676AE74C74B7D71053 /* libPods-UnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A59482D54A6B44E5B53EF41F /* libPods-UnitTest.a */; };
+		545BB4C3174471BE00DA959B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C2174471BE00DA959B /* UIKit.framework */; };
+		545BB4C5174471BE00DA959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C4174471BE00DA959B /* Foundation.framework */; };
+		545BB4C7174471BE00DA959B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C6174471BE00DA959B /* CoreGraphics.framework */; };
+		545BB4CD174471BE00DA959B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4CB174471BE00DA959B /* InfoPlist.strings */; };
+		545BB4CF174471BE00DA959B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4CE174471BE00DA959B /* main.m */; };
+		545BB4D3174471BE00DA959B /* MixiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4D2174471BE00DA959B /* MixiAppDelegate.m */; };
+		545BB4D5174471BE00DA959B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D4174471BE00DA959B /* Default.png */; };
+		545BB4D7174471BE00DA959B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D6174471BE00DA959B /* Default@2x.png */; };
+		545BB4D9174471BE00DA959B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D8174471BE00DA959B /* Default-568h@2x.png */; };
+		545BB4DC174471BE00DA959B /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4DB174471BE00DA959B /* MixiViewController.m */; };
+		545BB4DF174471BF00DA959B /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4DD174471BF00DA959B /* MixiViewController.xib */; };
+		545BB4E71744735600DA959B /* MixiJanken.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4E61744735600DA959B /* MixiJanken.m */; };
+		545BB4ED1744812900DA959B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C2174471BE00DA959B /* UIKit.framework */; };
+		545BB4EE1744812900DA959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C4174471BE00DA959B /* Foundation.framework */; };
+		545BB4EF1744812900DA959B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C6174471BE00DA959B /* CoreGraphics.framework */; };
+		545BB4F51744812900DA959B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4F31744812900DA959B /* InfoPlist.strings */; };
+		545BB4F71744812900DA959B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4F61744812900DA959B /* main.m */; };
+		545BB4FD1744812900DA959B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4FC1744812900DA959B /* Default.png */; };
+		545BB4FF1744812900DA959B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4FE1744812900DA959B /* Default@2x.png */; };
+		545BB5011744812900DA959B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB5001744812900DA959B /* Default-568h@2x.png */; };
+		545BB507174484AD00DA959B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB506174484AD00DA959B /* QuartzCore.framework */; };
+		545BB50B1744869F00DA959B /* MixiJankenTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5081744853100DA959B /* MixiJankenTest.m */; };
+		545BB50C174486E400DA959B /* MixiJanken.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4E61744735600DA959B /* MixiJanken.m */; };
+		545BB50E17448C0800DA959B /* RunTests.sh in Resources */ = {isa = PBXBuildFile; fileRef = 545BB50D17448C0800DA959B /* RunTests.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1250F610CA394C86B22B866B /* Pods-UnitTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.xcconfig"; path = "Pods/Pods-UnitTest.xcconfig"; sourceTree = SOURCE_ROOT; };
+		545BB4BF174471BE00DA959B /* janken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = janken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545BB4C2174471BE00DA959B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		545BB4C4174471BE00DA959B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		545BB4C6174471BE00DA959B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		545BB4CA174471BE00DA959B /* janken-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "janken-Info.plist"; sourceTree = "<group>"; };
+		545BB4CC174471BE00DA959B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545BB4CE174471BE00DA959B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545BB4D0174471BE00DA959B /* janken-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "janken-Prefix.pch"; sourceTree = "<group>"; };
+		545BB4D1174471BE00DA959B /* MixiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiAppDelegate.h; sourceTree = "<group>"; };
+		545BB4D2174471BE00DA959B /* MixiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiAppDelegate.m; sourceTree = "<group>"; };
+		545BB4D4174471BE00DA959B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		545BB4D6174471BE00DA959B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		545BB4D8174471BE00DA959B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		545BB4DA174471BE00DA959B /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
+		545BB4DB174471BE00DA959B /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
+		545BB4DE174471BF00DA959B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
+		545BB4E61744735600DA959B /* MixiJanken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiJanken.m; sourceTree = "<group>"; };
+		545BB4EC1744812900DA959B /* UnitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545BB4F21744812900DA959B /* UnitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTest-Info.plist"; sourceTree = "<group>"; };
+		545BB4F41744812900DA959B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545BB4F61744812900DA959B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545BB4F81744812900DA959B /* UnitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTest-Prefix.pch"; sourceTree = "<group>"; };
+		545BB4FC1744812900DA959B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		545BB4FE1744812900DA959B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		545BB5001744812900DA959B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		545BB5051744842F00DA959B /* MixiJanken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiJanken.h; sourceTree = "<group>"; };
+		545BB506174484AD00DA959B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		545BB5081744853100DA959B /* MixiJankenTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiJankenTest.m; sourceTree = "<group>"; };
+		545BB50D17448C0800DA959B /* RunTests.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
+		A59482D54A6B44E5B53EF41F /* libPods-UnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		545BB4BC174471BE00DA959B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4C3174471BE00DA959B /* UIKit.framework in Frameworks */,
+				545BB4C5174471BE00DA959B /* Foundation.framework in Frameworks */,
+				545BB4C7174471BE00DA959B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB4E91744812900DA959B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB507174484AD00DA959B /* QuartzCore.framework in Frameworks */,
+				545BB4ED1744812900DA959B /* UIKit.framework in Frameworks */,
+				545BB4EE1744812900DA959B /* Foundation.framework in Frameworks */,
+				545BB4EF1744812900DA959B /* CoreGraphics.framework in Frameworks */,
+				3C9F66676AE74C74B7D71053 /* libPods-UnitTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		545BB4B6174471BE00DA959B = {
+			isa = PBXGroup;
+			children = (
+				545BB4C8174471BE00DA959B /* janken */,
+				545BB4F01744812900DA959B /* UnitTest */,
+				545BB4C1174471BE00DA959B /* Frameworks */,
+				545BB4C0174471BE00DA959B /* Products */,
+				1250F610CA394C86B22B866B /* Pods-UnitTest.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		545BB4C0174471BE00DA959B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4BF174471BE00DA959B /* janken.app */,
+				545BB4EC1744812900DA959B /* UnitTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		545BB4C1174471BE00DA959B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545BB506174484AD00DA959B /* QuartzCore.framework */,
+				545BB4C2174471BE00DA959B /* UIKit.framework */,
+				545BB4C4174471BE00DA959B /* Foundation.framework */,
+				545BB4C6174471BE00DA959B /* CoreGraphics.framework */,
+				A59482D54A6B44E5B53EF41F /* libPods-UnitTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545BB4C8174471BE00DA959B /* janken */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4D1174471BE00DA959B /* MixiAppDelegate.h */,
+				545BB4D2174471BE00DA959B /* MixiAppDelegate.m */,
+				545BB4DA174471BE00DA959B /* MixiViewController.h */,
+				545BB4DB174471BE00DA959B /* MixiViewController.m */,
+				545BB4E61744735600DA959B /* MixiJanken.m */,
+				545BB5051744842F00DA959B /* MixiJanken.h */,
+				545BB4DD174471BF00DA959B /* MixiViewController.xib */,
+				545BB4C9174471BE00DA959B /* Supporting Files */,
+			);
+			path = janken;
+			sourceTree = "<group>";
+		};
+		545BB4C9174471BE00DA959B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4CA174471BE00DA959B /* janken-Info.plist */,
+				545BB4CB174471BE00DA959B /* InfoPlist.strings */,
+				545BB4CE174471BE00DA959B /* main.m */,
+				545BB4D0174471BE00DA959B /* janken-Prefix.pch */,
+				545BB4D4174471BE00DA959B /* Default.png */,
+				545BB4D6174471BE00DA959B /* Default@2x.png */,
+				545BB4D8174471BE00DA959B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		545BB4F01744812900DA959B /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				545BB50D17448C0800DA959B /* RunTests.sh */,
+				545BB4F11744812900DA959B /* Supporting Files */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		545BB4F11744812900DA959B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4F21744812900DA959B /* UnitTest-Info.plist */,
+				545BB4F31744812900DA959B /* InfoPlist.strings */,
+				545BB4F61744812900DA959B /* main.m */,
+				545BB4F81744812900DA959B /* UnitTest-Prefix.pch */,
+				545BB4FC1744812900DA959B /* Default.png */,
+				545BB4FE1744812900DA959B /* Default@2x.png */,
+				545BB5001744812900DA959B /* Default-568h@2x.png */,
+				545BB5081744853100DA959B /* MixiJankenTest.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		545BB4BE174471BE00DA959B /* janken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545BB4E2174471BF00DA959B /* Build configuration list for PBXNativeTarget "janken" */;
+			buildPhases = (
+				545BB4BB174471BE00DA959B /* Sources */,
+				545BB4BC174471BE00DA959B /* Frameworks */,
+				545BB4BD174471BE00DA959B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = janken;
+			productName = janken;
+			productReference = 545BB4BF174471BE00DA959B /* janken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		545BB4EB1744812900DA959B /* UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545BB5041744812900DA959B /* Build configuration list for PBXNativeTarget "UnitTest" */;
+			buildPhases = (
+				ADF0D36DE24D49D18ECF09D5 /* Check Pods Manifest.lock */,
+				545BB4E81744812900DA959B /* Sources */,
+				545BB4E91744812900DA959B /* Frameworks */,
+				545BB4EA1744812900DA959B /* Resources */,
+				49CC24F2D3694B849164D99C /* Copy Pods Resources */,
+				545BB50F17448C3400DA959B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest;
+			productName = UnitTest;
+			productReference = 545BB4EC1744812900DA959B /* UnitTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		545BB4B7174471BE00DA959B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mixi;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "武田 祐一";
+			};
+			buildConfigurationList = 545BB4BA174471BE00DA959B /* Build configuration list for PBXProject "janken" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 545BB4B6174471BE00DA959B;
+			productRefGroup = 545BB4C0174471BE00DA959B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				545BB4BE174471BE00DA959B /* janken */,
+				545BB4EB1744812900DA959B /* UnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		545BB4BD174471BE00DA959B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4CD174471BE00DA959B /* InfoPlist.strings in Resources */,
+				545BB4D5174471BE00DA959B /* Default.png in Resources */,
+				545BB4D7174471BE00DA959B /* Default@2x.png in Resources */,
+				545BB4D9174471BE00DA959B /* Default-568h@2x.png in Resources */,
+				545BB4DF174471BF00DA959B /* MixiViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB4EA1744812900DA959B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4F51744812900DA959B /* InfoPlist.strings in Resources */,
+				545BB4FD1744812900DA959B /* Default.png in Resources */,
+				545BB4FF1744812900DA959B /* Default@2x.png in Resources */,
+				545BB5011744812900DA959B /* Default-568h@2x.png in Resources */,
+				545BB50E17448C0800DA959B /* RunTests.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49CC24F2D3694B849164D99C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-UnitTest-resources.sh\"\n";
+		};
+		545BB50F17448C3400DA959B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh RunTests.sh";
+		};
+		ADF0D36DE24D49D18ECF09D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		545BB4BB174471BE00DA959B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4CF174471BE00DA959B /* main.m in Sources */,
+				545BB4D3174471BE00DA959B /* MixiAppDelegate.m in Sources */,
+				545BB4DC174471BE00DA959B /* MixiViewController.m in Sources */,
+				545BB4E71744735600DA959B /* MixiJanken.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB4E81744812900DA959B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4F71744812900DA959B /* main.m in Sources */,
+				545BB50B1744869F00DA959B /* MixiJankenTest.m in Sources */,
+				545BB50C174486E400DA959B /* MixiJanken.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		545BB4CB174471BE00DA959B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545BB4CC174471BE00DA959B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		545BB4DD174471BF00DA959B /* MixiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545BB4DE174471BF00DA959B /* en */,
+			);
+			name = MixiViewController.xib;
+			sourceTree = "<group>";
+		};
+		545BB4F31744812900DA959B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545BB4F41744812900DA959B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		545BB4E0174471BF00DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		545BB4E1174471BF00DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		545BB4E3174471BF00DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken/janken-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		545BB4E4174471BF00DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken/janken-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		545BB5021744812900DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1250F610CA394C86B22B866B /* Pods-UnitTest.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		545BB5031744812900DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1250F610CA394C86B22B866B /* Pods-UnitTest.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTest/UnitTest-Prefix.pch";
+				INFOPLIST_FILE = "UnitTest/UnitTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		545BB4BA174471BE00DA959B /* Build configuration list for PBXProject "janken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB4E0174471BF00DA959B /* Debug */,
+				545BB4E1174471BF00DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545BB4E2174471BF00DA959B /* Build configuration list for PBXNativeTarget "janken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB4E3174471BF00DA959B /* Debug */,
+				545BB4E4174471BF00DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545BB5041744812900DA959B /* Build configuration list for PBXNativeTarget "UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB5021744812900DA959B /* Debug */,
+				545BB5031744812900DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 545BB4B7174471BE00DA959B /* Project object */;
+}
