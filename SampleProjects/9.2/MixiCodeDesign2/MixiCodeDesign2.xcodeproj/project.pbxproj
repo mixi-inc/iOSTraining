@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0582D0174479BF003E865D /* MixiSharedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582CF174479BF003E865D /* MixiSharedObject.m */; };
 		2AD700991743B6E9005B0E41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD700981743B6E9005B0E41 /* UIKit.framework */; };
 		2AD7009B1743B6E9005B0E41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD7009A1743B6E9005B0E41 /* Foundation.framework */; };
 		2AD7009D1743B6E9005B0E41 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD7009C1743B6E9005B0E41 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0582CE174479BF003E865D /* MixiSharedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSharedObject.h; sourceTree = "<group>"; };
+		2A0582CF174479BF003E865D /* MixiSharedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSharedObject.m; sourceTree = "<group>"; };
 		2AD700951743B6E9005B0E41 /* MixiCodeDesign2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiCodeDesign2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD700981743B6E9005B0E41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2AD7009A1743B6E9005B0E41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,8 @@
 				2AD700C11743B864005B0E41 /* MixiDailyChoiceView.xib */,
 				2AD700C31743C029005B0E41 /* MixiDailyView.h */,
 				2AD700C41743C029005B0E41 /* MixiDailyView.m */,
+				2A0582CE174479BF003E865D /* MixiSharedObject.h */,
+				2A0582CF174479BF003E865D /* MixiSharedObject.m */,
 				2AD700B01743B6E9005B0E41 /* MixiViewController.h */,
 				2AD700B11743B6E9005B0E41 /* MixiViewController.m */,
 				2AD700B31743B6E9005B0E41 /* MixiViewController.xib */,
@@ -193,6 +198,7 @@
 				2AD700A91743B6E9005B0E41 /* MixiAppDelegate.m in Sources */,
 				2AD700B21743B6E9005B0E41 /* MixiViewController.m in Sources */,
 				2AD700C01743B857005B0E41 /* MixiDailyChoiceView.m in Sources */,
+				2A0582D0174479BF003E865D /* MixiSharedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +321,7 @@
 				2AD700BA1743B6E9005B0E41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

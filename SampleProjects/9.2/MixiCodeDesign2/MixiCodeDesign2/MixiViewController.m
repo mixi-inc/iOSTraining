@@ -7,10 +7,12 @@
 //
 
 #import "MixiViewController.h"
+#import "MixiSharedObject.h"
 
 @interface MixiViewController ()
 
 @property (nonatomic, strong) MixiDailyView *dailyView;
+@property (nonatomic, strong) NSMutableArray *array;
 
 @end
 
@@ -24,6 +26,11 @@
     _dailyView.center = self.view.center;
     _dailyView.delegate = self;
     [self.view addSubview:_dailyView];
+
+    _array = [NSMutableArray array];
+    for (NSInteger i = 0; i < 10; i++) {
+        [_array addObject:[MixiSharedObject sharedInstance]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
