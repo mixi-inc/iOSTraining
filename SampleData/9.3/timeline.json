@@ -3,7 +3,8 @@
 	"object_type" : "photo",
 	"date" : "2013-05-13 10:00:00",
 	"author" : "ojisan",
-	"photo_url" : "https://raw.github.com/mixi-inc/iOSTraining/master/SampleData/9.3/ojisan.png"
+	"photo_url" : "https://raw.github.com/mixi-inc/iOSTraining/master/SampleData/9.3/ojisan.png",
+	"photo_height" : 170
     },
     {
 	"object_type" : "text",
@@ -21,6 +22,7 @@
 	"object_type" : "photo",
 	"date" : "2013-05-13 13:00:00",
 	"author" : "ojisan",
-	"photo_url" : "https://raw.github.com/mixi-inc/iOSTraining/master/SampleData/9.3/ojisan2.png"
+	"photo_url" : "https://raw.github.com/mixi-inc/iOSTraining/master/SampleData/9.3/ojisan2.png",
+	"photo_height" : 170
     }
 ]
