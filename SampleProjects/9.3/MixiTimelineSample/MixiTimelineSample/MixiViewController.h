@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixiTimeLineModel.h"
 
-@interface MixiViewController : UIViewController
+@interface MixiViewController : UIViewController<
+MixiTimeLineModelDelegate,
+UITableViewDataSource,
+UITableViewDelegate>
 
 @end

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0582D31744E5BB003E865D /* MixiTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582D21744E5BB003E865D /* MixiTimeLineModel.m */; };
+		2A0582D61744EB18003E865D /* MixiTimelineEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582D51744EB18003E865D /* MixiTimelineEntity.m */; };
+		2A0582D91744F426003E865D /* MixiTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582D81744F426003E865D /* MixiTimelineCell.m */; };
+		2A0582DC1744F43B003E865D /* MixiTimelineTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582DB1744F43B003E865D /* MixiTimelineTextCell.m */; };
+		2A0582DF1744F44A003E865D /* MixiTimelinePhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0582DE1744F44A003E865D /* MixiTimelinePhotoCell.m */; };
+		2A0582E11744F780003E865D /* MixiTimelineTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0582E01744F780003E865D /* MixiTimelineTextCell.xib */; };
+		2A0582E31744F7CA003E865D /* MixiTimelinePhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0582E21744F7CA003E865D /* MixiTimelinePhotoCell.xib */; };
+		2A674F0817463FCC004069B2 /* MixiTimelineCellHeightCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A674F0717463FCC004069B2 /* MixiTimelineCellHeightCalculator.m */; };
 		2A9B482E1740E4B000EE8E64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B482D1740E4B000EE8E64 /* UIKit.framework */; };
 		2A9B48301740E4B000EE8E64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B482F1740E4B000EE8E64 /* Foundation.framework */; };
 		2A9B48321740E4B000EE8E64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9B48311740E4B000EE8E64 /* CoreGraphics.framework */; };
@@ -21,6 +29,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0582D11744E5BB003E865D /* MixiTimeLineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimeLineModel.h; sourceTree = "<group>"; };
+		2A0582D21744E5BB003E865D /* MixiTimeLineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimeLineModel.m; sourceTree = "<group>"; };
+		2A0582D41744EB18003E865D /* MixiTimelineEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimelineEntity.h; sourceTree = "<group>"; };
+		2A0582D51744EB18003E865D /* MixiTimelineEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimelineEntity.m; sourceTree = "<group>"; };
+		2A0582D71744F426003E865D /* MixiTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimelineCell.h; sourceTree = "<group>"; };
+		2A0582D81744F426003E865D /* MixiTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimelineCell.m; sourceTree = "<group>"; };
+		2A0582DA1744F43B003E865D /* MixiTimelineTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimelineTextCell.h; sourceTree = "<group>"; };
+		2A0582DB1744F43B003E865D /* MixiTimelineTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimelineTextCell.m; sourceTree = "<group>"; };
+		2A0582DD1744F44A003E865D /* MixiTimelinePhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimelinePhotoCell.h; sourceTree = "<group>"; };
+		2A0582DE1744F44A003E865D /* MixiTimelinePhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimelinePhotoCell.m; sourceTree = "<group>"; };
+		2A0582E01744F780003E865D /* MixiTimelineTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiTimelineTextCell.xib; sourceTree = "<group>"; };
+		2A0582E21744F7CA003E865D /* MixiTimelinePhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiTimelinePhotoCell.xib; sourceTree = "<group>"; };
+		2A674F0617463FCC004069B2 /* MixiTimelineCellHeightCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiTimelineCellHeightCalculator.h; sourceTree = "<group>"; };
+		2A674F0717463FCC004069B2 /* MixiTimelineCellHeightCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiTimelineCellHeightCalculator.m; sourceTree = "<group>"; };
 		2A9B482A1740E4B000EE8E64 /* MixiTimelineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiTimelineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9B482D1740E4B000EE8E64 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A9B482F1740E4B000EE8E64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,7 +106,21 @@
 			isa = PBXGroup;
 			children = (
 				2A9B483C1740E4B000EE8E64 /* MixiAppDelegate.h */,
+				2A674F0617463FCC004069B2 /* MixiTimelineCellHeightCalculator.h */,
+				2A674F0717463FCC004069B2 /* MixiTimelineCellHeightCalculator.m */,
 				2A9B483D1740E4B000EE8E64 /* MixiAppDelegate.m */,
+				2A0582D71744F426003E865D /* MixiTimelineCell.h */,
+				2A0582D81744F426003E865D /* MixiTimelineCell.m */,
+				2A0582D41744EB18003E865D /* MixiTimelineEntity.h */,
+				2A0582D51744EB18003E865D /* MixiTimelineEntity.m */,
+				2A0582D11744E5BB003E865D /* MixiTimeLineModel.h */,
+				2A0582D21744E5BB003E865D /* MixiTimeLineModel.m */,
+				2A0582DD1744F44A003E865D /* MixiTimelinePhotoCell.h */,
+				2A0582DE1744F44A003E865D /* MixiTimelinePhotoCell.m */,
+				2A0582E21744F7CA003E865D /* MixiTimelinePhotoCell.xib */,
+				2A0582DA1744F43B003E865D /* MixiTimelineTextCell.h */,
+				2A0582DB1744F43B003E865D /* MixiTimelineTextCell.m */,
+				2A0582E01744F780003E865D /* MixiTimelineTextCell.xib */,
 				2A9B48451740E4B000EE8E64 /* MixiViewController.h */,
 				2A9B48461740E4B000EE8E64 /* MixiViewController.m */,
 				2A9B48481740E4B000EE8E64 /* MixiViewController.xib */,
@@ -164,6 +200,8 @@
 				2A9B48421740E4B000EE8E64 /* Default@2x.png in Resources */,
 				2A9B48441740E4B000EE8E64 /* Default-568h@2x.png in Resources */,
 				2A9B484A1740E4B000EE8E64 /* MixiViewController.xib in Resources */,
+				2A0582E11744F780003E865D /* MixiTimelineTextCell.xib in Resources */,
+				2A0582E31744F7CA003E865D /* MixiTimelinePhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +215,12 @@
 				2A9B483A1740E4B000EE8E64 /* main.m in Sources */,
 				2A9B483E1740E4B000EE8E64 /* MixiAppDelegate.m in Sources */,
 				2A9B48471740E4B000EE8E64 /* MixiViewController.m in Sources */,
+				2A0582D31744E5BB003E865D /* MixiTimeLineModel.m in Sources */,
+				2A0582D61744EB18003E865D /* MixiTimelineEntity.m in Sources */,
+				2A0582D91744F426003E865D /* MixiTimelineCell.m in Sources */,
+				2A0582DC1744F43B003E865D /* MixiTimelineTextCell.m in Sources */,
+				2A0582DF1744F44A003E865D /* MixiTimelinePhotoCell.m in Sources */,
+				2A674F0817463FCC004069B2 /* MixiTimelineCellHeightCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
