@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		065E55EA2D32451D82785269 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20884EB60F1E4DC3B4EF6595 /* libPods.a */; };
+		545BB4C3174471BE00DA959B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C2174471BE00DA959B /* UIKit.framework */; };
+		545BB4C5174471BE00DA959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C4174471BE00DA959B /* Foundation.framework */; };
+		545BB4C7174471BE00DA959B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C6174471BE00DA959B /* CoreGraphics.framework */; };
+		545BB4CD174471BE00DA959B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4CB174471BE00DA959B /* InfoPlist.strings */; };
+		545BB4CF174471BE00DA959B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4CE174471BE00DA959B /* main.m */; };
+		545BB4D3174471BE00DA959B /* MixiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4D2174471BE00DA959B /* MixiAppDelegate.m */; };
+		545BB4D5174471BE00DA959B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D4174471BE00DA959B /* Default.png */; };
+		545BB4D7174471BE00DA959B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D6174471BE00DA959B /* Default@2x.png */; };
+		545BB4D9174471BE00DA959B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D8174471BE00DA959B /* Default-568h@2x.png */; };
+		545BB4DC174471BE00DA959B /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4DB174471BE00DA959B /* MixiViewController.m */; };
+		545BB4DF174471BF00DA959B /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4DD174471BF00DA959B /* MixiViewController.xib */; };
+		545BB4E71744735600DA959B /* MixiJanken.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4E61744735600DA959B /* MixiJanken.m */; };
+		545BB58C1745D39C00DA959B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4CE174471BE00DA959B /* main.m */; };
+		545BB58D1745D39C00DA959B /* MixiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4D2174471BE00DA959B /* MixiAppDelegate.m */; };
+		545BB58E1745D39C00DA959B /* MixiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4DB174471BE00DA959B /* MixiViewController.m */; };
+		545BB58F1745D39C00DA959B /* MixiJanken.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB4E61744735600DA959B /* MixiJanken.m */; };
+		545BB5911745D39C00DA959B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C2174471BE00DA959B /* UIKit.framework */; };
+		545BB5921745D39C00DA959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C4174471BE00DA959B /* Foundation.framework */; };
+		545BB5931745D39C00DA959B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545BB4C6174471BE00DA959B /* CoreGraphics.framework */; };
+		545BB5941745D39C00DA959B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20884EB60F1E4DC3B4EF6595 /* libPods.a */; };
+		545BB5961745D39C00DA959B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4CB174471BE00DA959B /* InfoPlist.strings */; };
+		545BB5971745D39C00DA959B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D4174471BE00DA959B /* Default.png */; };
+		545BB5981745D39C00DA959B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D6174471BE00DA959B /* Default@2x.png */; };
+		545BB5991745D39C00DA959B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4D8174471BE00DA959B /* Default-568h@2x.png */; };
+		545BB59A1745D39C00DA959B /* MixiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 545BB4DD174471BF00DA959B /* MixiViewController.xib */; };
+		545BB5A41745D90400DA959B /* MixiKIFTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5A31745D90400DA959B /* MixiKIFTestController.m */; };
+		545BB5A71745D98B00DA959B /* KIFTestScenario+MixiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5A61745D98B00DA959B /* KIFTestScenario+MixiAdditions.m */; };
+		545BB5A81745DAA400DA959B /* MixiKIFTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5A31745D90400DA959B /* MixiKIFTestController.m */; };
+		545BB5A91745DAA700DA959B /* KIFTestScenario+MixiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5A61745D98B00DA959B /* KIFTestScenario+MixiAdditions.m */; };
+		545BB5AC1745DE4000DA959B /* KIFTestStep+MixiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5AB1745DE4000DA959B /* KIFTestStep+MixiAdditions.m */; };
+		545BB5AD1745E2DD00DA959B /* KIFTestStep+MixiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 545BB5AB1745DE4000DA959B /* KIFTestStep+MixiAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20884EB60F1E4DC3B4EF6595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		545BB4BF174471BE00DA959B /* janken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = janken.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545BB4C2174471BE00DA959B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		545BB4C4174471BE00DA959B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		545BB4C6174471BE00DA959B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		545BB4CA174471BE00DA959B /* janken-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "janken-Info.plist"; sourceTree = "<group>"; };
+		545BB4CC174471BE00DA959B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		545BB4CE174471BE00DA959B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		545BB4D0174471BE00DA959B /* janken-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "janken-Prefix.pch"; sourceTree = "<group>"; };
+		545BB4D1174471BE00DA959B /* MixiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiAppDelegate.h; sourceTree = "<group>"; };
+		545BB4D2174471BE00DA959B /* MixiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiAppDelegate.m; sourceTree = "<group>"; };
+		545BB4D4174471BE00DA959B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		545BB4D6174471BE00DA959B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		545BB4D8174471BE00DA959B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		545BB4DA174471BE00DA959B /* MixiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixiViewController.h; sourceTree = "<group>"; };
+		545BB4DB174471BE00DA959B /* MixiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiViewController.m; sourceTree = "<group>"; };
+		545BB4DE174471BF00DA959B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MixiViewController.xib; sourceTree = "<group>"; };
+		545BB4E51744735600DA959B /* MixiJanken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiJanken.h; sourceTree = "<group>"; };
+		545BB4E61744735600DA959B /* MixiJanken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiJanken.m; sourceTree = "<group>"; };
+		545BB59F1745D39C00DA959B /* janken KIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "janken KIF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		545BB5A01745D39C00DA959B /* janken copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "janken copy-Info.plist"; path = "/Users/yuichi.takeda/Development/tech-study/ios-study/ios-traning-2013-05/iOSTraining/SampleProjects/11.0/janken-for-kif/janken copy-Info.plist"; sourceTree = "<absolute>"; };
+		545BB5A21745D90400DA959B /* MixiKIFTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiKIFTestController.h; sourceTree = "<group>"; };
+		545BB5A31745D90400DA959B /* MixiKIFTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiKIFTestController.m; sourceTree = "<group>"; };
+		545BB5A51745D98B00DA959B /* KIFTestScenario+MixiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestScenario+MixiAdditions.h"; sourceTree = "<group>"; };
+		545BB5A61745D98B00DA959B /* KIFTestScenario+MixiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestScenario+MixiAdditions.m"; sourceTree = "<group>"; };
+		545BB5AA1745DE4000DA959B /* KIFTestStep+MixiAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestStep+MixiAdditions.h"; sourceTree = "<group>"; };
+		545BB5AB1745DE4000DA959B /* KIFTestStep+MixiAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFTestStep+MixiAdditions.m"; sourceTree = "<group>"; };
+		C32049B1093843F8872A15B0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		545BB4BC174471BE00DA959B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4C3174471BE00DA959B /* UIKit.framework in Frameworks */,
+				545BB4C5174471BE00DA959B /* Foundation.framework in Frameworks */,
+				545BB4C7174471BE00DA959B /* CoreGraphics.framework in Frameworks */,
+				065E55EA2D32451D82785269 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB5901745D39C00DA959B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB5911745D39C00DA959B /* UIKit.framework in Frameworks */,
+				545BB5921745D39C00DA959B /* Foundation.framework in Frameworks */,
+				545BB5931745D39C00DA959B /* CoreGraphics.framework in Frameworks */,
+				545BB5941745D39C00DA959B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		545BB4B6174471BE00DA959B = {
+			isa = PBXGroup;
+			children = (
+				545BB4C8174471BE00DA959B /* janken */,
+				545BB4C1174471BE00DA959B /* Frameworks */,
+				545BB4C0174471BE00DA959B /* Products */,
+				545BB5A11745D7D800DA959B /* KIF Tests */,
+				C32049B1093843F8872A15B0 /* Pods.xcconfig */,
+				545BB5A01745D39C00DA959B /* janken copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		545BB4C0174471BE00DA959B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4BF174471BE00DA959B /* janken.app */,
+				545BB59F1745D39C00DA959B /* janken KIF.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		545BB4C1174471BE00DA959B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4C2174471BE00DA959B /* UIKit.framework */,
+				545BB4C4174471BE00DA959B /* Foundation.framework */,
+				545BB4C6174471BE00DA959B /* CoreGraphics.framework */,
+				20884EB60F1E4DC3B4EF6595 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		545BB4C8174471BE00DA959B /* janken */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4D1174471BE00DA959B /* MixiAppDelegate.h */,
+				545BB4D2174471BE00DA959B /* MixiAppDelegate.m */,
+				545BB4DA174471BE00DA959B /* MixiViewController.h */,
+				545BB4DB174471BE00DA959B /* MixiViewController.m */,
+				545BB4E51744735600DA959B /* MixiJanken.h */,
+				545BB4E61744735600DA959B /* MixiJanken.m */,
+				545BB4DD174471BF00DA959B /* MixiViewController.xib */,
+				545BB4C9174471BE00DA959B /* Supporting Files */,
+			);
+			path = janken;
+			sourceTree = "<group>";
+		};
+		545BB4C9174471BE00DA959B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				545BB4CA174471BE00DA959B /* janken-Info.plist */,
+				545BB4CB174471BE00DA959B /* InfoPlist.strings */,
+				545BB4CE174471BE00DA959B /* main.m */,
+				545BB4D0174471BE00DA959B /* janken-Prefix.pch */,
+				545BB4D4174471BE00DA959B /* Default.png */,
+				545BB4D6174471BE00DA959B /* Default@2x.png */,
+				545BB4D8174471BE00DA959B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		545BB5A11745D7D800DA959B /* KIF Tests */ = {
+			isa = PBXGroup;
+			children = (
+				545BB5A21745D90400DA959B /* MixiKIFTestController.h */,
+				545BB5A31745D90400DA959B /* MixiKIFTestController.m */,
+				545BB5A51745D98B00DA959B /* KIFTestScenario+MixiAdditions.h */,
+				545BB5A61745D98B00DA959B /* KIFTestScenario+MixiAdditions.m */,
+				545BB5AA1745DE4000DA959B /* KIFTestStep+MixiAdditions.h */,
+				545BB5AB1745DE4000DA959B /* KIFTestStep+MixiAdditions.m */,
+			);
+			name = "KIF Tests";
+			path = janken;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		545BB4BE174471BE00DA959B /* janken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545BB4E2174471BF00DA959B /* Build configuration list for PBXNativeTarget "janken" */;
+			buildPhases = (
+				BC716F912C2D4CFAA9DD6864 /* Check Pods Manifest.lock */,
+				545BB4BB174471BE00DA959B /* Sources */,
+				545BB4BC174471BE00DA959B /* Frameworks */,
+				545BB4BD174471BE00DA959B /* Resources */,
+				FCDF1A0ABF5C42F0AFB62C36 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = janken;
+			productName = janken;
+			productReference = 545BB4BF174471BE00DA959B /* janken.app */;
+			productType = "com.apple.product-type.application";
+		};
+		545BB5891745D39C00DA959B /* janken KIF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545BB59C1745D39C00DA959B /* Build configuration list for PBXNativeTarget "janken KIF" */;
+			buildPhases = (
+				545BB58A1745D39C00DA959B /* Check Pods Manifest.lock */,
+				545BB58B1745D39C00DA959B /* Sources */,
+				545BB5901745D39C00DA959B /* Frameworks */,
+				545BB5951745D39C00DA959B /* Resources */,
+				545BB59B1745D39C00DA959B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "janken KIF";
+			productName = janken;
+			productReference = 545BB59F1745D39C00DA959B /* janken KIF.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		545BB4B7174471BE00DA959B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mixi;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "武田 祐一";
+			};
+			buildConfigurationList = 545BB4BA174471BE00DA959B /* Build configuration list for PBXProject "janken" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 545BB4B6174471BE00DA959B;
+			productRefGroup = 545BB4C0174471BE00DA959B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				545BB4BE174471BE00DA959B /* janken */,
+				545BB5891745D39C00DA959B /* janken KIF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		545BB4BD174471BE00DA959B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4CD174471BE00DA959B /* InfoPlist.strings in Resources */,
+				545BB4D5174471BE00DA959B /* Default.png in Resources */,
+				545BB4D7174471BE00DA959B /* Default@2x.png in Resources */,
+				545BB4D9174471BE00DA959B /* Default-568h@2x.png in Resources */,
+				545BB4DF174471BF00DA959B /* MixiViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB5951745D39C00DA959B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB5961745D39C00DA959B /* InfoPlist.strings in Resources */,
+				545BB5971745D39C00DA959B /* Default.png in Resources */,
+				545BB5981745D39C00DA959B /* Default@2x.png in Resources */,
+				545BB5991745D39C00DA959B /* Default-568h@2x.png in Resources */,
+				545BB59A1745D39C00DA959B /* MixiViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		545BB58A1745D39C00DA959B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		545BB59B1745D39C00DA959B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		BC716F912C2D4CFAA9DD6864 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		FCDF1A0ABF5C42F0AFB62C36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		545BB4BB174471BE00DA959B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB4CF174471BE00DA959B /* main.m in Sources */,
+				545BB4D3174471BE00DA959B /* MixiAppDelegate.m in Sources */,
+				545BB4DC174471BE00DA959B /* MixiViewController.m in Sources */,
+				545BB4E71744735600DA959B /* MixiJanken.m in Sources */,
+				545BB5A41745D90400DA959B /* MixiKIFTestController.m in Sources */,
+				545BB5A71745D98B00DA959B /* KIFTestScenario+MixiAdditions.m in Sources */,
+				545BB5AC1745DE4000DA959B /* KIFTestStep+MixiAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545BB58B1745D39C00DA959B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545BB58C1745D39C00DA959B /* main.m in Sources */,
+				545BB58D1745D39C00DA959B /* MixiAppDelegate.m in Sources */,
+				545BB58E1745D39C00DA959B /* MixiViewController.m in Sources */,
+				545BB58F1745D39C00DA959B /* MixiJanken.m in Sources */,
+				545BB5A81745DAA400DA959B /* MixiKIFTestController.m in Sources */,
+				545BB5A91745DAA700DA959B /* KIFTestScenario+MixiAdditions.m in Sources */,
+				545BB5AD1745E2DD00DA959B /* KIFTestStep+MixiAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		545BB4CB174471BE00DA959B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545BB4CC174471BE00DA959B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		545BB4DD174471BF00DA959B /* MixiViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545BB4DE174471BF00DA959B /* en */,
+			);
+			name = MixiViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		545BB4E0174471BF00DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		545BB4E1174471BF00DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		545BB4E3174471BF00DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32049B1093843F8872A15B0 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken/janken-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		545BB4E4174471BF00DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32049B1093843F8872A15B0 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken/janken-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		545BB59D1745D39C00DA959B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32049B1093843F8872A15B0 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken copy-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-all-load",
+				);
+				PRODUCT_NAME = "janken KIF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		545BB59E1745D39C00DA959B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32049B1093843F8872A15B0 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "janken/janken-Prefix.pch";
+				INFOPLIST_FILE = "janken copy-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-all-load",
+				);
+				PRODUCT_NAME = "janken KIF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		545BB4BA174471BE00DA959B /* Build configuration list for PBXProject "janken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB4E0174471BF00DA959B /* Debug */,
+				545BB4E1174471BF00DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545BB4E2174471BF00DA959B /* Build configuration list for PBXNativeTarget "janken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB4E3174471BF00DA959B /* Debug */,
+				545BB4E4174471BF00DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545BB59C1745D39C00DA959B /* Build configuration list for PBXNativeTarget "janken KIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545BB59D1745D39C00DA959B /* Debug */,
+				545BB59E1745D39C00DA959B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 545BB4B7174471BE00DA959B /* Project object */;
+}
