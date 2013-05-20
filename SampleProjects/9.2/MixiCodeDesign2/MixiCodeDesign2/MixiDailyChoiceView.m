@@ -10,7 +10,7 @@
 
 @implementation MixiDailyChoiceView
 
-+(MixiDailyChoiceView *)dailyChoiceView
++(MixiDailyView *)dailyView
 {
     NSArray *topLevelViews = [[NSBundle mainBundle] loadNibNamed:@"MixiDailyChoiceView"
                                                            owner:self

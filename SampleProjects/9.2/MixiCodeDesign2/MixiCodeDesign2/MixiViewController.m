@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _dailyView = [MixiDailyChoiceView dailyChoiceView];
+    _dailyView = [MixiDailyChoiceView dailyView];
     _dailyView.center = self.view.center;
     _dailyView.delegate = self;
     [self.view addSubview:_dailyView];

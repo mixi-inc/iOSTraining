@@ -10,7 +10,6 @@
 
 @interface MixiDailyChoiceView : MixiDailyView
 
-+(MixiDailyChoiceView *)dailyChoiceView;
 - (IBAction)pressYesButton:(id)sender;
 - (IBAction)pressNoButton:(id)sender;
 

@@ -26,6 +26,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
 @property (nonatomic, weak) id delegate;
 
++(MixiDailyView *)dailyView;
 -(IBAction)pressCloseButton:(id)sender;
 
 @end
