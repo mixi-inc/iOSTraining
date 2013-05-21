@@ -96,7 +96,7 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  2. [GHUnit](https://github.com/mixi-inc/iOSTraining/wiki/11.2-GHUnit%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E5%8D%98%E4%BD%93%E3%83%86%E3%82%B9%E3%83%88)
  3. [Kiwi](https://github.com/mixi-inc/iOSTraining/wiki/11.3-Kiwi%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E6%8C%AF%E3%82%8B%E8%88%9E%E3%81%84%E3%83%86%E3%82%B9%E3%83%88)
  4. [KIF](https://github.com/mixi-inc/iOSTraining/wiki/11.4-KIF%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E7%B5%90%E5%90%88%E3%83%86%E3%82%B9%E3%83%88)
-12. iOS User Interface Design
+12. In-App Purchase
 13. 付録
  1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
  2. Tips of Debug
