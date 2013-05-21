@@ -1,0 +1,16 @@
+PODS:
+  - GHUnitIOS (0.5.6)
+  - KIF (0.0.1)
+  - Kiwi (2.1)
+
+DEPENDENCIES:
+  - GHUnitIOS (~> 0.5.5)
+  - KIF
+  - Kiwi
+
+SPEC CHECKSUMS:
+  GHUnitIOS: bf149b2c44084eee2785ce4ac3675c3a699e509d
+  KIF: 26ce47f3f37660ca9bb0b62f9545597e21eca3fc
+  Kiwi: 054ef97d0e50c279b21113a0880a906fa153a7fd
+
+COCOAPODS: 0.19.1
