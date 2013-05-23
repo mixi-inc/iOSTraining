@@ -89,23 +89,31 @@ static NSString *const kMixiStoreProductNonConsumable1ID = @"fuga";
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
-#pragma mark - SKPaymentTransactionOvserverDelegate methods
+#pragma mark - SKPaymentTransactionOvserver methods
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions
 {
     for (SKPaymentTransaction *transaction in transactions){
         switch (transaction.transactionState){
+            // 購入中
             case SKPaymentTransactionStatePurchasing:
                 //do something
                 break;
+
+            // 購入完了
             case SKPaymentTransactionStatePurchased:
                 [self completeTransaction:transaction];
                 break;
+
+            // 購入失敗
             case SKPaymentTransactionStateFailed:
                 [self failedTransaction:transaction];
                 break;
+
+            // リストア完了
             case SKPaymentTransactionStateRestored:
                 [self restoreTransaction:transaction];
                 break;
+                
             default:
                 break;
         }
