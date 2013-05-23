@@ -100,7 +100,6 @@ iOSアプリ開発の基礎知識と実務スキルを身に付けるトレー�
  1. [In-App Purchase](https://github.com/mixi-inc/iOSTraining/wiki/12.1-In-App-Purchase)
 13. 付録
  1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
- 2. Tips of Debug
 
 
 参考資料
