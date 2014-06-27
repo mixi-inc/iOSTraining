@@ -20,7 +20,32 @@
 
     // TODO ここに課題を書き進めていってください
 
-
+    NSArray *data = @[
+                      @{
+                          @"domain": @"mixi.jp",
+                          @"entry": @[
+                                  @"list_voice.pl",
+                                  @"list_diary.pl",
+                                  @"list_mymail_item.pl"
+                                  ]
+                          },
+                      @{
+                          @"domain": @"mmall.jp",
+                          @"entry": @{
+                                  @"path": @"add_diary.pl",
+                                  @"query":
+                                      @[
+                                          @{@"tag_id": @7}
+                                          ]
+                                  }
+                          },
+                      @{
+                          @"domain": @"itunes.apple.com"
+                          }
+                      ];
+    
+    NSLog(@"%@", data);
+    
 }
 
 - (void)didReceiveMemoryWarning
