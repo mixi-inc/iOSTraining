@@ -47,7 +47,7 @@
 /** キューのサイズ **/
 - (NSInteger)size
 {
-    return datas.count;
+    return datas.count - firstIndex;
 }
 
 @end
