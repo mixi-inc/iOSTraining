@@ -53,29 +53,51 @@
     // 課題2 -----------------------------------------------
     // キュー
     TestQueue *queue = [[TestQueue alloc] init];
+    NSLog(@"%d", [queue size]);
     [queue push:@"Queue Data1"];
+    NSLog(@"%d", [queue size]);
     [queue push:@"Queue Data2"];
+    NSLog(@"%d", [queue size]);
     NSLog(@"%@", [queue pop]);
+    NSLog(@"%d", [queue size]);
     [queue push:@"Queue Data3"];
+    NSLog(@"%d", [queue size]);
     [queue push:@"Queue Data4"];
+    NSLog(@"%d", [queue size]);
     NSLog(@"%@", [queue pop]);
+    NSLog(@"%d", [queue size]);
     NSLog(@"%@", [queue pop]);
+    NSLog(@"%d", [queue size]);
     [queue push:@"Queue Data5"];
+    NSLog(@"%d", [queue size]);
     NSLog(@"%@", [queue pop]);
+    NSLog(@"%d", [queue size]);
     NSLog(@"%@", [queue pop]);
+    NSLog(@"%d", [queue size]);
     
     // スタック
     TestStack *stack = [[TestStack alloc] init];
+    NSLog(@"%d", [stack size]);
     [stack push:@"Stack Data1"];
+    NSLog(@"%d", [stack size]);
     [stack push:@"Stack Data2"];
+    NSLog(@"%d", [stack size]);
     NSLog(@"%@", [stack pop]);
+    NSLog(@"%d", [stack size]);
     [stack push:@"Stack Data3"];
+    NSLog(@"%d", [stack size]);
     [stack push:@"Stack Data4"];
+    NSLog(@"%d", [stack size]);
     NSLog(@"%@", [stack pop]);
+    NSLog(@"%d", [stack size]);
     NSLog(@"%@", [stack pop]);
+    NSLog(@"%d", [stack size]);
     [stack push:@"Stack Data5"];
+    NSLog(@"%d", [stack size]);
     NSLog(@"%@", [stack pop]);
+    NSLog(@"%d", [stack size]);
     NSLog(@"%@", [stack pop]);
+    NSLog(@"%d", [stack size]);
     // ----------------------------------------------------
     
 }
