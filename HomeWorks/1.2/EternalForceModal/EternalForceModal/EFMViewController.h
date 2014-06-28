@@ -10,6 +10,6 @@
 
 #import "EFMSecondViewController.h"
 
-@interface EFMViewController : UIViewController // TODO EMFSecondViewControllerのdelegateを準拠する
+@interface EFMViewController : UIViewController <EMFSecondViewControllerDelegate> // TODO EMFSecondViewControllerのdelegateを準拠する
 
 @end
