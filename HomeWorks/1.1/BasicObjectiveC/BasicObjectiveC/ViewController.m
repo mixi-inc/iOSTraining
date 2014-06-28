@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TestQueue.h"
+#import "TestStack.h"
 
 @interface ViewController ()
 
@@ -20,6 +22,7 @@
 
     // TODO ここに課題を書き進めていってください
 
+    // 課題1 -----------------------------------------------
     NSArray *data = @[
                       @{
                           @"domain": @"mixi.jp",
@@ -45,6 +48,35 @@
                       ];
     
     NSLog(@"%@", data);
+    // ----------------------------------------------------
+    
+    // 課題2 -----------------------------------------------
+    // キュー
+    TestQueue *queue = [[TestQueue alloc] init];
+    [queue push:@"Queue Data1"];
+    [queue push:@"Queue Data2"];
+    NSLog(@"%@", [queue pop]);
+    [queue push:@"Queue Data3"];
+    [queue push:@"Queue Data4"];
+    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue pop]);
+    [queue push:@"Queue Data5"];
+    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue pop]);
+    
+    // スタック
+    TestStack *stack = [[TestStack alloc] init];
+    [stack push:@"Stack Data1"];
+    [stack push:@"Stack Data2"];
+    NSLog(@"%@", [stack pop]);
+    [stack push:@"Stack Data3"];
+    [stack push:@"Stack Data4"];
+    NSLog(@"%@", [stack pop]);
+    NSLog(@"%@", [stack pop]);
+    [stack push:@"Stack Data5"];
+    NSLog(@"%@", [stack pop]);
+    NSLog(@"%@", [stack pop]);
+    // ----------------------------------------------------
     
 }
 
