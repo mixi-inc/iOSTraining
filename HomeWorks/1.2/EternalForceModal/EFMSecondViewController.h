@@ -13,6 +13,7 @@
 @protocol EMFSecondViewControllerDelegate <NSObject>
 
 // ここにDelegateメソッドの定義
+- (void)closeView:(UIViewController*)sender;
 
 @end
 
