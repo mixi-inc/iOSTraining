@@ -11,7 +11,7 @@
 @interface TestQueue ()
 {
     // データ列
-    NSMutableArray *datas;
+    NSMutableArray *data;
     
     // キューの先頭のインデックス
     NSInteger firstIndex;
@@ -25,7 +25,7 @@
     self = [super init];
     
     if (self) {
-        datas = [[NSMutableArray alloc] initWithCapacity:8];
+        data = [[NSMutableArray alloc] initWithCapacity:8];
         firstIndex = 0;
     }
     
@@ -35,19 +35,19 @@
 /** エンキュー **/
 - (void)push:(id)object
 {
-    [datas addObject:object];
+    [data addObject:object];
 }
 
 /** デキュー **/
 - (id)pop
 {
-    return datas[firstIndex++];
+    return data[firstIndex++];
 }
 
 /** キューのサイズ **/
 - (NSInteger)size
 {
-    return datas.count - firstIndex;
+    return data.count - firstIndex;
 }
 
 @end
