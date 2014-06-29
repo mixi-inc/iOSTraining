@@ -33,13 +33,13 @@
 }
 
 /** エンキュー **/
-- (void)push:(id)object
+- (void)enqueue:(id)object
 {
     [data addObject:object];
 }
 
 /** デキュー **/
-- (id)pop
+- (id)dequeue
 {
     return data[firstIndex++];
 }

@@ -12,10 +12,10 @@
 @interface TestQueue : NSObject
 
 /** エンキュー **/
-- (void)push:(id)object;
+- (void)enqueue:(id)object;
 
 /** デキュー **/
-- (id)pop;
+- (id)dequeue;
 
 /** キューのサイズ **/
 - (NSInteger)size;
