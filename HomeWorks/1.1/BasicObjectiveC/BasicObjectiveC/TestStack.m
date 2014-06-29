@@ -12,9 +12,6 @@
 {
     // データ列
     NSMutableArray *data;
-    
-    // スタックの最上部
-    NSInteger topIndex;
 }
 
 @end
@@ -27,7 +24,6 @@
     
     if (self) {
         data = [[NSMutableArray alloc] initWithCapacity:8];
-        topIndex = -1;
     }
     
     return self;
@@ -36,24 +32,23 @@
 /** プッシュ **/
 - (void)push:(id)object
 {
-    if ((++topIndex) < data.count) {
-        data[topIndex] = object;
-    }
-    else {
-        [data addObject:object];
-    }
+    [data addObject:object];
 }
 
 /** ポップ **/
 - (id)pop
 {
-    return data[topIndex--];
+    id top = [data lastObject];
+    
+    [data removeLastObject];
+    
+    return top;
 }
 
 /** スタックのサイズ **/
 - (NSInteger)size
 {
-    return topIndex + 1;
+    return data.count;
 }
 
 @end
