@@ -12,9 +12,6 @@
 {
     // データ列
     NSMutableArray *data;
-    
-    // キューの先頭のインデックス
-    NSInteger firstIndex;
 }
 @end
 
@@ -26,7 +23,6 @@
     
     if (self) {
         data = [[NSMutableArray alloc] initWithCapacity:8];
-        firstIndex = 0;
     }
     
     return self;
@@ -41,13 +37,17 @@
 /** デキュー **/
 - (id)dequeue
 {
-    return data[firstIndex++];
+    id first = data.firstObject;
+    
+    [data removeObjectAtIndex:0];
+    
+    return first;
 }
 
 /** キューのサイズ **/
 - (NSInteger)size
 {
-    return data.count - firstIndex;
+    return data.count;
 }
 
 @end
