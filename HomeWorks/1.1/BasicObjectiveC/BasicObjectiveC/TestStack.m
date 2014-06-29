@@ -11,7 +11,7 @@
 @interface TestStack ()
 {
     // データ列
-    NSMutableArray *datas;
+    NSMutableArray *data;
     
     // スタックの最上部
     NSInteger topIndex;
@@ -26,7 +26,7 @@
     self = [super init];
     
     if (self) {
-        datas = [[NSMutableArray alloc] initWithCapacity:8];
+        data = [[NSMutableArray alloc] initWithCapacity:8];
         topIndex = -1;
     }
     
@@ -36,18 +36,18 @@
 /** プッシュ **/
 - (void)push:(id)object
 {
-    if ((++topIndex) < datas.count) {
-        datas[topIndex] = object;
+    if ((++topIndex) < data.count) {
+        data[topIndex] = object;
     }
     else {
-        [datas addObject:object];
+        [data addObject:object];
     }
 }
 
 /** ポップ **/
 - (id)pop
 {
-    return datas[topIndex--];
+    return data[topIndex--];
 }
 
 /** スタックのサイズ **/
