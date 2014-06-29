@@ -54,25 +54,25 @@
     // キュー
     TestQueue *queue = [[TestQueue alloc] init];
     NSLog(@"%d", [queue size]);
-    [queue push:@"Queue Data1"];
+    [queue enqueue:@"Queue Data1"];
     NSLog(@"%d", [queue size]);
-    [queue push:@"Queue Data2"];
+    [queue enqueue:@"Queue Data2"];
     NSLog(@"%d", [queue size]);
-    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue dequeue]);
     NSLog(@"%d", [queue size]);
-    [queue push:@"Queue Data3"];
+    [queue enqueue:@"Queue Data3"];
     NSLog(@"%d", [queue size]);
-    [queue push:@"Queue Data4"];
+    [queue enqueue:@"Queue Data4"];
     NSLog(@"%d", [queue size]);
-    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue dequeue]);
     NSLog(@"%d", [queue size]);
-    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue dequeue]);
     NSLog(@"%d", [queue size]);
-    [queue push:@"Queue Data5"];
+    [queue enqueue:@"Queue Data5"];
     NSLog(@"%d", [queue size]);
-    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue dequeue]);
     NSLog(@"%d", [queue size]);
-    NSLog(@"%@", [queue pop]);
+    NSLog(@"%@", [queue dequeue]);
     NSLog(@"%d", [queue size]);
     
     // スタック
