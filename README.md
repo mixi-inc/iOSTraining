@@ -1,6 +1,8 @@
 iOS Development Training Course Repository
 ======
 
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/mixi-inc/iOSTraining?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 iOS アプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
 
 前提
@@ -32,7 +34,7 @@ iOS アプリ開発の基礎知識と実務スキルを身に付けるトレー�
 
 iOSアプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
 
-**注意** : 
+**注意** :
 - 本カリキュラムは iPhone simulator で確認できる範囲のものになっております。
 - サンプルコード、サンプルプロジェクトはすべて iOS5 以降、ARC で動作するものとなっております。
 - カリキュラムは予告無く変更される場合があります。
