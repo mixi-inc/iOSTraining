@@ -24,6 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonTapped:(id)sender {
+    [self.delegate secondViewControllerButtonTapped];
+}
+
 /*
 #pragma mark - Navigation
 

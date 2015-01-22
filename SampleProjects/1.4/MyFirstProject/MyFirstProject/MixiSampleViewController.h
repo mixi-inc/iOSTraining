@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MySecondViewController.h"
 
-@interface MixiSampleViewController : UIViewController
+@interface MixiSampleViewController : UIViewController <MySecondViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *label;
 @end

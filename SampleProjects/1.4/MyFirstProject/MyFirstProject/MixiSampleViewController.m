@@ -36,7 +36,13 @@
     // [self performSegueWithIdentifier:@"presentMySecondViewController" sender:self];
 
     MySecondViewController *secondViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MySecondViewController"];
+    secondViewController.delegate = self;
     [self presentViewController:secondViewController animated:YES completion:nil];
+}
+
+- (void)secondViewControllerButtonTapped
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Navigation
