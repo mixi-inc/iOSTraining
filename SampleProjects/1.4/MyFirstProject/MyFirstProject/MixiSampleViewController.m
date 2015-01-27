@@ -58,4 +58,9 @@
 
 }
 
+- (IBAction)unwindToSampleViewController:(UIStoryboardSegue *)segue
+{
+    // segue実行時にここが実行される
+}
+
 @end

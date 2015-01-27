@@ -78,6 +78,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAe-uT-woN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XXT-HF-yvq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="338" y="1179"/>
         </scene>
@@ -106,6 +107,15 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonTapped:" destination="crx-H8-8iJ" eventType="touchUpInside" id="3ll-6a-MKk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpn-6q-B7z">
+                                <rect key="frame" x="16" y="87" width="100" height="30"/>
+                                <state key="normal" title="Unwind Segue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XXT-HF-yvq" kind="unwind" unwindAction="unwindToSampleViewController:" id="Mw2-wH-fgA"/>
                                 </connections>
                             </button>
                         </subviews>
