@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA28B773171F994100B1D982 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA28B772171F994100B1D982 /* QuartzCore.framework */; };
 		DAC572A5171D05E600E434A0 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAC572A0171D05E600E434A0 /* 0.jpg */; };
 		DAC572A6171D05E600E434A0 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAC572A1171D05E600E434A0 /* 1.jpg */; };
 		DAC572A7171D05E600E434A0 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAC572A2171D05E600E434A0 /* 2.jpg */; };
@@ -32,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA28B772171F994100B1D982 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DAC572A0171D05E600E434A0 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
 		DAC572A1171D05E600E434A0 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		DAC572A2171D05E600E434A0 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA28B773171F994100B1D982 /* QuartzCore.framework in Frameworks */,
 				DAD37290171C3B0F00DF0A95 /* UIKit.framework in Frameworks */,
 				DAD37292171C3B0F00DF0A95 /* Foundation.framework in Frameworks */,
 				DAD37294171C3B0F00DF0A95 /* CoreGraphics.framework in Frameworks */,
@@ -104,7 +101,6 @@
 		DAD37283171C3B0F00DF0A95 = {
 			isa = PBXGroup;
 			children = (
-				DA28B772171F994100B1D982 /* QuartzCore.framework */,
 				DAD37295171C3B0F00DF0A95 /* NiceModalView */,
 				DAD3728E171C3B0F00DF0A95 /* Frameworks */,
 				DAD3728D171C3B0F00DF0A95 /* Products */,
