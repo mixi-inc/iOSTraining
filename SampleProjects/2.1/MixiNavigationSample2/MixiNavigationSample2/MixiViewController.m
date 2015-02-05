@@ -10,10 +10,24 @@
 
 @implementation MixiViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.title = [NSString stringWithFormat:@"%ld", self.navigationController.viewControllers.count];
+
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"pop" style:UIBarButtonItemStylePlain target:self action:@selector(pressPopButton)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+}
+
 - (IBAction)pushButtonTapped:(id)sender
 {
     MixiViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MixiViewController"];
     [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (void)pressPopButton
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

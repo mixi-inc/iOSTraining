@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = [NSString stringWithFormat:@"hoge%ld", self.navigationController.viewControllers.count];
 }
 
 - (void)viewDidAppear:(BOOL)animated
