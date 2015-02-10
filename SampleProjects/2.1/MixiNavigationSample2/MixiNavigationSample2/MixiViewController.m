@@ -14,9 +14,6 @@
 {
     [super viewDidLoad];
     self.title = [NSString stringWithFormat:@"%ld", self.navigationController.viewControllers.count];
-
-    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"pop" style:UIBarButtonItemStylePlain target:self action:@selector(pressPopButton)];
-    self.navigationItem.rightBarButtonItem = rightButton;
 }
 
 - (IBAction)pushButtonTapped:(id)sender
