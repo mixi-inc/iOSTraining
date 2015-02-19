@@ -40,6 +40,6 @@
 
 - (IBAction)pressButton:(UIButton *)sender
 {
-    NSLog(@"%d", sender.tag);
+    NSLog(@"%ld", (long)sender.tag);
 }
 @end
