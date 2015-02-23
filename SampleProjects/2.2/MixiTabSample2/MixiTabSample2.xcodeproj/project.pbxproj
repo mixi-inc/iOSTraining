@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540893B11A9B2F6D00B3220A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540893B01A9B2F6D00B3220A /* main.m */; };
+		540893B41A9B2F6D00B3220A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540893B31A9B2F6D00B3220A /* AppDelegate.m */; };
+		540893B71A9B2F6D00B3220A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540893B61A9B2F6D00B3220A /* FirstViewController.m */; };
+		540893BA1A9B2F6D00B3220A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540893B91A9B2F6D00B3220A /* SecondViewController.m */; };
+		540893BD1A9B2F6D00B3220A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540893BB1A9B2F6D00B3220A /* Main.storyboard */; };
+		540893BF1A9B2F6D00B3220A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540893BE1A9B2F6D00B3220A /* Images.xcassets */; };
+		540893C21A9B2F6D00B3220A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540893C01A9B2F6D00B3220A /* LaunchScreen.xib */; };
+		540893CE1A9B2F6D00B3220A /* MixiTabSample2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540893CD1A9B2F6D00B3220A /* MixiTabSample2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540893C81A9B2F6D00B3220A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540893A31A9B2F6D00B3220A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540893AA1A9B2F6D00B3220A;
+			remoteInfo = MixiTabSample2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540893AB1A9B2F6D00B3220A /* MixiTabSample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixiTabSample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540893AF1A9B2F6D00B3220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540893B01A9B2F6D00B3220A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540893B21A9B2F6D00B3220A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		540893B31A9B2F6D00B3220A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		540893B51A9B2F6D00B3220A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		540893B61A9B2F6D00B3220A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		540893B81A9B2F6D00B3220A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		540893B91A9B2F6D00B3220A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		540893BC1A9B2F6D00B3220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		540893BE1A9B2F6D00B3220A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		540893C11A9B2F6D00B3220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		540893C71A9B2F6D00B3220A /* MixiTabSample2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixiTabSample2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540893CC1A9B2F6D00B3220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540893CD1A9B2F6D00B3220A /* MixiTabSample2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixiTabSample2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540893A81A9B2F6D00B3220A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540893C41A9B2F6D00B3220A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540893A21A9B2F6D00B3220A = {
+			isa = PBXGroup;
+			children = (
+				540893AD1A9B2F6D00B3220A /* MixiTabSample2 */,
+				540893CA1A9B2F6D00B3220A /* MixiTabSample2Tests */,
+				540893AC1A9B2F6D00B3220A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540893AC1A9B2F6D00B3220A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540893AB1A9B2F6D00B3220A /* MixiTabSample2.app */,
+				540893C71A9B2F6D00B3220A /* MixiTabSample2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540893AD1A9B2F6D00B3220A /* MixiTabSample2 */ = {
+			isa = PBXGroup;
+			children = (
+				540893B21A9B2F6D00B3220A /* AppDelegate.h */,
+				540893B31A9B2F6D00B3220A /* AppDelegate.m */,
+				540893B51A9B2F6D00B3220A /* FirstViewController.h */,
+				540893B61A9B2F6D00B3220A /* FirstViewController.m */,
+				540893B81A9B2F6D00B3220A /* SecondViewController.h */,
+				540893B91A9B2F6D00B3220A /* SecondViewController.m */,
+				540893BB1A9B2F6D00B3220A /* Main.storyboard */,
+				540893BE1A9B2F6D00B3220A /* Images.xcassets */,
+				540893C01A9B2F6D00B3220A /* LaunchScreen.xib */,
+				540893AE1A9B2F6D00B3220A /* Supporting Files */,
+			);
+			path = MixiTabSample2;
+			sourceTree = "<group>";
+		};
+		540893AE1A9B2F6D00B3220A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540893AF1A9B2F6D00B3220A /* Info.plist */,
+				540893B01A9B2F6D00B3220A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540893CA1A9B2F6D00B3220A /* MixiTabSample2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				540893CD1A9B2F6D00B3220A /* MixiTabSample2Tests.m */,
+				540893CB1A9B2F6D00B3220A /* Supporting Files */,
+			);
+			path = MixiTabSample2Tests;
+			sourceTree = "<group>";
+		};
+		540893CB1A9B2F6D00B3220A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540893CC1A9B2F6D00B3220A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540893AA1A9B2F6D00B3220A /* MixiTabSample2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540893D11A9B2F6D00B3220A /* Build configuration list for PBXNativeTarget "MixiTabSample2" */;
+			buildPhases = (
+				540893A71A9B2F6D00B3220A /* Sources */,
+				540893A81A9B2F6D00B3220A /* Frameworks */,
+				540893A91A9B2F6D00B3220A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixiTabSample2;
+			productName = MixiTabSample2;
+			productReference = 540893AB1A9B2F6D00B3220A /* MixiTabSample2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540893C61A9B2F6D00B3220A /* MixiTabSample2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540893D41A9B2F6D00B3220A /* Build configuration list for PBXNativeTarget "MixiTabSample2Tests" */;
+			buildPhases = (
+				540893C31A9B2F6D00B3220A /* Sources */,
+				540893C41A9B2F6D00B3220A /* Frameworks */,
+				540893C51A9B2F6D00B3220A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540893C91A9B2F6D00B3220A /* PBXTargetDependency */,
+			);
+			name = MixiTabSample2Tests;
+			productName = MixiTabSample2Tests;
+			productReference = 540893C71A9B2F6D00B3220A /* MixiTabSample2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540893A31A9B2F6D00B3220A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "mixi, Inc";
+				TargetAttributes = {
+					540893AA1A9B2F6D00B3220A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					540893C61A9B2F6D00B3220A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 540893AA1A9B2F6D00B3220A;
+					};
+				};
+			};
+			buildConfigurationList = 540893A61A9B2F6D00B3220A /* Build configuration list for PBXProject "MixiTabSample2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 540893A21A9B2F6D00B3220A;
+			productRefGroup = 540893AC1A9B2F6D00B3220A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540893AA1A9B2F6D00B3220A /* MixiTabSample2 */,
+				540893C61A9B2F6D00B3220A /* MixiTabSample2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540893A91A9B2F6D00B3220A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540893BD1A9B2F6D00B3220A /* Main.storyboard in Resources */,
+				540893C21A9B2F6D00B3220A /* LaunchScreen.xib in Resources */,
+				540893BF1A9B2F6D00B3220A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540893C51A9B2F6D00B3220A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540893A71A9B2F6D00B3220A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540893BA1A9B2F6D00B3220A /* SecondViewController.m in Sources */,
+				540893B41A9B2F6D00B3220A /* AppDelegate.m in Sources */,
+				540893B71A9B2F6D00B3220A /* FirstViewController.m in Sources */,
+				540893B11A9B2F6D00B3220A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540893C31A9B2F6D00B3220A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540893CE1A9B2F6D00B3220A /* MixiTabSample2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540893C91A9B2F6D00B3220A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540893AA1A9B2F6D00B3220A /* MixiTabSample2 */;
+			targetProxy = 540893C81A9B2F6D00B3220A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540893BB1A9B2F6D00B3220A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540893BC1A9B2F6D00B3220A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		540893C01A9B2F6D00B3220A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540893C11A9B2F6D00B3220A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540893CF1A9B2F6D00B3220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		540893D01A9B2F6D00B3220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540893D21A9B2F6D00B3220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MixiTabSample2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		540893D31A9B2F6D00B3220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MixiTabSample2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		540893D51A9B2F6D00B3220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixiTabSample2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixiTabSample2.app/MixiTabSample2";
+			};
+			name = Debug;
+		};
+		540893D61A9B2F6D00B3220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixiTabSample2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixiTabSample2.app/MixiTabSample2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540893A61A9B2F6D00B3220A /* Build configuration list for PBXProject "MixiTabSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540893CF1A9B2F6D00B3220A /* Debug */,
+				540893D01A9B2F6D00B3220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540893D11A9B2F6D00B3220A /* Build configuration list for PBXNativeTarget "MixiTabSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540893D21A9B2F6D00B3220A /* Debug */,
+				540893D31A9B2F6D00B3220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		540893D41A9B2F6D00B3220A /* Build configuration list for PBXNativeTarget "MixiTabSample2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540893D51A9B2F6D00B3220A /* Debug */,
+				540893D61A9B2F6D00B3220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540893A31A9B2F6D00B3220A /* Project object */;
+}
