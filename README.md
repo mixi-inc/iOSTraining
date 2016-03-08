@@ -1,8 +1,6 @@
 iOS Development Training Course Repository
 ======
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/mixi-inc/iOSTraining?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 iOS アプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
 
 前提
