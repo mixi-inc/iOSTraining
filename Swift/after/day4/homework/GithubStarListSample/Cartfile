@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire"
+github "SwiftyJSON/SwiftyJSON"
+github "onevcat/Kingfisher"

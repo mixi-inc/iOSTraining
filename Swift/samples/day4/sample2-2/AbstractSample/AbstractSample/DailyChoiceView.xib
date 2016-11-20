@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DailyChoiceView" customModule="AbstractSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf3-6B-bmq">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Zf3-6B-bmq" secondAttribute="height" multiplier="1:1" id="wYz-RN-CgT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <state key="normal" title="✗"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="maK-Zc-E8x"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQm-uM-MXl">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/11/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5V-hX-3Ft">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-sw-0dX">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWA-xo-xrB">
+                            <state key="normal" title="Yes"/>
+                            <connections>
+                                <action selector="yesButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="N9U-2a-TrA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbq-6h-P7G">
+                            <state key="normal" title="No"/>
+                            <connections>
+                                <action selector="noButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="6Lx-pB-2qX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HQm-uM-MXl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="JEU-NR-wNM"/>
+                <constraint firstAttribute="bottom" secondItem="v5V-hX-3Ft" secondAttribute="bottom" constant="12" id="K3G-b1-tVK"/>
+                <constraint firstItem="Zf3-6B-bmq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HQm-uM-MXl" secondAttribute="trailing" constant="16" id="UVO-nx-JIY"/>
+                <constraint firstItem="1Kt-sw-0dX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VW0-dL-O1L"/>
+                <constraint firstItem="Zf3-6B-bmq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cPf-vr-ud1"/>
+                <constraint firstItem="HQm-uM-MXl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="fAG-ZR-wTH"/>
+                <constraint firstAttribute="trailing" secondItem="Zf3-6B-bmq" secondAttribute="trailing" id="gp1-b5-JnT"/>
+                <constraint firstAttribute="trailing" secondItem="v5V-hX-3Ft" secondAttribute="trailing" constant="16" id="kCa-sW-1sj"/>
+                <constraint firstItem="1Kt-sw-0dX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rkH-ab-ZEa"/>
+                <constraint firstItem="v5V-hX-3Ft" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rnF-5C-OCi"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeButton" destination="Zf3-6B-bmq" id="TXg-m0-HLL"/>
+                <outlet property="dateLabel" destination="v5V-hX-3Ft" id="YMA-mC-GDF"/>
+                <outlet property="titleLabel" destination="HQm-uM-MXl" id="CGE-7z-bHw"/>
+            </connections>
+        </view>
+    </objects>
+</document>

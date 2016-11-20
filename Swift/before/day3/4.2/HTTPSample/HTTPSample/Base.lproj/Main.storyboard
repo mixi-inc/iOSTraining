@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HTTPSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="user name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f12-M8-FOb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bDs-37-72w"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBS-Uu-qHJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="cdo-DF-Qxf"/>
+                                    <constraint firstAttribute="height" constant="30" id="rr1-zo-Qak"/>
+                                </constraints>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfr-Fi-VGg"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CW7-aw-hzy">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WBS-Uu-qHJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="1Fd-2X-rq9"/>
+                            <constraint firstAttribute="trailing" secondItem="WBS-Uu-qHJ" secondAttribute="trailing" constant="10" id="APk-Pw-jwK"/>
+                            <constraint firstItem="CW7-aw-hzy" firstAttribute="top" secondItem="WBS-Uu-qHJ" secondAttribute="bottom" constant="20" id="IC1-SP-2IW"/>
+                            <constraint firstAttribute="trailing" secondItem="CW7-aw-hzy" secondAttribute="trailing" constant="20" id="Klz-2k-loS"/>
+                            <constraint firstItem="WBS-Uu-qHJ" firstAttribute="leading" secondItem="f12-M8-FOb" secondAttribute="trailing" constant="10" id="MIo-Uz-SxO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CW7-aw-hzy" secondAttribute="bottom" constant="20" id="WEx-gK-vVc"/>
+                            <constraint firstItem="f12-M8-FOb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="kxq-eW-eeq"/>
+                            <constraint firstItem="f12-M8-FOb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s1j-We-lCv"/>
+                            <constraint firstItem="CW7-aw-hzy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="uku-3s-1uU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="f12-M8-FOb" id="VzD-zp-bhQ"/>
+                        <outlet property="textView" destination="CW7-aw-hzy" id="YNF-KW-kOJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </scene>
+    </scenes>
+</document>
