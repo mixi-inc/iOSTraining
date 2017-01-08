@@ -478,7 +478,7 @@ setterを実装すると、値を保持できるpropertyでなくなります。
 
 ```swift
 struct Stack<T> {
-    private var items: [T] = []
+    fileprivate var items: [T] = []
     mutating func push(item: T) {
         items.append(item)
     }
@@ -529,9 +529,9 @@ let gender = Gender(rawValue: "man")
 型を指定せずに使うこともできます。
 
 ```swift
-enum Fluit {
-    case Apple
-    case Orange
+enum Fruit {
+    case apple
+    case orange
 }
 ```
 
@@ -630,14 +630,14 @@ cat.bark()
 ## closure
 
 ```swift
-let 変数名: (引数:引数の型) -> (戻り値の型) = { (引数:引数の型) -> (戻り値の型) in
+let 変数名: (引数の型) -> (戻り値の型) = { (引数:引数の型) -> (戻り値の型) in
     // 処理
     return 戻り値
 }
 ```
 
 ```swift
-let addFunc: (a: Int, b: Int) -> Int = { (a: Int, b: Int) -> Int in
+let addFunc: (Int,Int) -> Int = { (a: Int, b: Int) -> Int in
     return a + b
 }
 let result = addFunc(1, 2)
@@ -647,7 +647,7 @@ print(result)  // 3
 ちなみに引数も戻り値もない場合は下記のように書きます。
 
 ```swift
-let simpleClosure = { () -> () in
+let simpleClosure = { () -> Void in
     let a = 1 + 1
     print(a) // 2
 }
@@ -750,17 +750,17 @@ for i in stride(from: 0, through: 10, by: 2) {
 また`for in where`を使うことでも条件に当てはまる値の場合のみ処理を行います。
 
 ```swift
-enum Fluit {
-    case Apple, Orange
+enum Fruit {
+    case apple, orange
 }
 
-let fluits: [Fluit] = [.Apple, .Orange, .Apple, .Orange]
+let fruits: [Fruit] = [.Apple, .Orange, .Apple, .Orange]
 //Appleのときのみ処理を行う
-for case .Apple in fluits {
+for case .Apple in fruits {
     print("りんごです")
 }
 //Appleのときのみ処理を行う
-for fluit in fluits where fluit == .Apple {
+for fruit in fruits where fruit == .Apple {
     print("りんごです")
 }
 ```
@@ -783,12 +783,12 @@ default:
 ```
 
 ```swift
-enum Fluit {
+enum Fruit {
     case apple
     case orange
 }
 
-let value: Fluit = .apple
+let value: Fruit = .apple
 switch value {
 case .apple:
     print("りんごです")
