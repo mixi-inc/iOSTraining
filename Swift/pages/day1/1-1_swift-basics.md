@@ -754,13 +754,13 @@ enum Fruit {
     case apple, orange
 }
 
-let fruits: [Fruit] = [.Apple, .Orange, .Apple, .Orange]
+let fruits: [Fruit] = [.apple, .orange, .apple, .orange]
 //Appleのときのみ処理を行う
-for case .Apple in fruits {
+for case .apple in fruits {
     print("りんごです")
 }
 //Appleのときのみ処理を行う
-for fruit in fruits where fruit == .Apple {
+for fruit in fruits where fruit == .apple {
     print("りんごです")
 }
 ```
