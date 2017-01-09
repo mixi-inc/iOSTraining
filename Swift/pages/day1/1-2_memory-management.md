@@ -22,15 +22,15 @@ ARC では上記の retain, release はコンパイラが自動で補完して�
 
 ## 強参照
 
-参照先のオブジェクトのオーナーシップを持つ。自分がそのオブジェクトの参照を無くすまで確実に参照することができる。デフォルトこの設定
+参照先のオブジェクトのオーナーシップを持っています。自分がそのオブジェクトの参照を無くすまで確実に参照することができます。swif3では変数を宣言するとデフォルトでは強参照として宣言されます。
 
 ## 弱参照
 
-参照先のオブジェクトのオーナーシップを持たない。そのオブジェクトが破棄されたら参照できなくなる。delegate や blocks 使うときに主に使用
+変数宣言時にweakを付けると弱参照として設定されます。弱参照は参照先のオブジェクトのオーナーシップを持ちません。そのオブジェクトが破棄されると参照できなくなります。delegate や blocks などの利用時に登場する事が多いです。
 
 # 循環参照
 
-二つのオブジェクト間で相互に強参照を持つと循環参照が起き、解放されないオブジェクトがうまれる。
+二つのオブジェクト間で相互に強参照を持つと循環参照が起き、解放されないオブジェクトが生まれてしまいます。
 
 ![circular_reference](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/1.2/circular_reference.png)
 
@@ -41,22 +41,30 @@ ARC では上記の retain, release はコンパイラが自動で補完して�
 # 循環参照の例
 
 ```swift
-//ParentObjectのインスタンスへの強参照をparentObjが所持
-let parentObj: ParentObject = ParentObject()
+// ParentObjectのインスタンスへの強参照をparentObjが所持
+var parentObj: ParentObject? = ParentObject()
 
-//ChildObjectのインスタンスへの強参照をchildObjが所持
-let childObj: ChildObject = ChildObject()
+// ChildObjectのインスタンスへの強参照をchildObjが所持
+var childObj: ChildObject? = ChildObject()
 
-//parentObjのインスタンス変数がchildObjへの強参照を保持
-parentObj.object = childObj
+// parentObjのインスタンス変数がchildObjへの強参照を保持
+parentObj?.object = childObj
 //childObjのインスタンス変数がparentObjへの強参照を保持
-childObj.object = parentObj
+childObj?.object = parentObj
 
-//parentObjがnilになるので、parentObjがParentObjectのインスタンスへの参照を解除（解放）
-//childObjがnilになるので、、childObjがChildObjectのインスタンスを解放
+// parentObj.objectが弱参照の場合:
+// parentObjにnilを代入すると、parentObjがParentObjectのインスタンスへの参照を解除（解放）
+// childObjがnilになるので、childObjがChildObjectのインスタンスを解放
+parentObj = nil
 
-//parentObj.objectがChildObjectのインスタンスの強参照を保持
-//childObj.objectがParentObjectのインスタンスの強参照を保持
+
+// parentObj.objectが弱参照の場合:
+// parentObjにnilを代入しても、childObj.objectがParentObjectのインスタンスの強参照を保持
+parentObj = nil
 ```
+
+# 課題
+
+実際に強参照と弱参照でどのように参照の流れが変化するかを確かめてみましょう。
 
 [samples/day1/sample1-2/LeakSample](../../samples/day1/sample1-2)
