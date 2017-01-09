@@ -1,12 +1,10 @@
-//: Playground - noun: a place where people can play
-
 import UIKit
 
 class ParentObject {
     var object: AnyObject?
     
     deinit {
-        print(type(of: self))
+        print("ParentObject is released")
     }
 }
 
@@ -15,27 +13,33 @@ class ChildObject {
     weak var object: AnyObject?
     
     deinit {
-        print(type(of: self))
+        print("ChildObject is released")
     }
 }
 
 func main() {
     //ParentObjectのインスタンスへの強参照をparentObjが所持
-    let parentObj: ParentObject = ParentObject()
+    var parentObj: ParentObject? = ParentObject()
 
     //ChildObjectのインスタンスへの強参照をchildObjが所持
-    let childObj: ChildObject = ChildObject()
+    var childObj: ChildObject? = ChildObject()
 
     //parentObjのインスタンス変数がchildObjへの強参照を保持
-    parentObj.object = childObj
+    parentObj?.object = childObj
     //childObjのインスタンス変数がparentObjへの強参照を保持
-    childObj.object = parentObj
-        
+    childObj?.object = parentObj
+
     //parentObjがnilになるので、parentObjがParentObjectのインスタンスへの参照を解除（解放）
     //childObjがnilになるので、、childObjがChildObjectのインスタンスを解放
+    print("---- release parentObj ----")
+    parentObj = nil
+    print("parentObj is \(parentObj)")
+    print("childObj is \(childObj)")
+    print("childObj?.object is \(childObj?.object)")
     
-    //parentObj.objectがChildObjectのインスタンスの強参照を保持
-    //childObj.objectがParentObjectのインスタンスの強参照を保持
+    print("---- release childObj ----")
+    childObj = nil
+    print("childObj is \(childObj)")
 }
 
 main()
