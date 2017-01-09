@@ -4,7 +4,7 @@ class ParentObject {
     var object: AnyObject?
     
     deinit {
-        print("ParentObject is released")
+        print("ParentObject: released")
     }
 }
 
@@ -13,7 +13,7 @@ class ChildObject {
     weak var object: AnyObject?
     
     deinit {
-        print("ChildObject is released")
+        print("ChildObject: released")
     }
 }
 
