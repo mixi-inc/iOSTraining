@@ -44,7 +44,7 @@ xibはUIViewやUIViewControllerのパーツや画面単位でのUIをGUIを用�
 
 まず、新規クラスファイルを生成します。クラス名はここではSampleViewControllerとします。
 
-1. `command + n`あるいはメニューの`File → New → File`と選んで新しいファイルを作成します
+1. `command + n`あるいはメニューの`File → New → File`と選んで新しいファイルを作成します
 * `Cocoa Touch Class`を選択
 * Class **SampleViewController** , Subclass of **UIViewController**, Also create XIB Fileのチェックは**外します**
 * `Next → Create` とすると新規ファイル`SampleViewController.swift`が作成されます
@@ -162,7 +162,7 @@ labelプロパティが正しく紐付けができていれば、実行時にラ
 ### IBAction
 
 UI上のパーツに対してユーザーが何かアクションを起こした時に、対応するメソッドを呼び出すにはIBActionを利用します。
-手順としてはIBOutletと同様に、メソッドを宣言、定義し、storyboard上のパーツと結びつけます。
+手順としてはIBOutletと同様に、メソッドを宣言、定義し、storyboard上のパーツと結びつけます。
 
 ##### メソッドの定義
 
