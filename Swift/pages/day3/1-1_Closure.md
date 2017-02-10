@@ -96,7 +96,7 @@ let func2: (Float) -> ((Int) -> Double) = { a in
 
 // func2の使い方 //
 let myClosure: (Int) -> Double = func2(10)  
-let value = myClosure(10) // val = 10 + 20 が代入される
+let value = myClosure(20) // val = 10 + 20 が代入される
 ```
 
 ## typealiasを用いたClosureの型宣言
@@ -144,7 +144,7 @@ let func2: (Float) -> Closure2Type = { a in
 
 // func2の使い方 //
 let myClosure: Closure2Type = func2(10)
-let value = myClosure(10) // val = 10 + 20 が代入される
+let value = myClosure(20) // val = 10 + 20 が代入される
 ```
 
 と書き直すことができます。
@@ -204,7 +204,7 @@ let c1 = {
     a = 20
     print("a = \(a)")
 }
-c1() // a = 10 と表示
+c1() // a = 20 と表示
 print("a = \(a)") // a = 20 と表示
 ```
 
