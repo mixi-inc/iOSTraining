@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GithubStarListSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JDA-lh-Rqs">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="KzU-zq-nqR">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.52128775167785235" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDA-lh-Rqs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cxa-Np-3Vn"/>
+                            <constraint firstItem="JDA-lh-Rqs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GIS-Kw-Xtg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JDA-lh-Rqs" secondAttribute="bottom" id="RIt-LI-Wh1"/>
+                            <constraint firstItem="KzU-zq-nqR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TQf-sj-LeQ"/>
+                            <constraint firstAttribute="trailing" secondItem="JDA-lh-Rqs" secondAttribute="trailing" id="eOl-kl-g7t"/>
+                            <constraint firstItem="KzU-zq-nqR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yd8-hz-KHM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KzU-zq-nqR" id="mPD-mo-6UU"/>
+                        <outlet property="tableView" destination="JDA-lh-Rqs" id="EVc-EF-wPd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>

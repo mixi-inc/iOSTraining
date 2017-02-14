@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11201"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SampleViewController" customModule="VCCustomization" customModuleProvider="target">
+            <connections>
+                <outlet property="grayView" destination="jGc-Z9-NI5" id="Ids-jh-Q0x"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGc-Z9-NI5" userLabel="grayView">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xx-p0-qMn" userLabel="yellowView">
+                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="Fel-B7-hfe"/>
+                                <constraint firstAttribute="height" constant="150" id="YJs-y4-WWf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1xx-p0-qMn" firstAttribute="centerX" secondItem="jGc-Z9-NI5" secondAttribute="centerX" id="eri-Pc-uNz"/>
+                        <constraint firstItem="1xx-p0-qMn" firstAttribute="centerY" secondItem="jGc-Z9-NI5" secondAttribute="centerY" id="lGm-w1-9fD"/>
+                        <constraint firstAttribute="height" constant="320" id="vSa-Sr-QZk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jE3-y0-oMX" userLabel="blueView">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jGc-Z9-NI5" secondAttribute="trailing" constant="16" id="1Ne-KT-76j"/>
+                <constraint firstItem="jE3-y0-oMX" firstAttribute="top" secondItem="jGc-Z9-NI5" secondAttribute="bottom" constant="18" id="6YM-rz-tf6"/>
+                <constraint firstAttribute="bottom" secondItem="jE3-y0-oMX" secondAttribute="bottom" constant="20" id="Jec-AF-fSJ"/>
+                <constraint firstItem="jGc-Z9-NI5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="LtT-lu-xpa"/>
+                <constraint firstItem="jGc-Z9-NI5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="mki-SU-oUT"/>
+                <constraint firstItem="jE3-y0-oMX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="68" id="tcd-j7-oRC"/>
+                <constraint firstAttribute="trailing" secondItem="jE3-y0-oMX" secondAttribute="trailing" constant="68" id="twQ-Ax-9sL"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomCell" customModule="CustomCellSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1" translatesAutoresizingMaskIntoConstraints="NO" id="xlh-X2-c71">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="3mw-f8-Lc2"/>
+                            <constraint firstAttribute="width" constant="44" id="MkT-nb-rlV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon1" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-T9-VnT">
+                        <rect key="contentStretch" x="0.75" y="0.5" width="0.0" height="0.0"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ype-GO-ZbP">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zps-T9-VnT" secondAttribute="trailing" constant="16" id="DRi-FG-U9p"/>
+                    <constraint firstAttribute="trailing" secondItem="Ype-GO-ZbP" secondAttribute="trailing" constant="20" id="I0c-Nz-rIk"/>
+                    <constraint firstAttribute="bottom" secondItem="Ype-GO-ZbP" secondAttribute="bottom" constant="39.5" id="NBO-4G-A0W"/>
+                    <constraint firstAttribute="bottom" secondItem="Zps-T9-VnT" secondAttribute="bottom" constant="15.5" id="Nbb-w9-hU3"/>
+                    <constraint firstItem="Ype-GO-ZbP" firstAttribute="leading" secondItem="xlh-X2-c71" secondAttribute="trailing" constant="20" id="Oom-iM-LDq"/>
+                    <constraint firstItem="Zps-T9-VnT" firstAttribute="leading" secondItem="xlh-X2-c71" secondAttribute="trailing" constant="16" id="PSa-XS-0Vl"/>
+                    <constraint firstItem="Zps-T9-VnT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zat-Ay-D3r"/>
+                    <constraint firstItem="xlh-X2-c71" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="drW-5n-N1D"/>
+                    <constraint firstItem="Ype-GO-ZbP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="mbX-ZD-3Ai"/>
+                    <constraint firstAttribute="bottom" secondItem="xlh-X2-c71" secondAttribute="bottom" constant="15.5" id="wS9-t7-Vof"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="Ype-GO-ZbP" id="ric-Zf-a1a"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="balloon1" width="75" height="90"/>
+        <image name="icon1" width="72" height="56"/>
+    </resources>
+</document>

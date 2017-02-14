@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Reachability (3.2)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Reachability
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: 818cb1576f0ef8ea7222bcebcf9ca14cb939f2e9
+
+COCOAPODS: 1.1.1

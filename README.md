@@ -3,6 +3,8 @@ iOS Development Training Course Repository
 
 iOS アプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
 
+Swiftバージョンは[こちら](./Swift/README.md)
+
 前提
 ------
 
