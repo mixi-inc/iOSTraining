@@ -286,7 +286,7 @@ print(value) //Apple
 
 Optional型をforce unwrapした際と同様に、変数がnilであった場合に実行時エラーになってしまうので注意しましょう。  
 
-ここで注意いなければならないのは、`String!`は`ImplicitlyUnwrappedOptional<String>`なので  
+ここで注意しなければならないのは、`String!`は`ImplicitlyUnwrappedOptional<String>`なので  
 optionalな値をforce unwrapする際の`value!`とは、同じ記号を使っていても違った意味になります。
 
 ## メソッド
