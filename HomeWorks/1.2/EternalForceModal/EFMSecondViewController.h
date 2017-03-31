@@ -13,10 +13,13 @@
 @protocol EMFSecondViewControllerDelegate <NSObject>
 
 // ここにDelegateメソッドの定義
+- (void)didPressCloseButton;
 
 @end
 
 
 @interface EFMSecondViewController : UIViewController
 @property (nonatomic, weak) id<EMFSecondViewControllerDelegate> delegate;
+
+- (IBAction)closeButtonTapped:(id)sender;
 @end

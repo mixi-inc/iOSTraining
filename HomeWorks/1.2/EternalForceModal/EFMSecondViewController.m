@@ -34,12 +34,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)closeButtonTapped:(id)sender {
+- (IBAction)closeButtonTapped:(id)sender
+{
 
     // TODO
     // ボタンがタップされた時に呼ばれるメソッド
     // delegateを介してモーダルを消す
-
+    // respondsToSelectorでdelegate先にdidPressCloseButtonが実装されているか確認
+    if([_delegate respondsToSelector:@selector(didPressCloseButton)])
+    {
+        [_delegate didPressCloseButton];
+    }
 }
-
 @end

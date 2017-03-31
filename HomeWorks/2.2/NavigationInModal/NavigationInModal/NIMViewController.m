@@ -11,6 +11,9 @@
 
 @interface NIMViewController ()
 
+- (void)pressPushButton;
+- (void)pressRootButton;
+
 @end
 
 @implementation NIMViewController
@@ -19,6 +22,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"push" style:UIBarButtonItemStylePlain target:self action:@selector(pressPushButton)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+
+    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithTitle:@"root" style:UIBarButtonItemStylePlain target:self action:@selector(pressRootButton)];
+    self.navigationItem.leftBarButtonItem = leftButton;
+    self.navigationItem.leftItemsSupplementBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -32,6 +42,16 @@
     NIMModalViewController *modal = [[NIMModalViewController alloc] initWithNibName:@"NIMModalViewController" bundle:nil];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:modal];
     [self presentViewController:navigationController animated:YES completion:nil];
+}
+
+- (void)pressPushButton
+{
+    [self.navigationController pushViewController:[[NIMViewController alloc] init] animated:YES];
+}
+
+- (void)pressRootButton
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end
