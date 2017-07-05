@@ -1,117 +1,203 @@
-iOS Development Training Course Repository
-======
+# iOS Development Training Course in Swift3
 
-iOS アプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
+SwiftでのiOSアプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
 
-Swiftバージョンは[こちら](./Swift/README.md)
+### 概要
 
-前提
-------
+* 当コースはエンジニア向けに構成されています。
+* 課題によって、実装前と実装後（それぞれbefore, after）のプロジェクトを用意しています。
 
-このトレーニングコースに入る前に、下記の知識・スキルについて勉強しておいてください。
+### 環境
 
-1. Foundation Framework の事前知識
-  * NSString, NS(Mutable)Array, NS(Mutable)Dictionary あたりの使い方程度で大丈夫です。
-2. Xcode の使い方
-  * 基本操作が分かる程度で大丈夫です。
+* Xcode8.1以降
+* Swift3
 
-ゴール
-------
+## 1日目
 
-このトレーニングコースを受講することで、下記のような知識・スキルが身につきます。
-
-1. Xcode を使ったiOSアプリ開発
-2. 公式リファレンスやガイドを用いた api の調査
-3. リリース可能な品質を担保できる
-
-準備
-------
-
-このトレーニングコースを受講する上で、Xcode 最新バージョンをインストールした mac を準備しておいてください。
-
-構成
-------
-
-iOSアプリ開発の基礎知識と実務スキルを身に付けるトレーニングコース
-
-**注意** :
-- 本カリキュラムは iPhone simulator で確認できる範囲のものになっております。
-- サンプルコード、サンプルプロジェクトはすべて iOS5 以降、ARC で動作するものとなっております。
-- カリキュラムは予告無く変更される場合があります。
+#### 項目
 
 1. 導入
- 1. [Objective C の基礎](https://github.com/mixi-inc/iOSTraining/wiki/1.1-Objective-C-%E3%81%AE%E5%9F%BA%E7%A4%8E)
- 2. [メモリ管理](https://github.com/mixi-inc/iOSTraining/wiki/1.2-%E3%83%A1%E3%83%A2%E3%83%AA%E7%AE%A1%E7%90%86)
- 3. UIViewController1 - UIViewController のカスタマイズ [xib, autoresizing編](https://github.com/mixi-inc/iOSTraining/wiki/1.3-UIViewController1---UIViewController-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA\(xib,-autoresizing\)), [storyboard編](https://github.com/mixi-inc/iOSTraining/wiki/1.3-UIViewController1---UIViewController-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA\(storyboard\))
- 4. UIViewController2 - ModalViewControllertroller [xib, autoresizing 編](https://github.com/mixi-inc/iOSTraining/wiki/1.4-UIViewController2---ModalViewController), [storyboard 編](https://github.com/mixi-inc/iOSTraining/wiki/1.4-UIViewController2-ModalViewController-\(storyboard\))
- 5. [UIViewController3 - ライフサイクル](https://github.com/mixi-inc/iOSTraining/wiki/1.5-UIViewController3---%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB)
- 6. [HomeWork 1 Objective C の基本文法](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-1.1-Objective-C-%E3%81%AE%E5%9F%BA%E6%9C%AC%E6%96%87%E6%B3%95)
- 7. [HomeWork 2 UIViewControllerとModalViewController](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-1.2-UIViewController%E3%81%A8ModalViewController)
- 8. [HomeWork 3 UIViewController ＋ Animation](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-1.3-UIViewController-%EF%BC%8B-Animation)
-2. UIKit 1 - container, rotate-
- 1. [UINavigationController](https://github.com/mixi-inc/iOSTraining/wiki/2.1-UINavigationController)
- 2. [UITabController](https://github.com/mixi-inc/iOSTraining/wiki/2.2-UITabController)
- 3. [Custom Container View Controller](https://github.com/mixi-inc/iOSTraining/wiki/2.3-Custom-Container-View-Controller)
- 4. [Supporting Multiple Interface Orientations](https://github.com/mixi-inc/iOSTraining/wiki/2.4-Supporting-Multiple-Interface-Orientations)
- 5. [HomeWork 1 - タブバーからモーダルビューを表示する](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-2.1-%E3%82%BF%E3%83%96%E3%83%90%E3%83%BC%E3%81%8B%E3%82%89%E3%83%A2%E3%83%BC%E3%83%80%E3%83%AB%E3%83%93%E3%83%A5%E3%83%BC%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B)
- 6. [HomeWork 2 - NavigationController](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-2.2-NavigationController)
- 7. [HomeWork 2.3 デバイスことに回転対応](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-2.3-%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%81%93%E3%81%A8%E3%81%AB%E5%9B%9E%E8%BB%A2%E5%AF%BE%E5%BF%9C)
-3. UIKit 2- UIView -
- 1. [UIView](https://github.com/mixi-inc/iOSTraining/wiki/3.1-UIView)
- 2. [UIView のカスタマイズ](https://github.com/mixi-inc/iOSTraining/wiki/3.2-UIView-%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
- 3. [UIView Animation](https://github.com/mixi-inc/iOSTraining/wiki/3.3-UIView-Animation)
- 4. [HomeWork 1 - UIScrollView](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-3.1-UIScrollView)
-4. UIKit 3 - table view -
- 1. [UITableView について](https://github.com/mixi-inc/iOSTraining/wiki/4.1-UITableView%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
- 2. [UITableViewとNavigationController](https://github.com/mixi-inc/iOSTraining/wiki/4.2-uitableview%E3%81%A8navigationcontroller)
- 3. [custom UITableViewCell の作成](https://github.com/mixi-inc/iOSTraining/wiki/4.3-%E3%82%BB%E3%83%AB%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
- 4. [UITableViewのその他のオプション、カスタマイズ](https://github.com/mixi-inc/iOSTraining/wiki/4.4-UITableView%E3%81%AE%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%81%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA)
- 5. [HomeWork 1 - Dynamic height with a custom uitableviewcell](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-4.1-Dynamic-height-with-a-custom-uitableviewcell)
-5. UIKit 4 - image and text -
- 1. [UIImagePickerController](https://github.com/mixi-inc/iOSTraining/wiki/5.1-UIImagePickerController)
- 2. [Assets Library](https://github.com/mixi-inc/iOSTraining/wiki/5.2-Assets-Library)
- 3. [UITextFiled, UITextView](https://github.com/mixi-inc/iOSTraining/wiki/5.3-UITextFiled,-UITextView)
- 4. [KeyboardNotification](https://github.com/mixi-inc/iOSTraining/wiki/5.4-KeyboardNotification)
- 5. [Homework 1 - フォトの複数枚選択](https://github.com/mixi-inc/iOSTraining/wiki/Homework-5.1-%E3%83%95%E3%82%A9%E3%83%88%E3%81%AE%E8%A4%87%E6%95%B0%E6%9E%9A%E9%81%B8%E6%8A%9E)
-6. ネットワーク処理
- 1. [NSURLConnection](https://github.com/mixi-inc/iOSTraining/wiki/6.1-HTTP%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%81%AE%E5%9F%BA%E7%A4%8E)
- 2. [JSONのシリアライズとデシリアライズ](https://github.com/mixi-inc/iOSTraining/wiki/6.2-JSON%E3%81%AE%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BA%E3%81%A8%E3%83%87%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%A9%E3%82%A4%E3%82%BA)
- 3. [UIWebView](https://github.com/mixi-inc/iOSTraining/wiki/6.3-UIWebView)
-7. ローカルキャッシュと通知
- 1. [NSUserDefaults, Settings Bundle](https://github.com/mixi-inc/iOSTraining/wiki/7.1-NSUserDefaults,-Settings-Bundle)
- 2. [NSFileManager](https://github.com/mixi-inc/iOSTraining/wiki/7.2-NSFileManager)
- 3. [Key Value Observing](https://github.com/mixi-inc/iOSTraining/wiki/7.3-Key-Value-Observing)
- 4. [NSNotification、NSNotificationCenter を用いた通知](https://github.com/mixi-inc/iOSTraining/wiki/7.4-NSNotification%E3%80%81NSNotificationCenter-%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E9%80%9A%E7%9F%A5)
-8. Blocks, GCD
- 1. [Blocks](https://github.com/mixi-inc/iOSTraining/wiki/8.1-Blocks)
- 2. [GCD](https://github.com/mixi-inc/iOSTraining/wiki/8.2-Grand-Central-Dispatch)
- 3. [【演習】GCD,-Blocksを用いたHTTPリクエストマネージャの作成](https://github.com/mixi-inc/iOSTraining/wiki/8.3-%E3%80%90%E6%BC%94%E7%BF%92%E3%80%91GCD,-Blocks%E3%82%92%E7%94%A8%E3%81%84%E3%81%9FHTTP%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%81%AE%E4%BD%9C%E6%88%90)
-9. 設計とデザインパターン
- 1. [クラス設計 1](https://github.com/mixi-inc/iOSTraining/wiki/9.1-%E3%82%AF%E3%83%A9%E3%82%B9%E8%A8%AD%E8%A8%88-1)
- 2. [クラス設計 2](https://github.com/mixi-inc/iOSTraining/wiki/9.2-%E3%82%AF%E3%83%A9%E3%82%B9%E8%A8%AD%E8%A8%88-2)
- 3. [クラス設計演習] (https://github.com/mixi-inc/iOSTraining/wiki/9.3-%E3%82%AF%E3%83%A9%E3%82%B9%E8%A8%AD%E8%A8%88%E6%BC%94%E7%BF%92)
-10. 開発ツール
- 1. [Instruments, デバッガ](https://github.com/mixi-inc/iOSTraining/wiki/10.1-%E9%96%8B%E7%99%BA%E3%83%84%E3%83%BC%E3%83%AB)
- 2. [CocoaPods](https://github.com/mixi-inc/iOSTraining/wiki/10.2-CocoaPods)
-11. テスト
- 1. [iOS開発におけるテスト](https://github.com/mixi-inc/iOSTraining/wiki/11.1-iOS%E9%96%8B%E7%99%BA%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8CI)
- 2. [GHUnit](https://github.com/mixi-inc/iOSTraining/wiki/11.2-GHUnit%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E5%8D%98%E4%BD%93%E3%83%86%E3%82%B9%E3%83%88)
- 3. [Kiwi](https://github.com/mixi-inc/iOSTraining/wiki/11.3-Kiwi%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E6%8C%AF%E3%82%8B%E8%88%9E%E3%81%84%E3%83%86%E3%82%B9%E3%83%88)
- 4. [KIF](https://github.com/mixi-inc/iOSTraining/wiki/11.4-KIF%E3%82%92%E7%94%A8%E3%81%84%E3%81%9F%E7%B5%90%E5%90%88%E3%83%86%E3%82%B9%E3%83%88)
-12. In-App Purchase
- 1. [In-App Purchase](https://github.com/mixi-inc/iOSTraining/wiki/12.1-In-App-Purchase)
-13. 付録
- 1. [Tips of Xcode](https://github.com/mixi-inc/iOSTraining/wiki/Tips-of-Xcode)
+
+ 1. 基礎知識  
+ 課題 [1.1 Swiftの基礎](./pages/day1/1-1_swift-basics.md)  
+ プロジェクト [day1/1.1](./before/day1/1.1)  
+
+ 2. プロパティの属性、メモリ  
+ 課題 [1.2 メモリ管理](./pages/day1/1-2_memory-management.md)  
+ プロジェクト [day1/1.2](./before/day1/1.2)
+
+ 3. ビューコントローラ  
+ 課題 [1.3.1 UIViewControllerのカスタマイズ（stroyboard）](./pages/day1/1-3-1_UIViewController-customization-storyboard.md)  
+ 補足 [1.3.2 UIViewControllerのカスタマイズ（xib）](./pages/day1/1-3-2_UIViewController-customization-xib.md)  
+ プロジェクト [day1/1.3](./before/day1/1.3)
+
+ 4. モーダル  
+ 課題 [1.4.1 UIViewControllerのModalViewController（storyboard）](./pages/day1/1-4-1_ModalViewController-storyboard.md)  
+ 補足 [1.4.2 UIViewControllerのModalViewController（xib）](./pages/day1/1-4-2_ModalViewController-xib.md)  
+ プロジェクト [day1/1.4](./before/day1/1.4)
+
+ 5. ライフサイクル  
+ 課題 [1.5 UIViewControllerのライフサイクル](./pages/day1/1-5_UIViewController-lifecycle.md)  
+
+#### 宿題
+
+- 課題 [HomeWork 1.2 UIViewControllerとModalViewController](https://github.com/mixi-inc/iOSTraining/wiki/HomeWork-1.2-UIViewController%E3%81%A8ModalViewController)  
+ プロジェクト [day1/homework](./before/day1/homework)
+
+## 2日目
+
+#### 項目
+
+1. UIKit 1 - container, rotate-
+
+ 1. ナビゲーション  
+ 課題 [1.1 UINavigationController](./pages/day2/1-1_UINavigationController.md)  
+ プロジェクト [day2/1.1](./before/day2/1.1)
+
+ 2. タブ  
+ 課題 [1.2 UITabController](./pages/day2/1-2_UITabController.md)  
+ プロジェクト [day2/1.2](./before/day2/1.2)
+
+ 3. 回転  
+ 課題 [1.3 Supporting Multiple Interface Orientations](./pages/day2/1-3_Supporting-Multiple-Interface-Orientations.md)
+
+2. UIKit 2- UIView -
+
+ 1. ビュー1  
+ 課題 [2.1 UIView](./pages/day2/2-1_UIView.md)  
+ プロジェクト [day2/2.1](./before/day2/2.1)
+
+ 2. ビュー2  
+ 課題 [2.2 UIViewのカスタマイズ](./pages/day2/2-2_UIView-customization.md)
+
+ 3. アニメーション  
+ 課題 [2.3 UIView Animation](./pages/day2/2-3_UIView-Animation.md)  
+ プロジェクト [day2/2.3](./before/day2/2.3)
+
+ 4. Auto Layout  
+ 課題 [2.4 AutoLayout](./pages/day2/2-4_AutoLayout.md)  
+
+3. UIKit 3 - table view -
+
+ 1. テーブル1  
+ 課題 [3.1 UITableViewについて](./pages/day2/3-1_UITableView.md)  
+ プロジェクト [day2/3.1](./before/day2/3.1)
+
+ 2. テーブル2  
+ 課題 [3.2 UITableViewとNavigationController](.//pages/day2/3-2_UITableView-and-UINavigationController.md)  
+ 参考 [1.1 UINavigationController](./pages/day2/1-1_UINavigationController.md)  
+ プロジェクト [day2/3.2](./before/day2/3.2)
+
+ 3. セル  
+ 課題 [3.3 カスタムUITableViewCellの作成](./pages/day2/3-3_UITableViewCell-customization.md)
+
+ 4. テーブルのカスタマイズ  
+ 課題 [3.4 UITableViewのその他のオプション、カスタマイズ](./pages/day2/3-4_UITableView-other-options.md)  
+ 参考 [3.1 UITableViewについて](./pages/day2/3-1_UITableView.md)  
+ プロジェクト [day2/3.4](./before/day2/3.4)
+
+ 5. セルの高さ  
+ 課題 [3.5 Dynamic height with a custom UITableViewcell](./pages/day2/3-5_Dynamic-height-with-a-custom-UITableViewCell.md)  
+
+#### 宿題
+
+* 課題 [HomeWork 3.1 UIScrollView](./pages/day2/HomeWork-UIScrollView.md)  
+プロジェクト [day2/homework](./before/day2/homework)
+
+## 3日目
+
+#### 項目
+
+1. Closure, GCD
+
+ 1. Closure  
+ 課題 [1.1 Closure](./pages/day3/1-1_Closure.md)  
+ プロジェクト [day3/1.1](./before/day3/1.1)
+
+ 2. GCD  
+ 課題 [1.2 Grand Central Dispatch](./pages/day3/1-2_Grand-Central-Dispatch.md)  
+
+2. UIKit 4 - image and text -
+
+ 1. 画像1  
+ 課題 [2.1 UIImagePickerController](./pages/day3/2-1_UIImagePickerController.md)  
+ プロジェクト [day3/2.1](./before/day3/2.1)
+
+ 2. 画像2  
+ 課題 [2.2 PhotoKit](./pages/day3/2-2_PhotoKit.md)
+
+ 3. テキスト  
+ 課題 [2.3.1 KeyboardNotification](./pages/day3/2-3-1_KeyboardNotification.md)  
+ 参考 [2.3.2 UITextFiled, UITextView](./pages/day3/2-3-2_UITextFiled-UITextView.md)  
+ プロジェクト [day3/2.3](./before/day3/2.3)
+
+3. ローカルキャッシュと通知
+
+ 1. 設定  
+ 課題 [3.1 UserDefaults, Settings Bundle](./pages/day3/3-1_UserDefaults-Settings-Bundle.md)  
+ プロジェクト [day3/3.1](./before/day3/3.1)
+
+ 2. ファイル  
+ 課題 [3.2 FileManager](./pages/day3/3-2_FileManager.md)  
+ プロジェクト [day3/3.2](./before/day3/3.2)
+
+ 3. オブザーバ  
+ 課題 [3.3 Key Value Observing](./pages/day3/3-3_Key-Value-Observing.md)  
+
+ 4. 通知  
+ 課題 [3.4 Notification、NotificationCenter を用いた通知](./pages/day3/3-4_Notification-NotificationCenter.md)  
+ 参考 [2.3.1 KeyboardNotification](./pages/day3/2-3-1_KeyboardNotification.md)
+
+4. ネットワーク処理
+
+ 1. JSON  
+ 課題 [4.1 JSONのシリアライズとデシリアライズ](./pages/day3/4-1_JSON.md)  
+
+ 2. 通信  
+ 課題 [4.2 HTTPリクエストの基礎](./pages/day3/4-2_HTTP-request-basic.md)  
+ 参考 [App Transport Security](http://developer.hatenastaff.com/entry/2016/06/16/165924)  
+ 参考 [AlamofireとSwiftyJSONでAPIを叩くチュートリアル](http://qiita.com/yutat93/items/1b6dfe34fa8537cf3329)  
+ プロジェクト [day3/4.2](./before/day3/4.2)
+
+ 3. ウェブビュー  
+ 課題 [4.3 WKWebView](./pages/day3/4-3_WKWebView.md)  
+ プロジェクト [day3/homework](./before/day3/homework)
+
+#### 宿題
+
+* 課題 [4.3 WKWebView](./pages/day3/4-3_WKWebView.md)  
+ プロジェクト [day3/homework](./before/day3/homework)
+
+## 4日目
+
+1. 開発ツール
+
+ 1. デバッグ  
+ 課題 [1.1 開発ツール](./pages/day4/1-1_development-tools.md)  
+
+ 2. CocoaPods  
+ 課題 [1.2 CocoaPods](./pages/day4/1-2_CocoaPods.md)  
+ 参考 [開発レシピ：Objective-Cのライブラリ管理ツール](http://www.iosjp.com/dev/archives/451)  
+
+ 3. Carthage   
+ 課題 [1.3 Carthage](./pages/day4/1-3_Carthage.md)  
+ 参考 [Swiftで使えるライブラリ管理ツールCarthageの使い方](http://kotalab.com/carthage-install)  
+ 参考 [Swift Package Manager を試してみました](http://dev.classmethod.jp/etc/swift-package-manager-1/)  
+
+2. 設計とデザインパターン
+
+ 1. クラス設計1  
+ 課題 [2.1 クラス設計 1](./pages/day4/2-1_class-design-1.md)
+
+ 2. クラス設計2  
+ 課題 [2.2 クラス設計 2](./pages/day4/2-2_class-design-2.md)
+
+ 3. クラス設計3  
+ 課題 [2.3 プロトコル指向プログラミング](./pages/day4/2-3_protocol-oriented-programming.md)
+
+ 4. クラス設計4  
+ 課題 [2.4 クラス設計演習](./pages/day4/2-4_class-design-3.md)  
+ プロジェクト [day4/homework](./before/day4/homework)
 
 
-参考資料
------------------
-- [iOS Developer Library](https://developer.apple.com/library/ios/navigation/)
- - Guide から Reference まで全てのドキュメントが掲載されています。
-- [日本語ドキュメント](https://developer.apple.com/jp/devcenter/ios/library/japanese.html)
- - Guide の一部が日本語訳された PDF がアップロードされています。ただし、こちらは本家の最新の英語のドキュメントが翻訳されているとは限りません。更新日に注目してなるべく最新版のものを読むようにしましょう。
-
-LICENSE
------------------
-LICENSE CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/deed.ja  
-この資料はクリエイティブ・コモンズ 3.0 ライセンスの下に提供されています。  
+Objective-Cバージョンは[こちら](./objc/README.md)
