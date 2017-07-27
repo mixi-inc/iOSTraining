@@ -422,7 +422,7 @@ struct Person {
 
 ## propertyの値を監視
 
-`wiiSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
+`willSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
 
 ```swift
 class Person {
@@ -508,7 +508,7 @@ enum enum名: 型名 {
 
 ```swift
 enum Gender: Int {
-    case man = 0
+    case male = 0
     case female = 1
 }
 
@@ -519,11 +519,11 @@ Intに限らず、型にStringなど指定できます。
 
 ```swift
 enum Gender: String {
-    case man = "man"
+    case male = "male"
     case female = "female"
 }
 
-let gender = Gender(rawValue: "man")
+let gender = Gender(rawValue: "male")
 ```
 
 型を指定せずに使うこともできます。
@@ -948,7 +948,7 @@ print(queryParameter)
 
 ```swift
 enum Gender: Int {
-    case man = 0
+    case male = 0
     case female = 1
 }
 

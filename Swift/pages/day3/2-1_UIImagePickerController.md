@@ -8,7 +8,7 @@
 
 ### プログラミングガイド
 
-[カメラ操作のプログラ ミング（iOS用）につ いて](https://developer.apple.com/jp/devcenter/ios/library/documentation/CameraAndPhotoLib_TopicsForIOS.pdf)
+[カメラ操作のプログラミング（iOS用）について](https://developer.apple.com/jp/devcenter/ios/library/documentation/CameraAndPhotoLib_TopicsForIOS.pdf)
 
 UIImagePickerController を使って iPhone の中にあるメディアを参照してみましょう。
 

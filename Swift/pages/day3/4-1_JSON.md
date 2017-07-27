@@ -87,7 +87,7 @@ JSONオブジェクトからDataへの変換には
 class func data(withJSONObject obj: Any, options opt: JSONSerialization.WritingOptions = []) throws -> Data
 ```
 
-を用います。基本的な使い方は上記の逆となります。JSONのトップレベルオブジェクトを引数として渡します。同時にオプションとエラーへのポインタを渡します。変換に成功したらUTF-8でエンコードされた文字列のDataが返されます。エラーがあったときはerrorにその内容が含まれます。
+を用います。基本的な使い方は上記の逆となります。JSONのトップレベルオブジェクトとオプションを引数として渡します。変換に成功したらUTF-8でエンコードされた文字列のDataが返されます。エラーがあったときはcatchしたerrorにその内容が含まれます。
 
 上記データを逆にDataに変換したサンプルは以下のようになります。
 

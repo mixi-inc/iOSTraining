@@ -15,8 +15,8 @@ struct GithubUser: GithubEntity {
     
     init?(json: JSON) {
         guard
-            let rawAvatorUrl = json["avatar_url"].string,
-            let avatarUrl = URL(string: rawAvatorUrl),
+            let rawAvatarUrl = json["avatar_url"].string,
+            let avatarUrl = URL(string: rawAvatarUrl),
             let login = json["login"].string
         else { return nil }
         

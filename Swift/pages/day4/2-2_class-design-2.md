@@ -2,7 +2,7 @@
 
 引き続きクラス設計について説明します。
 
-## iOS開発におけるViweまわりでの抽象クラス
+## iOS開発におけるViewまわりでの抽象クラス
 
 day4 2.1 で例として挙げた仕様がありました。
 
@@ -131,7 +131,7 @@ extension ViewController: DailyChoiceViewDelegate {
 ![MixiDailyChoiceView](./images/2_2/image4.png)
 
 ## Singleton インスタンス
-アプリケーション内で一つだけインスタンスを存在させたい場合、Singlton パターンを使って実装します。Cocoa API では `UserDefaults.standard` `NotificationCenter.default` などで実現されています。その実装方法は以下のようになります。
+アプリケーション内で一つだけインスタンスを存在させたい場合、Singleton パターンを使って実装します。Cocoa API では `UserDefaults.standard` `NotificationCenter.default` などで実現されています。その実装方法は以下のようになります。
 
 SharedObject.swift
 

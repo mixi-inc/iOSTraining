@@ -66,13 +66,13 @@ public enum UIModalPresentationStyle : Int {
 ```swift
 dismiss(animated: true, completion: nil)
 ```
-このメソッドを呼べば、トップレベルの ModalViewController が dismiss されます。公式ドキュメントには原則として呼び出した ViewControlelr が消すべきと書いてあります。状況に応じて使い分けてください。
+このメソッドを呼べば、トップレベルの ModalViewController が dismiss されます。公式ドキュメントには原則として呼び出した ViewController が消すべきと書いてあります。状況に応じて使い分けてください。
 
 ![dismissViewController](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/1.5/dismissViewController.png)
 
 ## delegate と protocol
 
-ChildViewController で閉じるボタンを押したことを ViewControlelr が知る必要があります。このようにある VC から VC へ何らかの通知を送る手段の一つとして delegate があります。
+ChildViewController で閉じるボタンを押したことを ViewController が知る必要があります。このようにある VC から VC へ何らかの通知を送る手段の一つとして delegate があります。
 
 ![delegate](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/1.5/delegate.png)
 
@@ -101,7 +101,7 @@ class ChildViewController : UIViewController {
 
 ### [1] protocol
 
-プロトコルはメッソド宣言の集合体です。上記では、ChildViewController が ChildViewControllerDelegate というプロトコルで、他のクラスに任せたいメソッドを宣言しています。
+プロトコルはメソッド宣言の集合体です。上記では、ChildViewController が ChildViewControllerDelegate というプロトコルで、他のクラスに任せたいメソッドを宣言しています。
 
 ### [2] delegate オブジェクト
 

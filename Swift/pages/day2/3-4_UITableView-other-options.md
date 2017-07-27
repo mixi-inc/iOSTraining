@@ -145,7 +145,7 @@ UIRefreshControlとは、引っぱり更新やPullToRefreshと呼ばれるアク
 
 ### 実際に使ってみる
 
-###### 1. UIRefershControlはUITableViewControllerのプロパティとして利用できるので、UITableViewControllerのサブクラスを一つ作ります。
+###### 1. UIRefreshControlはUITableViewControllerのプロパティとして利用できるので、UITableViewControllerのサブクラスを一つ作ります。
   - storyboard上のUITableViewControllerとTableViewControllerを紐付けてください
   - .swiftファイルのなかで、セクションの数と行の数を適宜修正してください
 

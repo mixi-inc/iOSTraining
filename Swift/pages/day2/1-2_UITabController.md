@@ -49,7 +49,7 @@ AppDelegate.swift
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
-    if let tabBarContorller = window?.rootViewController as? UITabBarController {
+    if let tabBarController = window?.rootViewController as? UITabBarController {
         let viewControllers: [UIViewController] = [
             FirstViewController(imageName: "first"),
             FirstViewController(imageName: "second"),
@@ -58,13 +58,13 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
             FirstViewController(imageName: "fifth"),
             FirstViewController(imageName: "sixth")
         ]
-        tabBarContorller.viewControllers = viewControllers
+        tabBarController.viewControllers = viewControllers
     }
     return true
 }
 ```
 
-画像ファイルは[こちら](./images/day2/1_2/icons)
+画像ファイルは[こちら](./images/1_2/icons)
 
 ## tab のバッジ
 > ![tabBadge](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/2.2/tabBadge.png)
@@ -106,6 +106,6 @@ Storyboardを用いることで、視覚的にTabBarControllerとその中に入
 
 # 演習
 * storyboard上のTabBarControllerに対して、新しくViewController（ThirdViewController）を追加してください。
-* xibからロードしたViewContorller（FourthViewController）を更に追加してください。
+* xibからロードしたViewController（FourthViewController）を更に追加してください。
 
 解答は [after/day2/1.2/TabSample](../../after/day2/1.2/TabSample) をごらんください

@@ -27,7 +27,7 @@ SwiftでのiOSアプリ開発の基礎知識と実務スキルを身に付ける
  プロジェクト [day1/1.2](./before/day1/1.2)
 
  3. ビューコントローラ  
- 課題 [1.3.1 UIViewControllerのカスタマイズ（stroyboard）](./pages/day1/1-3-1_UIViewController-customization-storyboard.md)  
+ 課題 [1.3.1 UIViewControllerのカスタマイズ（storyboard）](./pages/day1/1-3-1_UIViewController-customization-storyboard.md)  
  補足 [1.3.2 UIViewControllerのカスタマイズ（xib）](./pages/day1/1-3-2_UIViewController-customization-xib.md)  
  プロジェクト [day1/1.3](./before/day1/1.3)
 
@@ -128,7 +128,7 @@ SwiftでのiOSアプリ開発の基礎知識と実務スキルを身に付ける
 
  3. テキスト  
  課題 [2.3.1 KeyboardNotification](./pages/day3/2-3-1_KeyboardNotification.md)  
- 参考 [2.3.2 UITextFiled, UITextView](./pages/day3/2-3-2_UITextFiled-UITextView.md)  
+ 参考 [2.3.2 UITextField, UITextView](./pages/day3/2-3-2_UITextFiled-UITextView.md)  
  プロジェクト [day3/2.3](./before/day3/2.3)
 
 3. ローカルキャッシュと通知
