@@ -68,7 +68,7 @@ c = { (a: Int) -> Void in
     print(a)
 }
 
-c(10) // bに代入されたblockを実行
+c(10) // cに代入されたblockを実行
 
 
 let c1: (Int, Int) -> Bool // 戻り値がBool型で引数として二つのInt型を取るClosure型変数c1の宣言

@@ -10,7 +10,7 @@
 
 ## plist からデータの読み込み
 
-plist は apple が用いているデータの定義で、XML で記述されているファイルです。
+plist は Apple が用いているデータの定義で、XML で記述されているファイルです。
 
 ![plist](./images/3_5/image2.png)
 

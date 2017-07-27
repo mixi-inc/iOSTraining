@@ -7,17 +7,17 @@
 iOS アプリケーション開発は MVC フレームワークを採用しています。最近ではMVVMだったり、Fluxだったりと様々な設計方法がありますが、まずはiOSアプリ設計の基本としてMVCをやっていきます。
 
 - Model
- - View を構成する情報を保持
- - 必要に応じて、APIClient でリモートから情報を取得したり、DB にアクセスして情報を取得する
+  - View を構成する情報を保持
+  - 必要に応じて、APIClient でリモートから情報を取得したり、DB にアクセスして情報を取得する
 
 - View
- - Model のデータを表示
- - ユーザから操作を受ける
+  - Model のデータを表示
+  - ユーザから操作を受ける
 
 - Controller
- - Model と View を結びつけるもの
- - Model に更新メッセージを送り、Model からその完了通知を受ける
- - View に Model の情報を送り、View を通じてユーザからの操作を受ける
+  - Model と View を結びつけるもの
+  - Model に更新メッセージを送り、Model からその完了通知を受ける
+  - View に Model の情報を送り、View を通じてユーザからの操作を受ける
 
 > ![MVC](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/9.1/MVC.png)
 > [Objective-Cプログラミングの概念](https://developer.apple.com/jp/devcenter/ios/library/documentation/CocoaEncyclopedia.pdf) から引用
@@ -126,8 +126,8 @@ struct GithubUser: GithubModel {
 
     init?(dict: [AnyHashable : Any]) {
         guard
-            let rawAvatorUrl = dict["avatar_url"] as? String,
-            let avatarUrl = URL(string: rawAvatorUrl),
+            let rawAvatarUrl = dict["avatar_url"] as? String,
+            let avatarUrl = URL(string: rawAvatarUrl),
             let login = dict["login"] as? String
         else { return nil }
 
@@ -174,7 +174,7 @@ extension Date {
         case unknown
         case sunday
         case monday
-        case tuseday
+        case tuesday
         case wednesday
         case thursday
         case friday
@@ -215,7 +215,7 @@ TransitionHandler.swift
 
 ```swift
 class TransitionHandler {
-    class func pushSecoundViewController(with viewController: UIViewController) {
+    class func pushSecondViewController(with viewController: UIViewController) {
         let vc = UIViewController()
         viewController.navigationController?.pushViewController(vc, animated: true)
     }
@@ -224,7 +224,7 @@ class TransitionHandler {
         //do something
     }
 
-    class func presentScountViewController(with viewController: UIViewController) {
+    class func presentSecondViewController(with viewController: UIViewController) {
         //do something
     }
 

@@ -24,7 +24,7 @@ UITableViewCellには、デフォルトでいくつかのオプションがあ�
 - セルの高さに合わせてcellの高さを変える
 
 この手順に沿って、実装を進めて行きます。
-プロジェクトファイルは4.2のものから引き続きで問題ありません。
+プロジェクトファイルは3.2のものから引き続きで問題ありません。
 (注:TableViewのスタイルはPlainにしておいてください）
 
 今回は以下の画像を使うので、サンプルプロジェクトに追加してください
@@ -35,11 +35,11 @@ UITableViewCellには、デフォルトでいくつかのオプションがあ�
 ![吹き出し左](./images/3_3/balloon1.png)
 ![吹き出し右](./images/3_3/balloon2.png)
 
-###カスタムセルのxibの追加
+### カスタムセルのxibの追加
 
 - XcodeのNewFileから Cocoa Touch Class を選択し、UITableViewCellのサブクラスとしてクラスを作成します。
 クラス名は、CustomCellとしました。
-- 次に同じ名前のxibファイルを作ります。NewFileからUserInterface → Empty を選んで、セルのクラス名と同じ名前で保存してください。(サンプルではTVSCustomCellです)
+- 次に同じ名前のxibファイルを作ります。NewFileからUserInterface → Empty を選んで、セルのクラス名と同じ名前で保存してください。(サンプルではCustomCellです)
 この辺りは、前回のviewをxibから作る、とほぼ同じです。
 - Interface builder から TableViewCell をドラッグアンドドロップしてCellを作り、以下のようにカスタマイズしてください。
     1. 高さを125pxくらいにする

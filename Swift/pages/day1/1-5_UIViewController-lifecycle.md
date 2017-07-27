@@ -58,7 +58,7 @@ override func viewDidLoad() {
 インスタンスが生成され、viewが表示されるタイミングでは
 [`viewWillAppear(_:)`](https://developer.apple.com/reference/uikit/uiviewcontroller/1621510-viewwillappear)
 と
-[`viewDidAppear(_:)`](https://developer.apple.com/reference/uikit/uiviewcontroller/1621423-viewdidappear)が呼ばれます。それぞれ、viewが表示される直前とviewが表示完了した直後に呼ばれます。例えばアニメーションを行ってViewControllerを表示する場合、
+[`viewDidAppear(_:)`](https://developer.apple.com/reference/uikit/uiviewcontroller/1621423-viewdidappear)が呼ばれます。それぞれ、viewが表示される直前とviewが表示完了した直後に呼ばれます。例えばアニメーションを行ってViewControllerを表示する場合、
 
 `viewWillAppear(_:)` → 表示アニメーション → `viewDidAppear(_:)` の順に呼び出されます。
 
@@ -128,6 +128,6 @@ UIViewController固有のものではなくSwiftのclassで実装できるメソ
 
 ```swift
 deinit {
-    print("dealloc");
+    print("deinit");
 }
 ```

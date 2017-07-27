@@ -2,7 +2,7 @@
 
 [File System Programming Guide](https://developer.apple.com/library/content/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672)
 
-[ファイルシステムプロ グラミングガイド](https://developer.apple.com/jp/devcenter/ios/library/documentation/FileSystemProgrammingGuide.pdf)
+[ファイルシステムプログラミングガイド](https://developer.apple.com/jp/devcenter/ios/library/documentation/FileSystemProgrammingGuide.pdf)
 
 [NSFileManager Class Reference](https://developer.apple.com/reference/foundation/nsfilemanager)
 
@@ -10,13 +10,13 @@
 
 > ![filesystem_in_iOS](https://raw.github.com/mixi-inc/iOSTraining/master/Doc/Images/7.2/filesystem_in_iOS.png)
 
-> [ファイルシステムプロ グラミングガイド](https://developer.apple.com/jp/devcenter/ios/library/documentation/FileSystemProgrammingGuide.pdf) から引用
+> [ファイルシステムプログラミングガイド](https://developer.apple.com/jp/devcenter/ios/library/documentation/FileSystemProgrammingGuide.pdf) から引用
 
 | path | 説明 |
 |-----|----|
 | <Application_Home>/Documents/ | ユーザが作り出したデータをファイルとして保存したい場合ここに保存してください。iTunes によってバックアップされます。 |
 | <Application_Home>/Library/Caches| システムが再度取得可能なデータをキャッシュしておきたい場合はここに保存してください。iTunes によってバックアップされません。|
-| <Application_Home>/tmp/ | 一時的に保存しておきたいデータがればここに保存してください。必要がなくなった際にはその都度削除するようにしてください。iTunes にはバックアップされません。|
+| <Application_Home>/tmp/ | 一時的に保存しておきたいデータがあればここに保存してください。必要がなくなった際にはその都度削除するようにしてください。iTunes にはバックアップされません。|
 
 ## Document ディレクトリパス取得
 
@@ -31,7 +31,7 @@ console log
 Optional(file:///Users/Username/Library/Developer/CoreSimulator/Devices/CE1017AE-5E14-488C-B0B3-B364453B0413/data/Containers/Data/Application/F47D5EB7-5271-4528-85D6-A7E85B9D13B8/Documents/)
 ```
 
-URL ベースのパスが取得できます。シュミレータだと Mac のファイルシステムパスが表示されます。
+URL ベースのパスが取得できます。シミュレータだと Mac のファイルシステムパスが表示されます。
 
 この URL に保存したいファイル名を追加して新たな URL を生成すれば保存が可能です。
 

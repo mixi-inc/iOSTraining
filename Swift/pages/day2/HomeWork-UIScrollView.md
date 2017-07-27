@@ -43,7 +43,7 @@ scrollView.addSubview(imageView)
 # 実際に動かしてみる
 
 上の例を実装することで、scrollViewの動作を確認してみましょう。
-リポジトリのHomewor/3.1k以下にある scrollViewSample を開くか、Xcodeから新しいプロジェクトをテンプレートをSingle View Applicationで開き、こちらの画像をプロジェクトに追加してください。
+リポジトリのSwift/before/day2/homework以下にある ScrollViewSample を開くか、Xcodeから新しいプロジェクトをテンプレートをSingle View Applicationで開き、こちらの画像をプロジェクトに追加してください。
 
 画像のURL → [https://raw.github.com/mixi-inc/iOSTraining/master/HomeWorks/3.1/scrollViewSample/scrollViewSample/big_image.jpg](https://raw.github.com/mixi-inc/iOSTraining/master/HomeWorks/3.1/scrollViewSample/scrollViewSample/big_image.jpg)
 
@@ -69,6 +69,7 @@ view.addSubview(scrollView)
   let scale = UIScreen.main.scale
   let size = CGSize(width: image.size.width * scale, height: image.size.height * scale)
   let imageView = UIImageView(frame:CGRect(origin: .zero, size: size))
+  imageView.image = image
   ```
 
  - 画像の大きさ(800,600)と同じ大きさのimageViewを作っています

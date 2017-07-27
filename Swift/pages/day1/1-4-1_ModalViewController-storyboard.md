@@ -137,7 +137,7 @@ storyboardを使いつつ、ただsegueを利用しない、という方法に�
 
 では実際に生成して表示します。
 
-生成するには UIStroyboardのインスタンスメソッド [`instantiateInitialViewController()`](https://developer.apple.com/reference/uikit/uistoryboard/1616213-instantiateinitialviewcontroller)を用います。
+生成するには UIStoryboardのインスタンスメソッド [`instantiateInitialViewController()`](https://developer.apple.com/reference/uikit/uistoryboard/1616213-instantiateinitialviewcontroller)を用います。
 このメソッドの引数に先ほど定義したstoryboardIDを渡します。UIViewControllerがstoryboardから生成された場合、プロパティにstoryboardがあるのでそれを利用します。
 
 ViewControllerからViewControllerを表示するにはメソッド [`present(_:animated:completion:)`](https://developer.apple.com/reference/uikit/uiviewcontroller/1621380-present) を用います。
@@ -160,7 +160,7 @@ ViewControllerからViewControllerを表示するにはメソッド [`present(_:
 
 ## ModalViewControllerを閉じる
 
-ModalViewControllerを表示できたら、次はModalViewControllerを閉じる方法について解説します。
+ModalViewControllerを表示できたら、次はModalViewControllerを閉じる方法について解説します。
 閉じ方はdelegateパターンを用いる方法とUnwind Segue を使う方法の２パターンがあります。
 
 ### delegateパターンを用いて閉じる
@@ -351,7 +351,7 @@ SecondViewController上に新しくボタンを追加し、そのボタンをタ
 * 戻り値の型は `IBAction` 型
 * 引数は一つだけで、その型は `UIStoryboardSegue` への参照 (i.e. `UIStoryboardSegue  *`型)
 
-これはstoryboardとこのメソッドを紐づけるための制約になります。メソッド名には特に制約はありません。
+これはstoryboardとこのメソッドを紐づけるための制約になります。メソッド名には特に制約はありません。
 例えば以下のようにメソッドを定義してください。
 
 ```swift

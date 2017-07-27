@@ -12,8 +12,8 @@ CocoaPodsの公式サイトは下記になります。詳細はこちらをご�
 #### インストール
 
 - RubyのGemを用いてインストールします。
- - RubyはおそらくCommandLineToolsを入れた時に入っていると思います
- - Gemもおそらく10.8以降なら入っていると思います
+  - RubyはおそらくCommandLineToolsを入れた時に入っていると思います
+  - Gemもおそらく10.8以降なら入っていると思います
 
 コマンドラインツールで以下を実行します
 ```
@@ -179,7 +179,7 @@ pod 'SwiftyJSON'
 例えば、サーバーから取得したJsonをパースして使おうとしたときに
 
 ```swift
-if let JSONObject = try JSONSerialization.jsonObject(with: data,, options: .allowFragments) as? [[String: AnyObject]],
+if let JSONObject = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [[String: AnyObject]],
     let username = (JSONObject[0]["user"] as? [String: AnyObject])?["name"] as? String {
         // There's our username
 }

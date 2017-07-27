@@ -54,7 +54,7 @@ storyboard上にUINavigationControllerを配置してください。
 
 ![](./images/1_1/image2.png)
 
-Initial View Controllerの指定方法は、[day1 1.3.1 UIViewControllerのカスタマイズ（stroyboard）](https://ghe.ca-tools.org/suzuki-taiki/natibootcamp-ios/blob/master/pages/day1/1-3-1_UIViewController-customization-storyboard.md#initial-view-controller%E3%81%AB%E8%A8%AD%E5%AE%9A)で説明しているので割愛します。
+Initial View Controllerの指定方法は、[day1 1.3.1 UIViewControllerのカスタマイズ（storyboard）](https://ghe.ca-tools.org/suzuki-taiki/natibootcamp-ios/blob/master/pages/day1/1-3-1_UIViewController-customization-storyboard.md#initial-view-controller%E3%81%AB%E8%A8%AD%E5%AE%9A)で説明しているので割愛します。
 
 ##### 2 ViewControllerをNavigationControllerのRoot View Controllerに指定  
 
@@ -81,10 +81,10 @@ ViewControllerのstoryboard ID はクラス名と同じで、ViewController
 ```swift
 // ViewController.swift
 @IBAction func pushButtonTapped(_ sender: UIButton) {
-    guard let viewControlelr = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
+    guard let viewController = storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController else {
         return
     }
-    navigationController?.pushViewController(viewControlelr, animated: true)
+    navigationController?.pushViewController(viewController, animated: true)
 }
 ```
 
