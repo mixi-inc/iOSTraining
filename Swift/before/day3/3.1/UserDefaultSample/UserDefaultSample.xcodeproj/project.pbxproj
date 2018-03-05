@@ -12,6 +12,7 @@
 		376238181DC4D03F003C8201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 376238161DC4D03F003C8201 /* Main.storyboard */; };
 		3762381A1DC4D03F003C8201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376238191DC4D03F003C8201 /* Assets.xcassets */; };
 		3762381D1DC4D03F003C8201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3762381B1DC4D03F003C8201 /* LaunchScreen.storyboard */; };
+		A7446A76204D644B006E3ADA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7446A75204D644B006E3ADA /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		376238191DC4D03F003C8201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3762381C1DC4D03F003C8201 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3762381E1DC4D03F003C8201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7446A75204D644B006E3ADA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				376238191DC4D03F003C8201 /* Assets.xcassets */,
 				3762381B1DC4D03F003C8201 /* LaunchScreen.storyboard */,
 				3762381E1DC4D03F003C8201 /* Info.plist */,
+				A7446A75204D644B006E3ADA /* Settings.bundle */,
 			);
 			path = UserDefaultSample;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7446A76204D644B006E3ADA /* Settings.bundle in Resources */,
 				3762381D1DC4D03F003C8201 /* LaunchScreen.storyboard in Resources */,
 				3762381A1DC4D03F003C8201 /* Assets.xcassets in Resources */,
 				376238181DC4D03F003C8201 /* Main.storyboard in Resources */,
