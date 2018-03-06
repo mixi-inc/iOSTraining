@@ -34,8 +34,14 @@ class GithubTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionLabelHeightConstraint: NSLayoutConstraint!
     
     class func height(of repository: GithubRepository, with maxSize: CGSize) -> CGFloat {
-        //TODO: 高さ計算のロジック
-        return 0
+        let spaces = GithubTableViewCell.descriptionLabelSpaces
+        var size = maxSize
+        size.width -= (spaces.left + spaces.right)
+        size.height = .greatestFiniteMagnitude
+        let string = repository.description as NSString
+        let height = string.boundingRect(with: size, options: [.usesLineFragmentOrigin], attributes: [NSFontAttributeName : UIFont(name: "HelveticaNeue-Light", size:14)], context: nil).size.height
+        let space = spaces.top + spaces.bottom
+        return max(GithubTableViewCell.defaultHeight, height + space)
     }
     
     override func awakeFromNib() {
@@ -59,6 +65,14 @@ class GithubTableViewCell: UITableViewCell {
     }
     
     func configure(with repository: GithubRepository) {
-        //TODO: - セルの内容設定
+        repositoryNameLabel.text = repository.name
+        userNameLabel.text = repository.owner.login
+        setImage(with: repository.owner.avatarUrl)
+        descriptionLabel.text = repository.description
+        starsCountLabel.text = "\(repository.stargazersCount)"
+        forksCountLabel.text = "\(repository.forksCount)"
+        watchersCountLabel.text = "\(repository.watchersCount)"
+        createdLabel.text = repository.createdAt.YYYYMMddString()
+        updatedLabel.text = repository.updatedAt.YYYYMMddString()
     }
 }
