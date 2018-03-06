@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         tableView.register(GithubTableViewCell.nib, forCellReuseIdentifier: GithubTableViewCell.identifier)
         tableView.dataSource = self
@@ -30,11 +29,6 @@ class ViewController: UIViewController {
         fetchRepositories()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     private func fetchRepositories() {
         
         //TODO: - 取得中はactivityIndicatorをアニメーションさせる
