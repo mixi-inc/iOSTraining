@@ -30,7 +30,8 @@ class ViewController: UIViewController {
     }
 
     private func fetchRepositories() {
-        
+        activityIndicator.hidesWhenStopped = true;
+        activityIndicator.startAnimating()
         //TODO: - 取得中はactivityIndicatorをアニメーションさせる
         
         //TODO: - 該当のURLからJSONを取得する
