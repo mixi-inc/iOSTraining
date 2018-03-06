@@ -1,0 +1,11 @@
+framework module Kingfisher {
+  umbrella header "Kingfisher.h"
+
+  export *
+  module * { export * }
+}
+
+module Kingfisher.Swift {
+    header "Kingfisher-Swift.h"
+    requires objc
+}
