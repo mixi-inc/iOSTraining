@@ -713,7 +713,7 @@ Swift3では、C言語スタイルのfor文と`++`及び`--`が使用できな�
 for var i = 0; i < 10 ; i++ {
     print(i)
 }
-// 0 1 2 3 4 5 6 7 8 9
+// error: C-style for statement has been removed in Swift 3
 ```
 
 ```swift
