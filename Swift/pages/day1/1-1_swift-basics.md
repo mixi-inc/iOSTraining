@@ -70,6 +70,16 @@ print("Hello World!")
 print("Hello " + "World!")
 ```
 
+Swift4からは複数行での文字列定義に対応しました。
+
+```swift
+print("""
+Hello
+World
+!!!
+""")
+```
+
 ## `let`と`var`
 
 Swiftでは`var`で変数を、`let`で定数を宣言できます。
