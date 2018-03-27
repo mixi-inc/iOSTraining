@@ -53,7 +53,7 @@ Int.max
 123+456   //579
 123 + 456 //579
 123+ 456  //error: '+' is not a postfix unary operator
-123 +456  //error: ambiguous use of operator '+'
+123 +456  //error: consecutive statements on a line must be separated by ';'
 ```
 
 ## 文字列
