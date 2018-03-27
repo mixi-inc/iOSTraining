@@ -433,7 +433,7 @@ struct Person {
 
 ## propertyの値を監視
 
-`wiiSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
+`willSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
 
 ```swift
 class Person {
