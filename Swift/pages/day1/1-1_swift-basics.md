@@ -14,6 +14,7 @@
 |2016年03月|Swift 2.2|
 |2016年12月|Swiftオープンソース化 [swift.org](https://swift.org/)|
 |2016年09月|Swift 2.3、Swift 3.0|
+|2017年09月|Swift 4.0|
 
 APIの振る舞いに関して疑問を持ったら、[公式API Reference](https://developer.apple.com/reference)を見ましょう。  
 またはXcodeのソースコード上で型にカーソルをあわせて`command`を押しながらクリックすると  
