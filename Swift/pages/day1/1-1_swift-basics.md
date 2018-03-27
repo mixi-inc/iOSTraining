@@ -897,6 +897,9 @@ print(dog as! PoliceDog)
 
 ## Access Control
 
+swift4からは`private`が`extension`内からもアクセスできるように変更になりました
+> 参考 [Improve Interaction Between private Declarations and Extensions](https://github.com/apple/swift-evolution/blob/master/proposals/0169-improve-interaction-between-private-declarations-and-extensions.md#detailed-design)
+
 |アクセス修飾子|内容|
 |:---|:---|
 |open|同じモジュールだけでなく、別のモジュールからもアクセスができ、別のモジュールで継承またはオーバーライドができる|
