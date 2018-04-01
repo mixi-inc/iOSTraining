@@ -26,7 +26,7 @@ print(helloWorld)
 //模範解答2
 /*
  * [h, ell, o, world]は[String?]型なので
- * flatMapで[String]型に変換し、[String]型の
+ * compactMapで[String]型に変換し、[String]型の
  * public func joined(separator: String = default) -> String
  * を使って内部のstringを結合する。
  * ※ループさせる回数が増える
