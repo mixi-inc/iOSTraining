@@ -18,11 +18,13 @@ class User: CustomStringConvertible {
      * print時に実装したdescriptionが出力されます。
      */
     var description: String {
-        return "\nUser:\n"
-        + "    name   = \(name)\n"
-        + "    era    = \(era)\n"
-        + "    age    = \(age)\n"
-        + "    visits = \(visits)\n"
+        return """
+        \nUser:
+        \tname   = \(name)
+        \tera    = \(era)
+        \tage    = \(age)
+        \tvisits = \(String(describing: visits))\n
+        """
     }
     
     init?(dict: [String : Any?]) {
