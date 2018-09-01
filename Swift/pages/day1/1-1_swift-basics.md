@@ -956,7 +956,7 @@ let queryParameter = ["name=doc", "gender=0", "age=65"].reduce("", { result, val
 print(queryParameter)
 ```
 
-## flatMap
+## compactMap ( 旧flatMap )
 
 配列内の要素に処理を適用し、その処理を施したものがnilでない配列を使いたい場合に使用します。
 
@@ -966,7 +966,7 @@ enum Gender: Int {
     case female = 1
 }
 
-let genderList = [0, 1, 2, 3, 0, 1].flatMap({ value in
+let genderList = [0, 1, 2, 3, 0, 1].compactMap({ value in
     return Gender(rawValue: value)
 })
 print(genderList)
