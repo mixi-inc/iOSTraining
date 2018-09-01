@@ -14,6 +14,7 @@
 |2016年03月|Swift 2.2|
 |2016年12月|Swiftオープンソース化 [swift.org](https://swift.org/)|
 |2016年09月|Swift 2.3、Swift 3.0|
+|2017年09月|Swift 4.0|
 
 APIの振る舞いに関して疑問を持ったら、[公式API Reference](https://developer.apple.com/reference)を見ましょう。  
 またはXcodeのソースコード上で型にカーソルをあわせて`command`を押しながらクリックすると  
@@ -52,7 +53,7 @@ Int.max
 123+456   //579
 123 + 456 //579
 123+ 456  //error: '+' is not a postfix unary operator
-123 +456  //error: ambiguous use of operator '+'
+123 +456  //error: consecutive statements on a line must be separated by ';'
 ```
 
 ## 文字列
@@ -67,6 +68,16 @@ print("Hello World!")
 
 ```swift
 print("Hello " + "World!")
+```
+
+Swift4からは複数行での文字列定義に対応しました。
+
+```swift
+print("""
+Hello
+World
+!!!
+""")
 ```
 
 ## `let`と`var`
@@ -422,7 +433,7 @@ struct Person {
 
 ## propertyの値を監視
 
-`wiiSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
+`willSet`や`didSet`を使うことで、propertyの値の変更を監視することができます。
 
 ```swift
 class Person {
@@ -702,7 +713,7 @@ Swift3では、C言語スタイルのfor文と`++`及び`--`が使用できな�
 for var i = 0; i < 10 ; i++ {
     print(i)
 }
-// 0 1 2 3 4 5 6 7 8 9
+// error: C-style for statement has been removed in Swift 3
 ```
 
 ```swift
@@ -885,6 +896,9 @@ print(dog as! PoliceDog)
 `as!`でキャストをしようとして型が異なった場合は、実行時エラーになるのであまりおすすめしません。
 
 ## Access Control
+
+swift4からは`private`が`extension`内からもアクセスできるように変更になりました
+> 参考 [Improve Interaction Between private Declarations and Extensions](https://github.com/apple/swift-evolution/blob/master/proposals/0169-improve-interaction-between-private-declarations-and-extensions.md#detailed-design)
 
 |アクセス修飾子|内容|
 |:---|:---|
