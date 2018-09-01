@@ -30,11 +30,11 @@ class TableViewController: UITableViewController {
         self.refreshControl = refreshControl
     }
 
-    func needRefresh(_ sender: UIRefreshControl) {
+    @objc func needRefresh(_ sender: UIRefreshControl) {
         perform(#selector(TableViewController.finishRefresh), with: nil, afterDelay: 3)
     }
     
-    func finishRefresh() {
+    @objc func finishRefresh() {
         refreshControl?.endRefreshing()
     }
     
