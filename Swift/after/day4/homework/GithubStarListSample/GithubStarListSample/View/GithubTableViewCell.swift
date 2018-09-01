@@ -40,7 +40,7 @@ class GithubTableViewCell: UITableViewCell {
         size.width -= (spaces.left + spaces.right)
         size.height = .greatestFiniteMagnitude
         let attibutes = [
-            NSFontAttributeName : UIFont.systemFont(ofSize: 14)
+            NSAttributedStringKey.font : UIFont.systemFont(ofSize: 14)
         ]
         let string = repository.description as NSString
         let height = string.boundingRect(with: size,
