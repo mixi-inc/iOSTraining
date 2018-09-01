@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,11 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="myO-1G-6nA">
-                                <frame key="frameInset" minX="28" minY="379" width="118" height="29"/>
+                                <rect key="frame" x="28" y="379" width="118" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5YO-36-Hzy">
-                                <frame key="frameInset" minX="139" minY="305" width="161" height="29"/>
+                                <rect key="frame" x="139" y="305" width="161" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
@@ -31,7 +34,7 @@
                                 </segments>
                             </segmentedControl>
                             <textView opaque="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E4x-mR-k5g">
-                                <frame key="frameInset" minX="20" minY="224" height="57" maxX="20"/>
+                                <rect key="frame" x="20" y="224" width="335" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <string key="text">Loaded by the first view
 controller — an instance of FirstViewController — specified in the app delegate.</string>
@@ -39,7 +42,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fba-G7-i3f">
-                                <frame key="frameInset" minX="20" minY="110" height="43" maxX="20"/>
+                                <rect key="frame" x="20" y="110" width="335" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
@@ -47,15 +50,15 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y4w-8R-BIr">
-                                <frame key="frameInset" minX="75" minY="79" width="150" height="2"/>
+                                <rect key="frame" x="75" y="79" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="KLQ-GV-nFM">
-                                <frame key="frameInset" minX="87" minY="415" width="200" height="195"/>
+                                <rect key="frame" x="87" y="415" width="200" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHq-zo-1vk">
-                                <frame key="frameInset" minX="40" minY="289" width="73" height="44"/>
+                                <rect key="frame" x="40" y="289" width="73" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button">
@@ -66,16 +69,16 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </state>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MmF-yj-iNN">
-                                <frame key="frameInset" minX="196" minY="375" width="51" height="31"/>
+                                <rect key="frame" x="196" y="375" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-CL-gTI">
-                                <frame key="frameInset" minX="66" minY="28" width="20" height="20"/>
+                                <rect key="frame" x="66" y="28" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <stepper opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Fid-wT-KMP">
-                                <frame key="frameInset" minX="140" width="94" height="23" maxY="470"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="140" y="174" width="94" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stepper>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,7 +102,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWo-sT-BDW">
-                                <frame key="frameInset" minX="47" minY="28" width="83" height="80"/>
+                                <rect key="frame" x="47" y="28" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="0">
@@ -113,7 +116,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX8-d7-pDL">
-                                <frame key="frameInset" minX="146" minY="28" width="83" height="80"/>
+                                <rect key="frame" x="146" y="28" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="1">
@@ -127,7 +130,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6v-5x-RDA">
-                                <frame key="frameInset" minX="244" minY="28" width="83" height="80"/>
+                                <rect key="frame" x="244" y="28" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="2">
@@ -141,7 +144,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-T9-EZI">
-                                <frame key="frameInset" minX="47" minY="124" width="83" height="80"/>
+                                <rect key="frame" x="47" y="124" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="3">
@@ -155,7 +158,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZ2-KC-X3O">
-                                <frame key="frameInset" minX="146" minY="124" width="83" height="80"/>
+                                <rect key="frame" x="146" y="124" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="4">
@@ -169,7 +172,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsr-QN-c0q">
-                                <frame key="frameInset" minX="244" minY="124" width="83" height="80"/>
+                                <rect key="frame" x="244" y="124" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="5">
@@ -183,7 +186,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm7-IL-jwA">
-                                <frame key="frameInset" minX="47" minY="219" width="83" height="80"/>
+                                <rect key="frame" x="47" y="219" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="6">
@@ -197,7 +200,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7C-Ld-1fz">
-                                <frame key="frameInset" minX="146" minY="219" width="83" height="80"/>
+                                <rect key="frame" x="146" y="219" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="7">
@@ -211,7 +214,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-9y-i1P">
-                                <frame key="frameInset" minX="244" minY="219" width="83" height="80"/>
+                                <rect key="frame" x="244" y="219" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="8">
@@ -225,7 +228,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eda-cT-EEe">
-                                <frame key="frameInset" minX="47" minY="313" width="83" height="80"/>
+                                <rect key="frame" x="47" y="313" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="9">
@@ -239,7 +242,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-kD-cEN">
-                                <frame key="frameInset" minX="146" minY="313" width="83" height="80"/>
+                                <rect key="frame" x="146" y="313" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="10">
@@ -253,7 +256,7 @@ controller — an instance of FirstViewController — specified in the app deleg
                                 </connections>
                             </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWN-Fw-hMo">
-                                <frame key="frameInset" minX="244" minY="313" width="83" height="80"/>
+                                <rect key="frame" x="244" y="313" width="83" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="11">
