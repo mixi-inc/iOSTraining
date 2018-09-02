@@ -18,13 +18,11 @@ class User: CustomStringConvertible {
      * print時に実装したdescriptionが出力されます。
      */
     var description: String {
-        return """
-        \nUser:
-        \tname   = \(name)
-        \tera    = \(era)
-        \tage    = \(age)
-        \tvisits = \(String(describing: visits))\n
-        """
+        return "\nUser:\n"
+        + "    name   = \(name)\n"
+        + "    era    = \(era)\n"
+        + "    age    = \(age)\n"
+        + "    visits = \(visits)\n"
     }
     
     init?(dict: [String : Any?]) {
@@ -76,5 +74,5 @@ let dict: [String : [[String : Any?]]] = [
 ]
 
 //usersのarrayを取得し、flatMapを使ってUser型に変換
-let users: [User] = (dict["users"] ?? []).compactMap { User(dict: $0) }
+let users: [User] = (dict["users"] ?? []).flatMap { User(dict: $0) }
 print(users)
