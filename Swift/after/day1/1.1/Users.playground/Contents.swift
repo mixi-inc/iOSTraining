@@ -75,6 +75,6 @@ let dict: [String : [[String : Any?]]] = [
     ]
 ]
 
-//usersのarrayを取得し、flatMapを使ってUser型に変換
+//usersのarrayを取得し、compactMapを使ってUser型に変換
 let users: [User] = (dict["users"] ?? []).compactMap { User(dict: $0) }
 print(users)
