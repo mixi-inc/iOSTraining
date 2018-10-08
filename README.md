@@ -177,7 +177,6 @@ SwiftでのiOSアプリ開発の基礎知識と実務スキルを身に付ける
 
  2. CocoaPods  
  課題 [1.2 CocoaPods](./Swift/pages/day4/1-2_CocoaPods.md)  
- 参考 [開発レシピ：Objective-Cのライブラリ管理ツール](http://www.iosjp.com/dev/archives/451)  
 
  3. Carthage   
  課題 [1.3 Carthage](./Swift/pages/day4/1-3_Carthage.md)  
