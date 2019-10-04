@@ -638,7 +638,7 @@ let 変数名: (引数の型) -> (戻り値の型) = { (引数:引数の型) -> 
     return 戻り値
 }
 
-# もしくは引数に名前を振って可読性を高めたい場合は以下のようにも書ける
+// もしくは引数に名前を振って可読性を高めたい場合は以下のようにも書ける
 let 変数名: (_ 引数: 引数の型) -> (戻り値の型) = { (引数:引数の型) -> (戻り値の型) in
     ....
 }
@@ -649,7 +649,7 @@ let addFunc: (Int, Int) -> Int = { (a: Int, b: Int) -> Int in
     return a + b
 }
 
-# もしくは
+// もしくは
 let addFuncLabeled: (_ a: Int, _ b: Int) -> Int = { (a: Int, b: Int) -> Int in
     return a + b
 }
@@ -665,7 +665,7 @@ let simpleClosure = { () -> () in
     let a = 1 + 1
     print(a) // 2
 }
-# もしくは
+// もしくは
 let simpleClosure = { () -> Void in
     ....
 }
