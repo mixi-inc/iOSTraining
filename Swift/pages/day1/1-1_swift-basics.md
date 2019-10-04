@@ -873,6 +873,8 @@ class PoliceDog: Dog {
 
 }
 
+let dog = PoliceDog()
+
 if let policeDog = dog as? PoliceDog {
     print(policeDog)
 }
