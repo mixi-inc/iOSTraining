@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func recieveNotification(_ notification: Notification) {
+    @objc func recieveNotification(_ notification: Notification) {
         // do something
         guard let value = notification.userInfo?["key"] as? String else { return }
         label.text = value

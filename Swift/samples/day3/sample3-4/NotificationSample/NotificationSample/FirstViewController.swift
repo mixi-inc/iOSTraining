@@ -21,7 +21,7 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func pushNotificationTapped(_ sender: UIButton) {
-        let dict = ["key" : "value"]
+        let dict = ["key" : "hoge"]
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pushNotificationTapped"), object: self, userInfo: dict)
     }
 }
