@@ -19,10 +19,7 @@ class ViewController: UIViewController {
         
         // TODO: 右ボタンを作成
         
-        NotificationCenter.default.addObserver(self,
-                                     selector: #selector(ViewController.keyboardWillShow(_:)),
-                                         name: NSNotification.Name.UIKeyboardWillShow,
-                                       object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         // TODO: キーボードが隠れる際の通知を登録
     }
@@ -33,7 +30,7 @@ class ViewController: UIViewController {
     }
 
     //MARK: - KeyboardNotification
-    func keyboardWillShow(_ notification: Notification) {
+    @objc func keyboardWillShow(_ notification: Notification) {
         print(notification.userInfo)
         
         // TODO: textViewのbottomのconstraintをキーボードの高さに再設定する（userInfoのUIKeyboardFrameEndUserInfoKeyの値を参照する）
