@@ -11,7 +11,7 @@ import UIKit
 class Counter: NSObject {
     static let shared = Counter()
     
-    dynamic var count: Int = 0
+    @objc dynamic var count: Int = 0
     
     private override init() {
         super.init()
