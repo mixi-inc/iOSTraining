@@ -25,7 +25,8 @@ var childObj: ChildObject? = ChildObject()
 
 // TODO: 1.上記2つのオブジェクトのプロパティobjectにお互いを代入して、
 // printの結果がどう変わるか確認しましょう
-
+parentObj?.object = childObj
+childObj?.object = parentObj
 
 // nilを代入(参照を解放)するとdeinitが実行される
 print("---- release parentObj ----")
