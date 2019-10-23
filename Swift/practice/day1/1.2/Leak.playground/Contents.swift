@@ -10,7 +10,7 @@ class ParentObject {
 
 class ChildObject {
     // TODO: 2.objectを弱参照にして、printの出力結果の違いを確かめてみましょう
-    var object: AnyObject?
+    weak var object: AnyObject?
     
     deinit {
         print("ChildObject: released")
