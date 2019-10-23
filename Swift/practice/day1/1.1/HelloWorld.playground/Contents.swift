@@ -6,5 +6,6 @@ let o: String? = "o"
 var world: String! = nil
 world = " world!"
 
-//let helloWorld: String
-//print(helloWorld)
+
+let helloWorld: String = (h ?? "H") + ell + (o ?? "o") + world
+print(helloWorld)
