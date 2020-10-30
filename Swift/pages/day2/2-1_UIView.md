@@ -48,7 +48,7 @@ UIViewにはいくつかのプロパティがあります。詳しくはクラ�
 | プロパティ名 | 解説 |
 | ----------- | ---- |
 | [backgroundColor](https://developer.apple.com/reference/uikit/uiview/1622591-backgroundcolor) | Viewの背景色を表すプロパティです。デフォルトでは透明です。Viewがちゃんと表示されているのかどうかの確認をしたい場合は適当な値を入れてデバッグなどをします。 |
-| [isHidden](https://developer.apple.com/reference/uikit/uiview/1622585-ishidden) | Viewの表示/非表示 を切り替えるパラメータです。`view.isHidden = false` とするとViewが非表示になります。　|
+| [isHidden](https://developer.apple.com/reference/uikit/uiview/1622585-ishidden) | Viewの表示/非表示 を切り替えるパラメータです。`view.isHidden = true` とするとViewが非表示になります。　|
 | [frame](https://developer.apple.com/reference/uikit/uiview/1622621-frame),  [bounds](https://developer.apple.com/reference/uikit/uiview/1622580-bounds) | 共にViewの位置と大きさに関するプロパティです。frameは親Viewの座標系に対する位置と大きさ、boundsは自分の座標系に対する位置と大きさを返します。基本的にはframeで位置やサイズを調整するのでframeを利用するケースの方が多いです。 |
 
 ##### Viewを配置する
