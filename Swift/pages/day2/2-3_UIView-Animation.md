@@ -73,6 +73,7 @@ override func viewDidLoad() {
     view.addSubview(ojisanImageView1)
     self.ojisanImageView1 = ojisanImageView1
 
+    let ojisanImageView2 = UIImageView(image: UIImage(named: "ojisan"))
     ojisanImageView2.frame = Const.ojisanInitialFrame
     view.addSubview(ojisanImageView2)
     ojisanImageView2.isHidden = true
