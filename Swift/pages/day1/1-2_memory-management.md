@@ -77,3 +77,12 @@ parentObj = nil
 実際に強参照と弱参照でどのように参照の流れが変化するかを確かめてみましょう。
 
 [samples/day1/sample1-2/LeakSample](../../samples/day1/sample1-2)
+
+## 強参照の場合
+1. parentObjにnilを代入する
+2. print()メソッドを利用して、childObj.objectがParentObjectクラスの参照を保持している確認する
+
+## 弱参照の場合
+1. ParentObjectクラスのobjectプロパティにweakを宣言して弱参照にする
+2. parentObjにnilを代入して確認する
+3. print()メソッドを利用して、childObj.objectがParentObjectの参照を保持しているか確認する
