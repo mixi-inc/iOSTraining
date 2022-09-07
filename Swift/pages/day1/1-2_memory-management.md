@@ -1,12 +1,26 @@
-# 参照カウント
+# MRR(manual retain-release)
+## MRRとは
+Objective-c言語で利用されていた
+所有するオブジェクトを追跡することによって、  
+明示的にメモリを管理するメモリ管理方法のことです。
+
+インスタンスへの参照回数のことを参照カウントといいます。
+
 > ![reference count](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/MemoryMgmt/Art/memory_management_2x.png)
 
 [Advanced Memory Management Programming Guide](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html) から引用
 
-Objective-C ではインスタンスへの参照回数が 1 以上であればメモリ領域が確保され続けインスタンスは生存し続けます。
+Objective-C ではインスタンスへの参照カウントが1以上であれば
+メモリ領域が確保され続けインスタンスは生存し続けます。
 
-# ARC
-ARC では上記の retain, release はコンパイラが自動で補完してくれます。よって、書くとエラーが出てビルド出来ません。
+alloc/init: 参照カウントを1に設定します。
+retain: 参照カウントを+1します。  
+release: 参照カウントを-1します。
+
+# ARC(Automatic Reference Counting)
+## ARCとは
+Swiftでも利用されているメモリ管理方法のことです。
+上記の retain, release など参照カウントを上下させるコードをコンパイラが自動で補完してくれる仕組みのことです。
 
 > ![ARC](https://developer.apple.com/library/mac/releasenotes/MacOSX/WhatsNewInOSX/Art/ARC_design_final.gif)
 
