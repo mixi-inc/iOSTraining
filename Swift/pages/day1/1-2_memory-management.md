@@ -67,7 +67,7 @@ childObj?.object = parentObj
 parentObj = nil
 
 
-// parentObj.objectが弱参照の場合:
+// parentObj.objectが強参照の場合:
 // parentObjにnilを代入しても、childObj.objectがParentObjectのインスタンスの強参照を保持
 parentObj = nil
 ```
