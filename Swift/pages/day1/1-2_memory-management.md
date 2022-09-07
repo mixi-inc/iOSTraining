@@ -1,5 +1,3 @@
-> 参考 [mixi-inc/iOSTraining
- 1.2 メモリ管理](https://github.com/mixi-inc/iOSTraining/wiki/1.2-%E3%83%A1%E3%83%A2%E3%83%AA%E7%AE%A1%E7%90%86)
 
 メモリ管理の考え方と ARC
 [MemoryMgmt](https://developer.apple.com/jp/devcenter/ios/library/documentation/MemoryMgmt.pdf)
