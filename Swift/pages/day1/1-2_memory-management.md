@@ -1,6 +1,3 @@
-
-メモリ管理の考え方と ARC
-[MemoryMgmt](https://developer.apple.com/jp/devcenter/ios/library/documentation/MemoryMgmt.pdf)
 # 参照カウント
 > ![reference count](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/MemoryMgmt/Art/memory_management_2x.png)
 
